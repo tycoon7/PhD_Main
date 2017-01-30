@@ -1,0 +1,2465 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2012.10.3)  18 MAR 2013 09:01
+entering extended mode
+**thesis.tex
+
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\thesis.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\afit-etd.cls"
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\enpStyle.sty")
+Document Class: afit-etd 2011/05/11 version 1.0 Air Force Institute of Technolo
+gy Electronic Thesis and Dissertation Class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lastpage\lastpage.sty"
+Package: lastpage 2011/09/01 v1.2k Refers to last page's name (HMM; JPG)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ltxmisc\url.sty"
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsmath.sty"
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amstext.sty"
+Package: amstext 2000/06/29 v2.01
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks15
+\ex@=\dimen105
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen106
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\math\amsopn.sty"
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count88
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count89
+\leftroot@=\count90
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count91
+\DOTSCASE@=\count92
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen107
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
+\dotsspace@=\muskip11
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
+\tag@help=\toks16
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
+\andhelp@=\toks17
+\eqnshift@=\dimen108
+\alignsep@=\dimen109
+\tagshift@=\dimen110
+\tagwidth@=\dimen111
+\totwidth@=\dimen112
+\lineht@=\dimen113
+\@envbody=\toks18
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks19
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\ams\classes\amsthm.sty"
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks20
+\thm@bodyfont=\toks21
+\thm@headfont=\toks22
+\thm@notefont=\toks23
+\thm@headpunct=\toks24
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks25
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\txfonts.sty"
+Package: txfonts 2008/01/22 v3.2.1
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/txr/m/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/txr/m/n on input line 21.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/txr/m/n --> OT1/txr/bx/n on input line 22.
+\symitalic=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `italic' in version `bold'
+(Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 26.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/txr/bx/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/txr/bx/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/txr/m/it on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/txr/m/it on input line 30.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/txr/m/it --> OT1/txr/bx/it on input line 31.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/txss/m/n on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/txss/m/n on input line 40.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/txss/m/n --> OT1/txss/b/n on input line 41.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/txtt/m/n on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/txtt/m/n on input line 50.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/txtt/m/n --> OT1/txtt/b/n on input line 51.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/txmi/m/it on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/txmi/m/it on input line 58.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/txmi/m/it --> OML/txmi/bx/it on input line 59.
+\symlettersA=\mathgroup5
+LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
+(Font)                  U/txmia/m/it --> U/txmia/bx/it on input line 67.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/txsy/m/n on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/txsy/m/n on input line 77.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/txsy/m/n --> OMS/txsy/bx/n on input line 78.
+\symAMSa=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/txsya/m/n --> U/txsya/bx/n on input line 94.
+\symAMSb=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
+(Font)                  U/txsyb/m/n --> U/txsyb/bx/n on input line 103.
+\symsymbolsC=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
+(Font)                  U/txsyc/m/n --> U/txsyc/bx/n on input line 113.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/txex/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/txex/m/n on input line 120.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/txex/m/n --> OMX/txex/bx/n on input line 121.
+\symlargesymbolsA=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `largesymbolsA' in version `bold'
+(Font)                  U/txexa/m/n --> U/txexa/bx/n on input line 129.
+LaTeX Info: Redefining \not on input line 1043.
+LaTeX Info: Redefining \textsquare on input line 1063.
+LaTeX Info: Redefining \openbox on input line 1064.
+)
+\@lineskip=\skip49
+\@fracskip=\skip50
+\@doubleskip=\skip51
+\c@@appcount=\count100
+\c@listctr=\count101
+\c@listcnt=\count102
+\c@chapter=\count103
+\c@schapter=\count104
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+Package: hyperref 2012/05/13 v6.82q Hypertext links for LaTeX
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+Package hobsub Info: Skipping package `infwarerr' (already loaded).
+Package hobsub Info: Skipping package `ltxcmds' (already loaded).
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+)
+Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
+Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: xcolor-patch 2011/01/30 xcolor patch
+Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
+Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+)
+\@linkdim=\dimen114
+\Hy@linkcounter=\count105
+\Hy@pagecounter=\count106
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+File: pd1enc.def 2012/05/13 v6.82q Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count107
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `bookmarks' set `true' on input line 3941.
+Package hyperref Info: Option `breaklinks' set `true' on input line 3941.
+Package hyperref Info: Option `colorlinks' set `true' on input line 3941.
+Package hyperref Info: Hyper figures OFF on input line 4062.
+Package hyperref Info: Link nesting OFF on input line 4067.
+Package hyperref Info: Hyper index ON on input line 4070.
+Package hyperref Info: Plain pages OFF on input line 4077.
+Package hyperref Info: Backreferencing OFF on input line 4082.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4300.
+\c@Hy@tempcnt=\count108
+LaTeX Info: Redefining \url on input line 4653.
+\Fld@menulength=\count109
+\Field@Width=\dimen115
+\Fld@charsize=\dimen116
+Package hyperref Info: Hyper figures OFF on input line 5773.
+Package hyperref Info: Link nesting OFF on input line 5778.
+Package hyperref Info: Hyper index ON on input line 5781.
+Package hyperref Info: backreferencing OFF on input line 5788.
+Package hyperref Info: Link coloring ON on input line 5791.
+Package hyperref Info: Link coloring with OCG OFF on input line 5798.
+Package hyperref Info: PDF/A mode OFF on input line 5803.
+LaTeX Info: Redefining \ref on input line 5843.
+LaTeX Info: Redefining \pageref on input line 5847.
+\Hy@abspage=\count110
+\c@Item=\count111
+\c@Hfootnote=\count112
+)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+File: hpdftex.def 2012/05/13 v6.82q Hyperref driver for pdfTeX
+\Fld@listcount=\count113
+\c@bookmark@seq@number=\count114
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip52
+)
+\@input{packages.aux}
+
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\packages.tex"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\natbib\natbib.sty"
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip53
+\bibsep=\skip54
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count115
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\textcomp.sty"
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+Package: amssymb 2009/06/22 v3.00
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+LaTeX Font Info:    Redeclaring symbol font `AMSa' on input line 49.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `normal'
+(Font)                  U/txsya/m/n --> U/msa/m/n on input line 49.
+LaTeX Font Info:    Overwriting symbol font `AMSa' in version `bold'
+(Font)                  U/txsya/bx/n --> U/msa/m/n on input line 49.
+LaTeX Font Info:    Redeclaring symbol font `AMSb' on input line 50.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `normal'
+(Font)                  U/txsyb/m/n --> U/msb/m/n on input line 50.
+LaTeX Font Info:    Overwriting symbol font `AMSb' in version `bold'
+(Font)                  U/txsyb/bx/n --> U/msb/m/n on input line 50.
+LaTeX Font Info:    Redeclaring math delimiter \ulcorner on input line 64.
+LaTeX Font Info:    Redeclaring math delimiter \urcorner on input line 65.
+LaTeX Font Info:    Redeclaring math delimiter \llcorner on input line 66.
+LaTeX Font Info:    Redeclaring math delimiter \lrcorner on input line 67.
+LaTeX Font Info:    Redeclaring math alphabet \mathfrak on input line 95.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+LaTeX Font Info:    Redeclaring math symbol \square on input line 128.
+LaTeX Font Info:    Redeclaring math symbol \lozenge on input line 129.
+LaTeX Font Info:    Redeclaring math symbol \vartriangleright on input line 130
+.
+LaTeX Font Info:    Redeclaring math symbol \vartriangleleft on input line 131.
+
+LaTeX Font Info:    Redeclaring math symbol \trianglerighteq on input line 132.
+
+LaTeX Font Info:    Redeclaring math symbol \trianglelefteq on input line 133.
+LaTeX Font Info:    Redeclaring math symbol \rightsquigarrow on input line 134.
+
+)
+LaTeX Font Info:    Redeclaring math symbol \boxdot on input line 39.
+LaTeX Font Info:    Redeclaring math symbol \boxplus on input line 40.
+LaTeX Font Info:    Redeclaring math symbol \boxtimes on input line 41.
+LaTeX Font Info:    Redeclaring math symbol \blacksquare on input line 43.
+LaTeX Font Info:    Redeclaring math symbol \centerdot on input line 44.
+LaTeX Font Info:    Redeclaring math symbol \blacklozenge on input line 46.
+LaTeX Font Info:    Redeclaring math symbol \circlearrowright on input line 47.
+
+LaTeX Font Info:    Redeclaring math symbol \circlearrowleft on input line 48.
+LaTeX Font Info:    Redeclaring math symbol \leftrightharpoons on input line 51
+.
+LaTeX Font Info:    Redeclaring math symbol \boxminus on input line 52.
+LaTeX Font Info:    Redeclaring math symbol \Vdash on input line 53.
+LaTeX Font Info:    Redeclaring math symbol \Vvdash on input line 54.
+LaTeX Font Info:    Redeclaring math symbol \vDash on input line 55.
+LaTeX Font Info:    Redeclaring math symbol \twoheadrightarrow on input line 56
+.
+LaTeX Font Info:    Redeclaring math symbol \twoheadleftarrow on input line 57.
+
+LaTeX Font Info:    Redeclaring math symbol \leftleftarrows on input line 58.
+LaTeX Font Info:    Redeclaring math symbol \rightrightarrows on input line 59.
+
+LaTeX Font Info:    Redeclaring math symbol \upuparrows on input line 60.
+LaTeX Font Info:    Redeclaring math symbol \downdownarrows on input line 61.
+LaTeX Font Info:    Redeclaring math symbol \upharpoonright on input line 62.
+LaTeX Font Info:    Redeclaring math symbol \downharpoonright on input line 64.
+
+LaTeX Font Info:    Redeclaring math symbol \upharpoonleft on input line 65.
+LaTeX Font Info:    Redeclaring math symbol \downharpoonleft on input line 66.
+LaTeX Font Info:    Redeclaring math symbol \rightarrowtail on input line 67.
+LaTeX Font Info:    Redeclaring math symbol \leftarrowtail on input line 68.
+LaTeX Font Info:    Redeclaring math symbol \leftrightarrows on input line 69.
+LaTeX Font Info:    Redeclaring math symbol \rightleftarrows on input line 70.
+LaTeX Font Info:    Redeclaring math symbol \Lsh on input line 71.
+LaTeX Font Info:    Redeclaring math symbol \Rsh on input line 72.
+LaTeX Font Info:    Redeclaring math symbol \leftrightsquigarrow on input line 
+74.
+LaTeX Font Info:    Redeclaring math symbol \looparrowleft on input line 75.
+LaTeX Font Info:    Redeclaring math symbol \looparrowright on input line 76.
+LaTeX Font Info:    Redeclaring math symbol \circeq on input line 77.
+LaTeX Font Info:    Redeclaring math symbol \succsim on input line 78.
+LaTeX Font Info:    Redeclaring math symbol \gtrsim on input line 79.
+LaTeX Font Info:    Redeclaring math symbol \gtrapprox on input line 80.
+LaTeX Font Info:    Redeclaring math symbol \multimap on input line 81.
+LaTeX Font Info:    Redeclaring math symbol \therefore on input line 82.
+LaTeX Font Info:    Redeclaring math symbol \because on input line 83.
+LaTeX Font Info:    Redeclaring math symbol \doteqdot on input line 84.
+LaTeX Font Info:    Redeclaring math symbol \triangleq on input line 86.
+LaTeX Font Info:    Redeclaring math symbol \precsim on input line 87.
+LaTeX Font Info:    Redeclaring math symbol \lesssim on input line 88.
+LaTeX Font Info:    Redeclaring math symbol \lessapprox on input line 89.
+LaTeX Font Info:    Redeclaring math symbol \eqslantless on input line 90.
+LaTeX Font Info:    Redeclaring math symbol \eqslantgtr on input line 91.
+LaTeX Font Info:    Redeclaring math symbol \curlyeqprec on input line 92.
+LaTeX Font Info:    Redeclaring math symbol \curlyeqsucc on input line 93.
+LaTeX Font Info:    Redeclaring math symbol \preccurlyeq on input line 94.
+LaTeX Font Info:    Redeclaring math symbol \leqq on input line 95.
+LaTeX Font Info:    Redeclaring math symbol \leqslant on input line 96.
+LaTeX Font Info:    Redeclaring math symbol \lessgtr on input line 97.
+LaTeX Font Info:    Redeclaring math symbol \backprime on input line 98.
+LaTeX Font Info:    Redeclaring math symbol \risingdotseq on input line 99.
+LaTeX Font Info:    Redeclaring math symbol \fallingdotseq on input line 100.
+LaTeX Font Info:    Redeclaring math symbol \succcurlyeq on input line 101.
+LaTeX Font Info:    Redeclaring math symbol \geqq on input line 102.
+LaTeX Font Info:    Redeclaring math symbol \geqslant on input line 103.
+LaTeX Font Info:    Redeclaring math symbol \gtrless on input line 104.
+LaTeX Font Info:    Redeclaring math symbol \bigstar on input line 112.
+LaTeX Font Info:    Redeclaring math symbol \between on input line 113.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangledown on input line 11
+4.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleright on input line 1
+15.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangleleft on input line 11
+6.
+LaTeX Font Info:    Redeclaring math symbol \vartriangle on input line 117.
+LaTeX Font Info:    Redeclaring math symbol \blacktriangle on input line 118.
+LaTeX Font Info:    Redeclaring math symbol \triangledown on input line 119.
+LaTeX Font Info:    Redeclaring math symbol \eqcirc on input line 120.
+LaTeX Font Info:    Redeclaring math symbol \lesseqgtr on input line 121.
+LaTeX Font Info:    Redeclaring math symbol \gtreqless on input line 122.
+LaTeX Font Info:    Redeclaring math symbol \lesseqqgtr on input line 123.
+LaTeX Font Info:    Redeclaring math symbol \gtreqqless on input line 124.
+LaTeX Font Info:    Redeclaring math symbol \Rrightarrow on input line 125.
+LaTeX Font Info:    Redeclaring math symbol \Lleftarrow on input line 126.
+LaTeX Font Info:    Redeclaring math symbol \veebar on input line 127.
+LaTeX Font Info:    Redeclaring math symbol \barwedge on input line 128.
+LaTeX Font Info:    Redeclaring math symbol \doublebarwedge on input line 129.
+LaTeX Font Info:    Redeclaring math symbol \measuredangle on input line 132.
+LaTeX Font Info:    Redeclaring math symbol \sphericalangle on input line 133.
+LaTeX Font Info:    Redeclaring math symbol \varpropto on input line 134.
+LaTeX Font Info:    Redeclaring math symbol \smallsmile on input line 135.
+LaTeX Font Info:    Redeclaring math symbol \smallfrown on input line 136.
+LaTeX Font Info:    Redeclaring math symbol \Subset on input line 137.
+LaTeX Font Info:    Redeclaring math symbol \Supset on input line 138.
+LaTeX Font Info:    Redeclaring math symbol \Cup on input line 139.
+LaTeX Font Info:    Redeclaring math symbol \Cap on input line 141.
+LaTeX Font Info:    Redeclaring math symbol \curlywedge on input line 143.
+LaTeX Font Info:    Redeclaring math symbol \curlyvee on input line 144.
+LaTeX Font Info:    Redeclaring math symbol \leftthreetimes on input line 145.
+LaTeX Font Info:    Redeclaring math symbol \rightthreetimes on input line 146.
+
+LaTeX Font Info:    Redeclaring math symbol \subseteqq on input line 147.
+LaTeX Font Info:    Redeclaring math symbol \supseteqq on input line 148.
+LaTeX Font Info:    Redeclaring math symbol \bumpeq on input line 149.
+LaTeX Font Info:    Redeclaring math symbol \Bumpeq on input line 150.
+LaTeX Font Info:    Redeclaring math symbol \lll on input line 151.
+LaTeX Font Info:    Redeclaring math symbol \ggg on input line 153.
+LaTeX Font Info:    Redeclaring math symbol \circledS on input line 155.
+LaTeX Font Info:    Redeclaring math symbol \pitchfork on input line 156.
+LaTeX Font Info:    Redeclaring math symbol \dotplus on input line 157.
+LaTeX Font Info:    Redeclaring math symbol \backsim on input line 158.
+LaTeX Font Info:    Redeclaring math symbol \backsimeq on input line 159.
+LaTeX Font Info:    Redeclaring math symbol \complement on input line 160.
+LaTeX Font Info:    Redeclaring math symbol \intercal on input line 161.
+LaTeX Font Info:    Redeclaring math symbol \circledcirc on input line 162.
+LaTeX Font Info:    Redeclaring math symbol \circledast on input line 163.
+LaTeX Font Info:    Redeclaring math symbol \circleddash on input line 164.
+LaTeX Font Info:    Redeclaring math symbol \lvertneqq on input line 166.
+LaTeX Font Info:    Redeclaring math symbol \gvertneqq on input line 167.
+LaTeX Font Info:    Redeclaring math symbol \nleq on input line 168.
+LaTeX Font Info:    Redeclaring math symbol \ngeq on input line 169.
+LaTeX Font Info:    Redeclaring math symbol \nless on input line 170.
+LaTeX Font Info:    Redeclaring math symbol \ngtr on input line 171.
+LaTeX Font Info:    Redeclaring math symbol \nprec on input line 172.
+LaTeX Font Info:    Redeclaring math symbol \nsucc on input line 173.
+LaTeX Font Info:    Redeclaring math symbol \lneqq on input line 174.
+LaTeX Font Info:    Redeclaring math symbol \gneqq on input line 175.
+LaTeX Font Info:    Redeclaring math symbol \nleqslant on input line 176.
+LaTeX Font Info:    Redeclaring math symbol \ngeqslant on input line 177.
+LaTeX Font Info:    Redeclaring math symbol \lneq on input line 178.
+LaTeX Font Info:    Redeclaring math symbol \gneq on input line 179.
+LaTeX Font Info:    Redeclaring math symbol \npreceq on input line 180.
+LaTeX Font Info:    Redeclaring math symbol \nsucceq on input line 181.
+LaTeX Font Info:    Redeclaring math symbol \precnsim on input line 182.
+LaTeX Font Info:    Redeclaring math symbol \succnsim on input line 183.
+LaTeX Font Info:    Redeclaring math symbol \lnsim on input line 184.
+LaTeX Font Info:    Redeclaring math symbol \gnsim on input line 185.
+LaTeX Font Info:    Redeclaring math symbol \nleqq on input line 186.
+LaTeX Font Info:    Redeclaring math symbol \ngeqq on input line 187.
+LaTeX Font Info:    Redeclaring math symbol \precneqq on input line 188.
+LaTeX Font Info:    Redeclaring math symbol \succneqq on input line 189.
+LaTeX Font Info:    Redeclaring math symbol \precnapprox on input line 190.
+LaTeX Font Info:    Redeclaring math symbol \succnapprox on input line 191.
+LaTeX Font Info:    Redeclaring math symbol \lnapprox on input line 192.
+LaTeX Font Info:    Redeclaring math symbol \gnapprox on input line 193.
+LaTeX Font Info:    Redeclaring math symbol \nsim on input line 194.
+LaTeX Font Info:    Redeclaring math symbol \ncong on input line 195.
+LaTeX Font Info:    Redeclaring math symbol \diagup on input line 196.
+LaTeX Font Info:    Redeclaring math symbol \diagdown on input line 197.
+LaTeX Font Info:    Redeclaring math symbol \varsubsetneq on input line 198.
+LaTeX Font Info:    Redeclaring math symbol \varsupsetneq on input line 199.
+LaTeX Font Info:    Redeclaring math symbol \nsubseteqq on input line 200.
+LaTeX Font Info:    Redeclaring math symbol \nsupseteqq on input line 201.
+LaTeX Font Info:    Redeclaring math symbol \subsetneqq on input line 202.
+LaTeX Font Info:    Redeclaring math symbol \supsetneqq on input line 203.
+LaTeX Font Info:    Redeclaring math symbol \varsubsetneqq on input line 204.
+LaTeX Font Info:    Redeclaring math symbol \varsupsetneqq on input line 205.
+LaTeX Font Info:    Redeclaring math symbol \subsetneq on input line 206.
+LaTeX Font Info:    Redeclaring math symbol \supsetneq on input line 207.
+LaTeX Font Info:    Redeclaring math symbol \nsubseteq on input line 208.
+LaTeX Font Info:    Redeclaring math symbol \nsupseteq on input line 209.
+LaTeX Font Info:    Redeclaring math symbol \nparallel on input line 210.
+LaTeX Font Info:    Redeclaring math symbol \nmid on input line 211.
+LaTeX Font Info:    Redeclaring math symbol \nshortmid on input line 212.
+LaTeX Font Info:    Redeclaring math symbol \nshortparallel on input line 213.
+LaTeX Font Info:    Redeclaring math symbol \nvdash on input line 214.
+LaTeX Font Info:    Redeclaring math symbol \nVdash on input line 215.
+LaTeX Font Info:    Redeclaring math symbol \nvDash on input line 216.
+LaTeX Font Info:    Redeclaring math symbol \nVDash on input line 217.
+LaTeX Font Info:    Redeclaring math symbol \ntrianglerighteq on input line 218
+.
+LaTeX Font Info:    Redeclaring math symbol \ntrianglelefteq on input line 219.
+
+LaTeX Font Info:    Redeclaring math symbol \ntriangleleft on input line 220.
+LaTeX Font Info:    Redeclaring math symbol \ntriangleright on input line 221.
+LaTeX Font Info:    Redeclaring math symbol \nleftarrow on input line 222.
+LaTeX Font Info:    Redeclaring math symbol \nrightarrow on input line 223.
+LaTeX Font Info:    Redeclaring math symbol \nLeftarrow on input line 224.
+LaTeX Font Info:    Redeclaring math symbol \nRightarrow on input line 225.
+LaTeX Font Info:    Redeclaring math symbol \nLeftrightarrow on input line 226.
+
+LaTeX Font Info:    Redeclaring math symbol \nleftrightarrow on input line 227.
+
+LaTeX Font Info:    Redeclaring math symbol \divideontimes on input line 228.
+LaTeX Font Info:    Redeclaring math symbol \varnothing on input line 229.
+LaTeX Font Info:    Redeclaring math symbol \nexists on input line 230.
+LaTeX Font Info:    Redeclaring math symbol \Finv on input line 231.
+LaTeX Font Info:    Redeclaring math symbol \Game on input line 232.
+LaTeX Font Info:    Redeclaring math symbol \eth on input line 235.
+LaTeX Font Info:    Redeclaring math symbol \eqsim on input line 236.
+LaTeX Font Info:    Redeclaring math symbol \beth on input line 237.
+LaTeX Font Info:    Redeclaring math symbol \gimel on input line 238.
+LaTeX Font Info:    Redeclaring math symbol \daleth on input line 239.
+LaTeX Font Info:    Redeclaring math symbol \lessdot on input line 240.
+LaTeX Font Info:    Redeclaring math symbol \gtrdot on input line 241.
+LaTeX Font Info:    Redeclaring math symbol \ltimes on input line 242.
+LaTeX Font Info:    Redeclaring math symbol \rtimes on input line 243.
+LaTeX Font Info:    Redeclaring math symbol \shortmid on input line 244.
+LaTeX Font Info:    Redeclaring math symbol \shortparallel on input line 245.
+LaTeX Font Info:    Redeclaring math symbol \smallsetminus on input line 246.
+LaTeX Font Info:    Redeclaring math symbol \thicksim on input line 247.
+LaTeX Font Info:    Redeclaring math symbol \thickapprox on input line 248.
+LaTeX Font Info:    Redeclaring math symbol \approxeq on input line 249.
+LaTeX Font Info:    Redeclaring math symbol \succapprox on input line 250.
+LaTeX Font Info:    Redeclaring math symbol \precapprox on input line 251.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowleft on input line 252.
+LaTeX Font Info:    Redeclaring math symbol \curvearrowright on input line 253.
+
+LaTeX Font Info:    Redeclaring math symbol \digamma on input line 254.
+LaTeX Font Info:    Redeclaring math symbol \varkappa on input line 255.
+LaTeX Font Info:    Redeclaring math symbol \Bbbk on input line 256.
+LaTeX Font Info:    Redeclaring math symbol \hslash on input line 257.
+LaTeX Font Info:    Redeclaring math symbol \backepsilon on input line 260.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\bm.sty"
+Package: bm 2004/02/26 v1.1c Bold Symbol Support (DPC/FMi)
+\symboldoperators=\mathgroup10
+\symboldletters=\mathgroup11
+\symboldsymbols=\mathgroup12
+\symboldlargesymbols=\mathgroup13
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 138.
+LaTeX Info: Redefining \bm on input line 204.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\booktabs\booktabs.sty"
+Package: booktabs 2005/04/14 v1.61803 publication quality tables
+\heavyrulewidth=\dimen117
+\lightrulewidth=\dimen118
+\cmidrulewidth=\dimen119
+\belowrulesep=\dimen120
+\belowbottomsep=\dimen121
+\aboverulesep=\dimen122
+\abovetopsep=\dimen123
+\cmidrulesep=\dimen124
+\cmidrulekern=\dimen125
+\defaultaddspace=\dimen126
+\@cmidla=\count116
+\@cmidlb=\count117
+\@aboverulesep=\dimen127
+\@belowrulesep=\dimen128
+\@thisruleclass=\count118
+\@lastruleclass=\count119
+\@thisrulewidth=\dimen129
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\dcolumn.sty"
+Package: dcolumn 2001/05/28 v1.06 decimal alignment package (DPC)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen130
+\extrarowheight=\dimen131
+\NC@list=\toks26
+\extratabsurround=\skip55
+\backup@length=\skip56
+))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\multirow\multirow.sty"
+\bigstrutjot=\dimen132
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\acronym\acronym.sty"
+Package: acronym 2012/09/04 v1.37 Support for acronyms (Tobias Oetiker)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\bigfoot\suffix.sty"
+Package: suffix 2006/07/15 1.5 Variant command support
+)
+\AC@clearlist=\toks27
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.sty"
+Package: subfigure 2002/07/30 v2.1.4 subfigure package
+\subfigtopskip=\skip57
+\subfigcapskip=\skip58
+\subfigcaptopadj=\dimen133
+\subfigbottomskip=\skip59
+\subfigcapmargin=\dimen134
+\subfiglabelskip=\skip60
+\c@subfigure=\count120
+\c@lofdepth=\count121
+\c@subtable=\count122
+\c@lotdepth=\count123
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\subfigure\subfigure.cfg")
+\subfig@top=\skip61
+\subfig@bottom=\skip62
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\calc.sty"
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count124
+\calc@Bcount=\count125
+\calc@Adimen=\dimen135
+\calc@Bdimen=\dimen136
+\calc@Askip=\skip63
+\calc@Bskip=\skip64
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count126
+\calc@Cskip=\skip65
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\wrapfig\wrapfig.sty"
+\wrapoverhang=\dimen137
+\WF@size=\dimen138
+\c@WF@wrappedlines=\count127
+\WF@box=\box28
+\WF@everypar=\toks28
+Package: wrapfig 2003/01/31  v 3.6
+)
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\mcode.sty"
+-- Package: `mcode' 2.2 <2011/08/26> --
+Package: mcode 2011/08/26 2.2
+ - settings optimized for display (colour formating)
+ - line numbering enabled
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\xcolor\xcolor.sty"
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+\lst@mode=\count128
+\lst@gtempboxa=\box29
+\lst@token=\toks29
+\lst@length=\count129
+\lst@currlwidth=\dimen139
+\lst@column=\count130
+\lst@pos=\count131
+\lst@lostspace=\dimen140
+\lst@width=\dimen141
+\lst@newlines=\count132
+\lst@lineno=\count133
+\lst@maxwidth=\dimen142
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count134
+\lst@skipnumbers=\count135
+\lst@framebox=\box30
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count136
+\float@exts=\toks30
+\float@box=\box31
+\@float@everytoks=\toks31
+\@floatcapt=\box32
+)
+(C:\Users\TyCoon\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pdfpages.sty
+Package: pdfpages 2012/08/31 v0.4t Insert pages of external PDF documents (AM)
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ifthen.sty"
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\TyCoon\AppData\Roaming\MiKTeX\2.9\tex\latex\eso-pic\eso-pic.sty
+Package: eso-pic 2010/10/06 v2.0c eso-pic (RN)
+)
+(C:\Users\TyCoon\AppData\Roaming\MiKTeX\2.9\tex\latex\pdfpages\pppdftex.def
+File: pppdftex.def 2012/08/31 v0.4t Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box33
+\AM@toc@title=\toks32
+\c@AM@survey=\count137
+\AM@templatesizebox=\box34
+))
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\thesis.aux")
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 90.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 90.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\omltxmi.fd"
+File: omltxmi.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 90.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 90.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\omstxsy.fd"
+File: omstxsy.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 90.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 90.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\omxtxex.fd"
+File: omxtxex.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 90.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 90.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\utxexa.fd"
+File: utxexa.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 90.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 90.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\ot1txr.fd"
+File: ot1txr.fd 2000/12/15 v3.1
+)
+Package lastpage Info: Please have a look at the pageslts package at
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             macros/latex/contrib/pageslts/ 
+(lastpage)             or
+(lastpage)             http://www.ctan.org/tex-archive/ 
+(lastpage)             install/macros/latex/contrib/pageslts.tds.zip
+(lastpage)             ! on input line 90.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count138
+\scratchdimen=\dimen143
+\scratchbox=\box35
+\nofMPsegments=\count139
+\nofMParguments=\count140
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count141
+\MPscratchDim=\dimen144
+\MPnumerator=\count142
+\makeMPintoPDFobject=\count143
+\everyMPtoPDFconversion=\toks34
+)
+\AtBeginShipoutBox=\box36
+Package hyperref Info: Link coloring ON on input line 90.
+ ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+)
+\c@section@level=\count144
+)
+LaTeX Info: Redefining \ref on input line 90.
+LaTeX Info: Redefining \pageref on input line 90.
+LaTeX Info: Redefining \nameref on input line 90.
+
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\thesis.out")
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\thesis.out")
+\@outlinefile=\write3
+\c@lstlisting=\count145
+ <afitlogo.pdf, id=199, 622.325pt x 678.535pt>
+File: afitlogo.pdf Graphic file (type pdf)
+
+<use afitlogo.pdf>
+Package pdftex.def Info: afitlogo.pdf used on input line 92.
+(pdftex.def)             Requested size: 216.81pt x 236.39333pt.
+LaTeX Font Info:    Try loading font information for OT1+txss on input line 92.
+
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\ot1txss.fd"
+File: ot1txss.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Font shape `OT1/txss/bx/n' in size <12> not available
+(Font)              Font shape `OT1/txss/b/n' tried instead on input line 92.
+LaTeX Font Info:    Font shape `OT1/txss/b/n' will be
+(Font)              scaled to size 11.39996pt on input line 92.
+ [1
+
+
+
+\reset@newl@bel
+
+{C:/Users/TyCoon/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/T
+yCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/Coon - Thesis/afi
+tlogo.pdf>]
+Missing character: There is no ‚ in font txr!
+Missing character: There is no Ä in font txr!
+Missing character: There is no ù in font txr!
+pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.92 \makePrefatoryPages
+                         % Don't remove this - it generates the prefatory pages
+[1]
+
+pdfTeX warning: pdflatex.exe (file C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_
+Research/0. Complete System/Coon - Thesis/SignaturePage.pdf): PDF inclusion: fo
+und PDF version <1.6>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_
+Research/0. Complete System/Coon - Thesis/SignaturePage.pdf): PDF inclusion: fo
+und PDF version <1.6>, but at most version <1.5> allowed
+[2]
+
+pdfTeX warning: pdflatex.exe (file C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_
+Research/0. Complete System/Coon - Thesis/SignaturePage.pdf): PDF inclusion: fo
+und PDF version <1.6>, but at most version <1.5> allowed
+<SignaturePage.pdf, id=223, page=1, 614.295pt x 794.97pt>
+File: SignaturePage.pdf Graphic file (type pdf)
+
+<use SignaturePage.pdf, page 1>
+Package pdftex.def Info: SignaturePage.pdf, page1 used on input line 92.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: SignaturePage.pdf Graphic file (type pdf)
+ <use SignaturePage.pdf, page 1>
+Package pdftex.def Info: SignaturePage.pdf, page1 used on input line 92.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SignaturePage.pdf Graphic file (type pdf)
+
+<use SignaturePage.pdf, page 1>
+Package pdftex.def Info: SignaturePage.pdf, page1 used on input line 92.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SignaturePage.pdf Graphic file (type pdf)
+ <use SignaturePage.pdf, page 1>
+Package pdftex.def Info: SignaturePage.pdf, page1 used on input line 92.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SignaturePage.pdf Graphic file (type pdf)
+
+<use SignaturePage.pdf, page 1>
+Package pdftex.def Info: SignaturePage.pdf, page1 used on input line 92.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [3 <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/Co
+on - Thesis/SignaturePage.pdf>]
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\abstract.tex"
+Package acronym Info: Label `acro:CTEx' newly defined as it shall be overridden
+
+although it is yet undefined on input line 1.
+Package acronym Info: Label `acro:AFIT' newly defined as it shall be overridden
+
+although it is yet undefined on input line 1.
+Package acronym Info: Label `acro:DVP' newly defined as it shall be overridden
+although it is yet undefined on input line 1.
+) [4
+
+] [5] [6
+
+]
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\thesis.toc"
+LaTeX Font Info:    Try loading font information for U+txmia on input line 1.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\utxmia.fd"
+File: utxmia.fd 2000/12/15 v3.1
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 1.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\utxsyc.fd"
+File: utxsyc.fd 2000/12/15 v3.1
+) [7
+
+
+] [8])
+\tf@toc=\write4
+
+[9]
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\thesis.lof"
+Overfull \hbox (4.72807pt too wide) in paragraph at lines 1--1
+ [][] [][][]\OT1/txr/m/n/12 Illustration of elec-tro-mag-netic[] spec-trums wit
+h the vis-i-ble spec-trum high-lighted [[]].[][] [][]  
+ []
+
+
+Underfull \hbox (badness 1270) in paragraph at lines 3--3
+ [][] [][][]\OT1/txr/m/n/12 The radiation detected by an Earth-observing satell
+ite has a significant 
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+txr on input line 4.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\txfonts\ts1txr.fd"
+File: ts1txr.fd 2000/12/15 v3.1
+)
+Underfull \hbox (badness 1314) in paragraph at lines 5--5
+ [][] [][][]\OT1/txr/m/n/12 Spectral signature inherent to the scene at various
+ points sensed by a 
+ []
+
+
+Underfull \hbox (badness 1946) in paragraph at lines 9--9
+ [][] [][][]\OT1/txr/m/n/12 (a) An artist rendition of the GOSAT satellite and 
+(b) table of FTS 
+ []
+
+
+Underfull \hbox (badness 1895) in paragraph at lines 15--15
+ [][] [][][]\OT1/txr/m/n/12 Simulated images through a direct-vision prism[] sh
+owing three distinct 
+ []
+
+[10
+
+]
+Underfull \hbox (badness 1354) in paragraph at lines 33--33
+ [][] [][][]\OT1/txr/m/n/12 The small-angle approximation applied to Snell's La
+w to calculate the 
+ []
+
+[11] [12] [13])
+\tf@lof=\write5
+ [14]
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\thesis.lot")
+\tf@lot=\write6
+ [15
+
+]
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\acronyms.tex") [16
+
+]
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\chap1.tex"
+Chapter 1.
+Package acronym Info: Label `acro:CTI' newly defined as it shall be overridden
+although it is yet undefined on input line 4.
+[1
+
+] [2] <images/chap1/EMspectrum.jpg, id=789, 505.89pt x 236.885pt>
+File: images/chap1/EMspectrum.jpg Graphic file (type jpg)
+
+<use images/chap1/EMspectrum.jpg>
+Package pdftex.def Info: images/chap1/EMspectrum.jpg used on input line 31.
+(pdftex.def)             Requested size: 325.215pt x 152.28542pt.
+ [3pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.55 \end{table}
+                 <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Compl
+ete System/Coon - Thesis/images/chap1/EMspectrum.jpg>] [4pdfTeX warning (ext4):
+ destination with the same identifier (name{table.1.1}) has been already used, 
+duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.73 
+     ] <images/chap1/HgLampSpectrum.jpg, id=808, 578.16pt x 306.4248pt>
+File: images/chap1/HgLampSpectrum.jpg Graphic file (type jpg)
+
+<use images/chap1/HgLampSpectrum.jpg>
+Package pdftex.def Info: images/chap1/HgLampSpectrum.jpg used on input line 76.
+
+(pdftex.def)             Requested size: 390.25536pt x 207.11272pt.
+Package acronym Info: Label `acro:SWIR' newly defined as it shall be overridden
+
+although it is yet undefined on input line 83.
+ [5pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.84 
+      <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/
+Coon - Thesis/images/chap1/HgLampSpectrum.jpg>]
+<images/chap1/RemoteSensing.jpg, id=825, 351.3125pt x 308.15125pt>
+File: images/chap1/RemoteSensing.jpg Graphic file (type jpg)
+
+<use images/chap1/RemoteSensing.jpg>
+Package pdftex.def Info: images/chap1/RemoteSensing.jpg used on input line 89.
+(pdftex.def)             Requested size: 216.81pt x 190.17722pt.
+
+<images/chap1/solaremissionspectrum.png, id=828, 275.52937pt x 248.42813pt>
+File: images/chap1/solaremissionspectrum.png Graphic file (type png)
+
+<use images/chap1/solaremissionspectrum.png>
+Package pdftex.def Info: images/chap1/solaremissionspectrum.png used on input l
+ine 96.
+(pdftex.def)             Requested size: 216.81pt x 195.49034pt.
+
+<images/chap1/ReflectanceSpectrum.jpg, id=832, 362.85562pt x 298.11375pt>
+File: images/chap1/ReflectanceSpectrum.jpg Graphic file (type jpg)
+
+<use images/chap1/ReflectanceSpectrum.jpg>
+Package pdftex.def Info: images/chap1/ReflectanceSpectrum.jpg used on input lin
+e 105.
+(pdftex.def)             Requested size: 433.62001pt x 356.26088pt.
+Package acronym Info: Label `acro:AVIRIS' newly defined as it shall be overridd
+en
+although it is yet undefined on input line 111.
+Package acronym Info: Label `acro:FOV' newly defined as it shall be overridden
+although it is yet undefined on input line 111.
+ [6pdfTeX warning (ext4): destination with the same identifier (name{figure.1.3
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.112 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap1/RemoteSensing.jpg>]
+<images/chap1/avcubebig.png, id=843, 334.24875pt x 326.72063pt>
+File: images/chap1/avcubebig.png Graphic file (type png)
+
+<use images/chap1/avcubebig.png>
+Package pdftex.def Info: images/chap1/avcubebig.png used on input line 115.
+(pdftex.def)             Requested size: 325.215pt x 317.91568pt.
+ [7pdfTeX warning (ext4): destination with the same identifier (name{figure.1.4
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.123 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap1/solaremissionspectrum.png>]
+<images/chap1/MyGraphics_Ch1.pdf, id=854, page=1, 794.97pt x 614.295pt>
+File: images/chap1/MyGraphics_Ch1.pdf Graphic file (type pdf)
+
+<use images/chap1/MyGraphics_Ch1.pdf, page 1>
+Package pdftex.def Info: images/chap1/MyGraphics_Ch1.pdf, page1 used on input l
+ine 126.
+(pdftex.def)             Requested size: 433.62001pt x 335.07939pt.
+ [8pdfTeX warning (ext4): destination with the same identifier (name{figure.1.5
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.129 \end{figure}
+                   <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Com
+plete System/Coon - Thesis/images/chap1/ReflectanceSpectrum.jpg>] [9pdfTeX warn
+ing (ext4): destination with the same identifier (name{figure.1.6}) has been al
+ready used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.132 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap1/avcubebig.png>] [10pdfTeX warning (ext4): destinati
+on with the same identifier (name{figure.1.7}) has been already used, duplicate
+ ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.132 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap1/MyGraphics_Ch1.pdf, page is rotated 90 degrees>]
+<images/chap1/pushbroomOperation.jpg, id=902, 347.8596pt x 291.9708pt>
+File: images/chap1/pushbroomOperation.jpg Graphic file (type jpg)
+
+<use images/chap1/pushbroomOperation.jpg>
+Package pdftex.def Info: images/chap1/pushbroomOperation.jpg used on input line
+ 137.
+(pdftex.def)             Requested size: 216.81pt x 180.4936pt.
+ [11pdfTeX warning (ext4): destination with the same identifier (name{figure.1.
+8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.144 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap1/pushbroomOperation.jpg>])
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\chap2.tex" [12] [13]
+Chapter 2.
+Package acronym Info: Label `acro:FTS' newly defined as it shall be overridden
+although it is yet undefined on input line 11.
+Package acronym Info: Label `acro:CAI' newly defined as it shall be overridden
+although it is yet undefined on input line 11.
+<images/chap2/GOSAT-3.jpg, id=958, 256.7994pt x 171.039pt>
+File: images/chap2/GOSAT-3.jpg Graphic file (type jpg)
+
+<use images/chap2/GOSAT-3.jpg>
+Package pdftex.def Info: images/chap2/GOSAT-3.jpg used on input line 17.
+(pdftex.def)             Requested size: 173.44534pt x 115.52202pt.
+
+<images/chap2/FTS_specs.png, id=959, 327.47343pt x 162.6075pt>
+File: images/chap2/FTS_specs.png Graphic file (type png)
+
+<use images/chap2/FTS_specs.png>
+Package pdftex.def Info: images/chap2/FTS_specs.png used on input line 20.
+(pdftex.def)             Requested size: 216.81pt x 107.65623pt.
+Package acronym Info: Label `acro:NASA' newly defined as it shall be overridden
+
+although it is yet undefined on input line 27.
+Package acronym Info: Label `acro:USGS' newly defined as it shall be overridden
+
+although it is yet undefined on input line 27.
+Package acronym Info: Label `acro:OLI' newly defined as it shall be overridden
+although it is yet undefined on input line 27.
+ [14
+
+]
+Package acronym Info: Label `acro:CAT' newly defined as it shall be overridden
+although it is yet undefined on input line 33.
+ [15pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.34 
+      <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/
+Coon - Thesis/images/chap2/GOSAT-3.jpg> <C:/Users/TyCoon/Documents/AFIT/CTEx/My
+_CTEx_Research/0. Complete System/Coon - Thesis/images/chap2/FTS_specs.png>]
+<images/chap2/CircularMedicalTomography.png, id=989, 348.55219pt x 278.54062pt>
+File: images/chap2/CircularMedicalTomography.png Graphic file (type png)
+<use images/chap2/CircularMedicalTomography.png>
+Package pdftex.def Info: images/chap2/CircularMedicalTomography.png used on inp
+ut line 37.
+(pdftex.def)             Requested size: 325.215pt x 259.90288pt.
+ [16pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.43 
+      <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/
+Coon - Thesis/images/chap2/CircularMedicalTomography.png>]
+<images/chap2/layout.png, id=1006, 1501.86093pt x 474.27188pt>
+File: images/chap2/layout.png Graphic file (type png)
+
+<use images/chap2/layout.png>
+Package pdftex.def Info: images/chap2/layout.png used on input line 46.
+(pdftex.def)             Requested size: 433.62001pt x 136.92743pt.
+
+<images/chap2/objectCubeProj.png, id=1008, 325.96782pt x 189.70876pt>
+File: images/chap2/objectCubeProj.png Graphic file (type png)
+
+<use images/chap2/objectCubeProj.png>
+Package pdftex.def Info: images/chap2/objectCubeProj.png used on input line 53.
+
+(pdftex.def)             Requested size: 325.215pt x 189.28564pt.
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.56 \end{figure}
+                  <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Comp
+lete System/Coon - Thesis/images/chap2/layout.png>]
+<images/chap2/Dispersed_180deg.pdf, id=1015, 614.295pt x 794.97pt>
+File: images/chap2/Dispersed_180deg.pdf Graphic file (type pdf)
+
+<use images/chap2/Dispersed_180deg.pdf>
+Package pdftex.def Info: images/chap2/Dispersed_180deg.pdf used on input line 6
+2.
+(pdftex.def)             Requested size: 130.08733pt x 185.36362pt.
+
+<images/chap2/Dispersed_90deg.pdf, id=1017, 614.295pt x 794.97pt>
+File: images/chap2/Dispersed_90deg.pdf Graphic file (type pdf)
+
+<use images/chap2/Dispersed_90deg.pdf>
+Package pdftex.def Info: images/chap2/Dispersed_90deg.pdf used on input line 65
+.
+(pdftex.def)             Requested size: 130.08733pt x 185.36362pt.
+
+<images/chap2/Dispersed_0deg.pdf, id=1019, 614.295pt x 794.97pt>
+File: images/chap2/Dispersed_0deg.pdf Graphic file (type pdf)
+
+<use images/chap2/Dispersed_0deg.pdf>
+Package pdftex.def Info: images/chap2/Dispersed_0deg.pdf used on input line 68.
+
+(pdftex.def)             Requested size: 130.08733pt x 185.36362pt.
+
+<images/chap2/Dispersed_270deg.pdf, id=1021, 614.295pt x 794.97pt>
+File: images/chap2/Dispersed_270deg.pdf Graphic file (type pdf)
+
+<use images/chap2/Dispersed_270deg.pdf>
+Package pdftex.def Info: images/chap2/Dispersed_270deg.pdf used on input line 7
+1.
+(pdftex.def)             Requested size: 130.08733pt x 185.36362pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.79 
+      <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/
+Coon - Thesis/images/chap2/objectCubeProj.png>] [19pdfTeX warning (ext4): desti
+nation with the same identifier (name{figure.2.5}) has been already used, dupli
+cate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.79 
+      <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/
+Coon - Thesis/images/chap2/Dispersed_180deg.pdf> <C:/Users/TyCoon/Documents/AFI
+T/CTEx/My_CTEx_Research/0. Complete System/Coon - Thesis/images/chap2/Dispersed
+_90deg.pdf> <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete S
+ystem/Coon - Thesis/images/chap2/Dispersed_0deg.pdf> <C:/Users/TyCoon/Documents
+/AFIT/CTEx/My_CTEx_Research/0. Complete System/Coon - Thesis/images/chap2/Dispe
+rsed_270deg.pdf>]
+Package acronym Info: Label `acro:POCS' newly defined as it shall be overridden
+
+although it is yet undefined on input line 90.
+ [20] [21]
+<images/chap2/MyGraphics_Ch2.pdf, id=1137, page=1, 794.97pt x 614.295pt>
+File: images/chap2/MyGraphics_Ch2.pdf Graphic file (type pdf)
+
+<use images/chap2/MyGraphics_Ch2.pdf, page 1>
+Package pdftex.def Info: images/chap2/MyGraphics_Ch2.pdf, page1 used on input l
+ine 108.
+(pdftex.def)             Requested size: 433.62001pt x 209.92331pt.
+ [22]
+<images/chap2/BostickSystemErrorTable.png, id=1148, 400.49625pt x 283.81032pt>
+File: images/chap2/BostickSystemErrorTable.png Graphic file (type png)
+
+<use images/chap2/BostickSystemErrorTable.png>
+Package pdftex.def Info: images/chap2/BostickSystemErrorTable.png used on input
+ line 122.
+(pdftex.def)             Requested size: 433.62001pt x 307.30307pt.
+Package acronym Info: Label `acro:GCTEx' newly defined as it shall be overridde
+n
+although it is yet undefined on input line 129.
+Package acronym Info: Label `acro:FPA' newly defined as it shall be overridden
+although it is yet undefined on input line 129.
+ [23pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.130 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap2/MyGraphics_Ch2.pdf, page is rotated 90 degrees>]
+[24pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.130 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap2/BostickSystemErrorTable.png>]
+<images/chap2/transverseOffset2.png, id=1177, 722.7pt x 542.025pt>
+File: images/chap2/transverseOffset2.png Graphic file (type png)
+
+<use images/chap2/transverseOffset2.png>
+Package pdftex.def Info: images/chap2/transverseOffset2.png used on input line 
+133.
+(pdftex.def)             Requested size: 325.215pt x 243.90898pt.
+
+<images/chap2/AFtUncorr.pdf, id=1183, 389.455pt x 389.455pt>
+File: images/chap2/AFtUncorr.pdf Graphic file (type pdf)
+
+<use images/chap2/AFtUncorr.pdf>
+Package pdftex.def Info: images/chap2/AFtUncorr.pdf used on input line 144.
+(pdftex.def)             Requested size: 198.73827pt x 198.73827pt.
+
+<images/chap2/AFtCorr.pdf, id=1184, 389.455pt x 389.455pt>
+File: images/chap2/AFtCorr.pdf Graphic file (type pdf)
+
+<use images/chap2/AFtCorr.pdf>
+Package pdftex.def Info: images/chap2/AFtCorr.pdf used on input line 147.
+(pdftex.def)             Requested size: 198.73827pt x 198.73827pt.
+ [25pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.151 \end{figure}
+                   <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Com
+plete System/Coon - Thesis/images/chap2/transverseOffset2.png>] [26pdfTeX warni
+ng (ext4): destination with the same identifier (name{figure.2.9}) has been alr
+eady used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.160 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap2/AFtUncorr.pdf> <C:/Users/TyCoon/Documents/AFIT/CTEx
+/My_CTEx_Research/0. Complete System/Coon - Thesis/images/chap2/AFtCorr.pdf>]
+[27])
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\chap3.tex" [28]
+Chapter 3.
+[29
+
+] <images/chap3/EM_Wave.png, id=1256, 200.24812pt x 143.78719pt>
+File: images/chap3/EM_Wave.png Graphic file (type png)
+
+<use images/chap3/EM_Wave.png>
+Package pdftex.def Info: images/chap3/EM_Wave.png used on input line 14.
+(pdftex.def)             Requested size: 260.17465pt x 186.84213pt.
+ [30pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.33 
+      <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/
+Coon - Thesis/images/chap3/EM_Wave.png>]
+<images/chap3/MyGraphics_Ch3.pdf, id=1268, page=5, 794.97pt x 614.295pt>
+File: images/chap3/MyGraphics_Ch3.pdf Graphic file (type pdf)
+
+<use images/chap3/MyGraphics_Ch3.pdf, page 5>
+Package pdftex.def Info: images/chap3/MyGraphics_Ch3.pdf, page5 used on input l
+ine 48.
+(pdftex.def)             Requested size: 260.17465pt x 168.08356pt.
+ [31pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.57 
+      <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/
+Coon - Thesis/images/chap3/MyGraphics_Ch3.pdf, page is rotated 90 degrees>]
+<images/chap3/MyGraphics_Ch3.pdf, id=1299, page=1, 794.97pt x 614.295pt>
+File: images/chap3/MyGraphics_Ch3.pdf Graphic file (type pdf)
+
+<use images/chap3/MyGraphics_Ch3.pdf, page 1>
+Package pdftex.def Info: images/chap3/MyGraphics_Ch3.pdf, page1 used on input l
+ine 91.
+(pdftex.def)             Requested size: 195.12767pt x 186.53284pt.
+
+<images/chap3/MyGraphics_Ch3.pdf, id=1301, page=2, 794.97pt x 614.295pt>
+File: images/chap3/MyGraphics_Ch3.pdf Graphic file (type pdf)
+
+<use images/chap3/MyGraphics_Ch3.pdf, page 2>
+Package pdftex.def Info: images/chap3/MyGraphics_Ch3.pdf, page2 used on input l
+ine 94.
+(pdftex.def)             Requested size: 195.12767pt x 186.53284pt.
+ [32]
+<images/chap3/deviationAngle.png, id=1316, 489.32813pt x 299.61937pt>
+File: images/chap3/deviationAngle.png Graphic file (type png)
+
+<use images/chap3/deviationAngle.png>
+Package pdftex.def Info: images/chap3/deviationAngle.png used on input line 130
+.
+(pdftex.def)             Requested size: 325.215pt x 199.13464pt.
+ [33pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.136 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap3/MyGraphics_Ch3.pdf, page is rotated 90 degrees> <C:
+/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/Coon - Th
+esis/images/chap3/MyGraphics_Ch3.pdf, page is rotated 90 degrees>] [34pdfTeX wa
+rning (ext4): destination with the same identifier (name{figure.3.4}) has been 
+already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.144 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap3/deviationAngle.png>] [35] [36]
+<images/chap3/MyGraphics_Ch3.pdf, id=1389, page=3, 794.97pt x 614.295pt>
+File: images/chap3/MyGraphics_Ch3.pdf Graphic file (type pdf)
+
+<use images/chap3/MyGraphics_Ch3.pdf, page 3>
+Package pdftex.def Info: images/chap3/MyGraphics_Ch3.pdf, page3 used on input l
+ine 210.
+(pdftex.def)             Requested size: 325.215pt x 310.88808pt.
+
+<images/chap3/SmallAngleApprox_Nom0.pdf, id=1391, 614.295pt x 794.97pt>
+File: images/chap3/SmallAngleApprox_Nom0.pdf Graphic file (type pdf)
+
+<use images/chap3/SmallAngleApprox_Nom0.pdf>
+Package pdftex.def Info: images/chap3/SmallAngleApprox_Nom0.pdf used on input l
+ine 224.
+(pdftex.def)             Requested size: 208.13574pt x 160.38672pt.
+
+<images/chap3/SmallAngleApprox_Nom10.pdf, id=1393, 614.295pt x 794.97pt>
+File: images/chap3/SmallAngleApprox_Nom10.pdf Graphic file (type pdf)
+
+<use images/chap3/SmallAngleApprox_Nom10.pdf>
+Package pdftex.def Info: images/chap3/SmallAngleApprox_Nom10.pdf used on input 
+line 227.
+(pdftex.def)             Requested size: 208.13574pt x 160.38672pt.
+
+<images/chap3/SmallAngleApprox_Nom20.pdf, id=1395, 614.295pt x 794.97pt>
+File: images/chap3/SmallAngleApprox_Nom20.pdf Graphic file (type pdf)
+
+<use images/chap3/SmallAngleApprox_Nom20.pdf>
+Package pdftex.def Info: images/chap3/SmallAngleApprox_Nom20.pdf used on input 
+line 230.
+(pdftex.def)             Requested size: 208.13574pt x 160.38672pt.
+
+<images/chap3/SmallAngleApprox_Nom30.pdf, id=1397, 614.295pt x 794.97pt>
+File: images/chap3/SmallAngleApprox_Nom30.pdf Graphic file (type pdf)
+
+<use images/chap3/SmallAngleApprox_Nom30.pdf>
+Package pdftex.def Info: images/chap3/SmallAngleApprox_Nom30.pdf used on input 
+line 233.
+(pdftex.def)             Requested size: 208.13574pt x 160.38672pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+Package acronym Info: Label `acro:JPL' newly defined as it shall be overridden
+although it is yet undefined on input line 243.
+[37] [38pdfTeX warning (ext4): destination with the same identifier (name{figur
+e.3.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.247 \subsection
+                 {Defining the Nominal Case} <C:/Users/TyCoon/Documents/AFIT/CT
+Ex/My_CTEx_Research/0. Complete System/Coon - Thesis/images/chap3/MyGraphics_Ch
+3.pdf, page is rotated 90 degrees>] [39pdfTeX warning (ext4): destination with 
+the same identifier (name{figure.3.6}) has been already used, duplicate ignored
+
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.251 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap3/SmallAngleApprox_Nom0.pdf> <C:/Users/TyCoon/Documen
+ts/AFIT/CTEx/My_CTEx_Research/0. Complete System/Coon - Thesis/images/chap3/Sma
+llAngleApprox_Nom10.pdf> <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/
+0. Complete System/Coon - Thesis/images/chap3/SmallAngleApprox_Nom20.pdf> <C:/U
+sers/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/Coon - Thes
+is/images/chap3/SmallAngleApprox_Nom30.pdf>]
+<images/chap3/MyGraphics_Ch3.pdf, id=1500, page=9, 794.97pt x 614.295pt>
+File: images/chap3/MyGraphics_Ch3.pdf Graphic file (type pdf)
+
+<use images/chap3/MyGraphics_Ch3.pdf, page 9>
+Package pdftex.def Info: images/chap3/MyGraphics_Ch3.pdf, page9 used on input l
+ine 254.
+(pdftex.def)             Requested size: 216.81pt x 160.68323pt.
+ [40] [41pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.3.7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.273 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap3/MyGraphics_Ch3.pdf, page is rotated 90 degrees>]
+[42] <images/chap3/MyGraphics_Ch3.pdf, id=1546, page=4, 794.97pt x 614.295pt>
+File: images/chap3/MyGraphics_Ch3.pdf Graphic file (type pdf)
+
+<use images/chap3/MyGraphics_Ch3.pdf, page 4>
+Package pdftex.def Info: images/chap3/MyGraphics_Ch3.pdf, page4 used on input l
+ine 297.
+(pdftex.def)             Requested size: 325.215pt x 231.08855pt.
+
+<images/chap3/MyGraphics_Ch3.pdf, id=1548, page=8, 794.97pt x 614.295pt>
+File: images/chap3/MyGraphics_Ch3.pdf Graphic file (type pdf)
+
+<use images/chap3/MyGraphics_Ch3.pdf, page 8>
+Package pdftex.def Info: images/chap3/MyGraphics_Ch3.pdf, page8 used on input l
+ine 304.
+(pdftex.def)             Requested size: 216.81pt x 219.53593pt.
+ [43]
+
+LaTeX Warning: Text page 44 contains only floats.
+
+
+Overfull \vbox (3.64575pt too high) has occurred while \output is active []
+
+
+[44pdfTeX warning (ext4): destination with the same identifier (name{figure.3.8
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.325 \begin{equation}
+                      pdfTeX warning (ext4): destination with the same identifi
+er (name{figure.3.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.325 \begin{equation}
+                       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0.
+ Complete System/Coon - Thesis/images/chap3/MyGraphics_Ch3.pdf, page is rotated
+ 90 degrees> <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete 
+System/Coon - Thesis/images/chap3/MyGraphics_Ch3.pdf, page is rotated 90 degree
+s>] [45] [46] [47] [48]
+<images/chap3/AutocollimatorAngle.png, id=1658, 487.8225pt x 164.86594pt>
+File: images/chap3/AutocollimatorAngle.png Graphic file (type png)
+
+<use images/chap3/AutocollimatorAngle.png>
+Package pdftex.def Info: images/chap3/AutocollimatorAngle.png used on input lin
+e 476.
+(pdftex.def)             Requested size: 433.62001pt x 146.54907pt.
+ [49] [50pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.3.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.507 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap3/AutocollimatorAngle.png>]
+<images/chap3/MyGraphics_Ch3.pdf, id=1685, page=10, 794.97pt x 614.295pt>
+File: images/chap3/MyGraphics_Ch3.pdf Graphic file (type pdf)
+
+<use images/chap3/MyGraphics_Ch3.pdf, page 10>
+Package pdftex.def Info: images/chap3/MyGraphics_Ch3.pdf, page10 used on input 
+line 527.
+(pdftex.def)             Requested size: 216.81pt x 296.42926pt.
+
+<images/chap3/MyGraphics_Ch3.pdf, id=1687, page=11, 794.97pt x 614.295pt>
+File: images/chap3/MyGraphics_Ch3.pdf Graphic file (type pdf)
+
+<use images/chap3/MyGraphics_Ch3.pdf, page 11>
+Package pdftex.def Info: images/chap3/MyGraphics_Ch3.pdf, page11 used on input 
+line 534.
+(pdftex.def)             Requested size: 433.62001pt x 295.53244pt.
+ [51pdfTeX warning (ext4): destination with the same identifier (name{table.3.1
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.542 
+      ]
+Package acronym Info: Label `acro:DDE' newly defined as it shall be overridden
+although it is yet undefined on input line 543.
+ [52pdfTeX warning (ext4): destination with the same identifier (name{figure.3.
+11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.544 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap3/MyGraphics_Ch3.pdf, page is rotated 90 degrees>]
+Package acronym Info: Label `acro:GDT' newly defined as it shall be overridden
+although it is yet undefined on input line 549.
+
+[53pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.550 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap3/MyGraphics_Ch3.pdf, page is rotated 90 degrees>]
+[54])
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\chap4.tex" [55]
+Chapter 4.
+[56
+
+] <images/chap4/Two_Prisms_Nominal.pdf, id=1762, 794.97pt x 614.295pt>
+File: images/chap4/Two_Prisms_Nominal.pdf Graphic file (type pdf)
+
+<use images/chap4/Two_Prisms_Nominal.pdf>
+Package pdftex.def Info: images/chap4/Two_Prisms_Nominal.pdf used on input line
+ 22.
+(pdftex.def)             Requested size: 173.44534pt x 134.03159pt.
+File: images/chap4/Two_Prisms_Nominal.pdf Graphic file (type pdf)
+
+<use images/chap4/Two_Prisms_Nominal.pdf>
+Package pdftex.def Info: images/chap4/Two_Prisms_Nominal.pdf used on input line
+ 24.
+(pdftex.def)             Requested size: 173.44534pt x 159.65157pt.
+ [57pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.31 
+      <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/
+Coon - Thesis/images/chap4/Two_Prisms_Nominal.pdf, page is rotated 90 degrees>]
+<images/chap4/MyGraphics_Ch4.pdf, id=1786, page=11, 794.97pt x 614.295pt>
+File: images/chap4/MyGraphics_Ch4.pdf Graphic file (type pdf)
+
+<use images/chap4/MyGraphics_Ch4.pdf, page 11>
+Package pdftex.def Info: images/chap4/MyGraphics_Ch4.pdf, page11 used on input 
+line 34.
+(pdftex.def)             Requested size: 130.08733pt x 297.52965pt.
+ [58]
+<images/chap4/PlotZernikes_P2XRotMed.pdf, id=1798, 614.295pt x 794.97pt>
+File: images/chap4/PlotZernikes_P2XRotMed.pdf Graphic file (type pdf)
+
+<use images/chap4/PlotZernikes_P2XRotMed.pdf>
+Package pdftex.def Info: images/chap4/PlotZernikes_P2XRotMed.pdf used on input 
+line 47.
+(pdftex.def)             Requested size: 291.38478pt x 221.33072pt.
+
+<images/chap4/PlotZernikes_P2XRotSmall.pdf, id=1800, 614.295pt x 794.97pt>
+File: images/chap4/PlotZernikes_P2XRotSmall.pdf Graphic file (type pdf)
+
+<use images/chap4/PlotZernikes_P2XRotSmall.pdf>
+Package pdftex.def Info: images/chap4/PlotZernikes_P2XRotSmall.pdf used on inpu
+t line 50.
+(pdftex.def)             Requested size: 291.38478pt x 221.33072pt.
+ [59pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.55 
+      <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/
+Coon - Thesis/images/chap4/MyGraphics_Ch4.pdf, page is rotated 90 degrees>]
+<images/chap4/PlotZernikes_P2YRotMed.pdf, id=1819, 614.295pt x 794.97pt>
+File: images/chap4/PlotZernikes_P2YRotMed.pdf Graphic file (type pdf)
+
+<use images/chap4/PlotZernikes_P2YRotMed.pdf>
+Package pdftex.def Info: images/chap4/PlotZernikes_P2YRotMed.pdf used on input 
+line 60.
+(pdftex.def)             Requested size: 291.38478pt x 221.33072pt.
+
+<images/chap4/PlotZernikes_P2YRotSmall.pdf, id=1821, 614.295pt x 794.97pt>
+File: images/chap4/PlotZernikes_P2YRotSmall.pdf Graphic file (type pdf)
+
+<use images/chap4/PlotZernikes_P2YRotSmall.pdf>
+Package pdftex.def Info: images/chap4/PlotZernikes_P2YRotSmall.pdf used on inpu
+t line 63.
+(pdftex.def)             Requested size: 291.38478pt x 221.33072pt.
+ [60pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.68 
+      <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/
+Coon - Thesis/images/chap4/PlotZernikes_P2XRotMed.pdf> <C:/Users/TyCoon/Documen
+ts/AFIT/CTEx/My_CTEx_Research/0. Complete System/Coon - Thesis/images/chap4/Plo
+tZernikes_P2XRotSmall.pdf>]
+<images/chap4/PlotZernikes_P2ZRotLarge.pdf, id=1851, 614.295pt x 794.97pt>
+File: images/chap4/PlotZernikes_P2ZRotLarge.pdf Graphic file (type pdf)
+
+<use images/chap4/PlotZernikes_P2ZRotLarge.pdf>
+Package pdftex.def Info: images/chap4/PlotZernikes_P2ZRotLarge.pdf used on inpu
+t line 73.
+(pdftex.def)             Requested size: 291.38478pt x 221.33072pt.
+
+<images/chap4/PlotZernikes_P2ZRotSmall.pdf, id=1853, 614.295pt x 794.97pt>
+File: images/chap4/PlotZernikes_P2ZRotSmall.pdf Graphic file (type pdf)
+
+<use images/chap4/PlotZernikes_P2ZRotSmall.pdf>
+Package pdftex.def Info: images/chap4/PlotZernikes_P2ZRotSmall.pdf used on inpu
+t line 76.
+(pdftex.def)             Requested size: 291.38478pt x 221.33072pt.
+ [61pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+4}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.81 
+      <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/
+Coon - Thesis/images/chap4/PlotZernikes_P2YRotMed.pdf> <C:/Users/TyCoon/Documen
+ts/AFIT/CTEx/My_CTEx_Research/0. Complete System/Coon - Thesis/images/chap4/Plo
+tZernikes_P2YRotSmall.pdf>]
+<images/chap4/PlotZernikes_P2NormRotLarge.pdf, id=1883, 614.295pt x 794.97pt>
+File: images/chap4/PlotZernikes_P2NormRotLarge.pdf Graphic file (type pdf)
+
+<use images/chap4/PlotZernikes_P2NormRotLarge.pdf>
+Package pdftex.def Info: images/chap4/PlotZernikes_P2NormRotLarge.pdf used on i
+nput line 86.
+(pdftex.def)             Requested size: 291.38478pt x 221.33072pt.
+
+<images/chap4/PlotZernikes_P2NormRotSmall.pdf, id=1885, 614.295pt x 794.97pt>
+File: images/chap4/PlotZernikes_P2NormRotSmall.pdf Graphic file (type pdf)
+
+<use images/chap4/PlotZernikes_P2NormRotSmall.pdf>
+Package pdftex.def Info: images/chap4/PlotZernikes_P2NormRotSmall.pdf used on i
+nput line 89.
+(pdftex.def)             Requested size: 291.38478pt x 221.33072pt.
+ [62pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.94 
+      <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/
+Coon - Thesis/images/chap4/PlotZernikes_P2ZRotLarge.pdf> <C:/Users/TyCoon/Docum
+ents/AFIT/CTEx/My_CTEx_Research/0. Complete System/Coon - Thesis/images/chap4/P
+lotZernikes_P2ZRotSmall.pdf>] [63pdfTeX warning (ext4): destination with the sa
+me identifier (name{figure.4.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.102 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap4/PlotZernikes_P2NormRotLarge.pdf> <C:/Users/TyCoon/D
+ocuments/AFIT/CTEx/My_CTEx_Research/0. Complete System/Coon - Thesis/images/cha
+p4/PlotZernikes_P2NormRotSmall.pdf>]
+<images/chap4/HawksPrism_Zemax_L3d.pdf, id=1950, 614.295pt x 794.97pt>
+File: images/chap4/HawksPrism_Zemax_L3d.pdf Graphic file (type pdf)
+
+<use images/chap4/HawksPrism_Zemax_L3d.pdf>
+Package pdftex.def Info: images/chap4/HawksPrism_Zemax_L3d.pdf used on input li
+ne 105.
+(pdftex.def)             Requested size: 182.75464pt x 433.62001pt.
+ [64pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+7}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.112 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap4/HawksPrism_Zemax_L3d.pdf>]
+<images/chap4/MyGraphics_Ch4.pdf, id=1966, page=13, 794.97pt x 614.295pt>
+File: images/chap4/MyGraphics_Ch4.pdf Graphic file (type pdf)
+
+<use images/chap4/MyGraphics_Ch4.pdf, page 13>
+Package pdftex.def Info: images/chap4/MyGraphics_Ch4.pdf, page13 used on input 
+line 117.
+(pdftex.def)             Requested size: 325.215pt x 251.30954pt.
+Package acronym Info: Label `acro:CCD' newly defined as it shall be overridden
+although it is yet undefined on input line 123.
+ [65pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.124 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap4/MyGraphics_Ch4.pdf, page is rotated 90 degrees>]
+<images/chap4/DavidsonAutocollimator.png, id=1992, 679.03688pt x 423.08063pt>
+File: images/chap4/DavidsonAutocollimator.png Graphic file (type png)
+
+<use images/chap4/DavidsonAutocollimator.png>
+Package pdftex.def Info: images/chap4/DavidsonAutocollimator.png used on input 
+line 127.
+(pdftex.def)             Requested size: 325.215pt x 197.27132pt.
+ [66]
+<images/chap4/ScreenPicBasicCircles.jpg, id=2003, 3276.24pt x 2457.18pt>
+File: images/chap4/ScreenPicBasicCircles.jpg Graphic file (type jpg)
+
+<use images/chap4/ScreenPicBasicCircles.jpg>
+Package pdftex.def Info: images/chap4/ScreenPicBasicCircles.jpg used on input l
+ine 134.
+(pdftex.def)             Requested size: 260.17465pt x 198.57689pt.
+
+<images/chap4/CCD_Eyepiece.jpg, id=2007, 3276.24pt x 2457.18pt>
+File: images/chap4/CCD_Eyepiece.jpg Graphic file (type jpg)
+
+<use images/chap4/CCD_Eyepiece.jpg>
+Package pdftex.def Info: images/chap4/CCD_Eyepiece.jpg used on input line 141.
+(pdftex.def)             Requested size: 325.215pt x 243.89522pt.
+ [67pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.145 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4.10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.145 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap4/DavidsonAutocollimator.png> <C:/Users/TyCoon/Docume
+nts/AFIT/CTEx/My_CTEx_Research/0. Complete System/Coon - Thesis/images/chap4/Sc
+reenPicBasicCircles.jpg>]
+<images/chap4/MyGraphics_Ch4.pdf, id=2015, page=14, 794.97pt x 614.295pt>
+File: images/chap4/MyGraphics_Ch4.pdf Graphic file (type pdf)
+
+<use images/chap4/MyGraphics_Ch4.pdf, page 14>
+Package pdftex.def Info: images/chap4/MyGraphics_Ch4.pdf, page14 used on input 
+line 152.
+(pdftex.def)             Requested size: 325.215pt x 192.66338pt.
+ [68pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+11}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.155 \end{figure}
+                   <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Com
+plete System/Coon - Thesis/images/chap4/CCD_Eyepiece.jpg>]
+<images/chap4/Zmx_ReflectionS2.pdf, id=2026, 614.295pt x 794.97pt>
+File: images/chap4/Zmx_ReflectionS2.pdf Graphic file (type pdf)
+
+<use images/chap4/Zmx_ReflectionS2.pdf>
+Package pdftex.def Info: images/chap4/Zmx_ReflectionS2.pdf used on input line 1
+64.
+(pdftex.def)             Requested size: 195.12767pt x 154.05423pt.
+ [69pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+12}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.173 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap4/MyGraphics_Ch4.pdf, page is rotated 90 degrees>]
+[70pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1
+3}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.177 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap4/Zmx_ReflectionS2.pdf>]
+<images/chap4/MyGraphics_Ch4.pdf, id=2066, page=15, 794.97pt x 614.295pt>
+File: images/chap4/MyGraphics_Ch4.pdf Graphic file (type pdf)
+
+<use images/chap4/MyGraphics_Ch4.pdf, page 15>
+Package pdftex.def Info: images/chap4/MyGraphics_Ch4.pdf, page15 used on input 
+line 180.
+(pdftex.def)             Requested size: 325.215pt x 229.37012pt.
+
+<images/chap4/SecondReflection.jpg, id=2070, 2137.9875pt x 1772.6225pt>
+File: images/chap4/SecondReflection.jpg Graphic file (type jpg)
+
+<use images/chap4/SecondReflection.jpg>
+Package pdftex.def Info: images/chap4/SecondReflection.jpg used on input line 1
+87.
+(pdftex.def)             Requested size: 325.215pt x 269.61453pt.
+
+<images/chap4/Zmx_ReflectionS3.pdf, id=2071, 614.295pt x 794.97pt>
+File: images/chap4/Zmx_ReflectionS3.pdf Graphic file (type pdf)
+
+<use images/chap4/Zmx_ReflectionS3.pdf>
+Package pdftex.def Info: images/chap4/Zmx_ReflectionS3.pdf used on input line 1
+94.
+(pdftex.def)             Requested size: 216.81pt x 264.01357pt.
+
+<images/chap4/Zmx_ReflectionS4.pdf, id=2073, 614.295pt x 794.97pt>
+File: images/chap4/Zmx_ReflectionS4.pdf Graphic file (type pdf)
+
+<use images/chap4/Zmx_ReflectionS4.pdf>
+Package pdftex.def Info: images/chap4/Zmx_ReflectionS4.pdf used on input line 2
+01.
+(pdftex.def)             Requested size: 151.76964pt x 248.37714pt.
+ [71] [72pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.4.14}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.214 T
+       he approach to extract surface orientation knowledge was developed by...
+ <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/Coon 
+- Thesis/images/chap4/MyGraphics_Ch4.pdf, page is rotated 90 degrees>] [73pdfTe
+X warning (ext4): destination with the same identifier (name{figure.4.15}) has 
+been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.218 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap4/SecondReflection.jpg>] [74pdfTeX warning (ext4): de
+stination with the same identifier (name{figure.4.16}) has been already used, d
+uplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.218 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4.17}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.218 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap4/Zmx_ReflectionS3.pdf> <C:/Users/TyCoon/Documents/AF
+IT/CTEx/My_CTEx_Research/0. Complete System/Coon - Thesis/images/chap4/Zmx_Refl
+ectionS4.pdf>]
+<images/chap4/myGraphics_Ch4.pdf, id=2125, page=4, 794.97pt x 614.295pt>
+File: images/chap4/myGraphics_Ch4.pdf Graphic file (type pdf)
+
+<use images/chap4/myGraphics_Ch4.pdf, page 4>
+Package pdftex.def Info: images/chap4/myGraphics_Ch4.pdf, page4 used on input l
+ine 221.
+(pdftex.def)             Requested size: 325.215pt x 201.44281pt.
+ [75pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+18}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.229 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap4/myGraphics_Ch4.pdf, page is rotated 90 degrees>]
+<images/chap4/myGraphics_Ch4.pdf, id=2166, page=8, 794.97pt x 614.295pt>
+File: images/chap4/myGraphics_Ch4.pdf Graphic file (type pdf)
+
+<use images/chap4/myGraphics_Ch4.pdf, page 8>
+Package pdftex.def Info: images/chap4/myGraphics_Ch4.pdf, page8 used on input l
+ine 272.
+(pdftex.def)             Requested size: 333.88925pt x 189.53632pt.
+ [76]
+<images/chap4/MyGraphics_Ch4.pdf, id=2178, page=2, 794.97pt x 614.295pt>
+File: images/chap4/MyGraphics_Ch4.pdf Graphic file (type pdf)
+
+<use images/chap4/MyGraphics_Ch4.pdf, page 2>
+Package pdftex.def Info: images/chap4/MyGraphics_Ch4.pdf, page2 used on input l
+ine 282.
+(pdftex.def)             Requested size: 346.89732pt x 168.73239pt.
+
+<images/chap4/PertModelValidRange_S2X_-S3X_small.pdf, id=2180, 614.295pt x 794.
+97pt>
+File: images/chap4/PertModelValidRange_S2X_-S3X_small.pdf Graphic file (type pd
+f)
+ <use images/chap4/PertModelValidRange_S2X_-S3X_small.pdf>
+Package pdftex.def Info: images/chap4/PertModelValidRange_S2X_-S3X_small.pdf us
+ed on input line 289.
+(pdftex.def)             Requested size: 325.215pt x 243.87546pt.
+ [77pdfTeX warning (ext4): destination with the same identifier (name{figure.4.
+19}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.295 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap4/myGraphics_Ch4.pdf, page is rotated 90 degrees>]
+[78pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
+0}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.303 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap4/MyGraphics_Ch4.pdf, page is rotated 90 degrees>]
+[79pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2
+1}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.306 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap4/PertModelValidRange_S2X_-S3X_small.pdf>] [80]
+<images/chap4/PrismMotor.png, id=2275, 1206.00563pt x 663.98062pt>
+File: images/chap4/PrismMotor.png Graphic file (type png)
+
+<use images/chap4/PrismMotor.png>
+Package pdftex.def Info: images/chap4/PrismMotor.png used on input line 389.
+(pdftex.def)             Requested size: 325.215pt x 179.04413pt.
+
+<images/chap4/HawksPrism_Iso.png, id=2277, 1273.00594pt x 663.98062pt>
+File: images/chap4/HawksPrism_Iso.png Graphic file (type png)
+
+<use images/chap4/HawksPrism_Iso.png>
+Package pdftex.def Info: images/chap4/HawksPrism_Iso.png used on input line 396
+.
+(pdftex.def)             Requested size: 433.62001pt x 209.94334pt.
+
+<images/chap4/MyGraphics_Ch4.pdf, id=2279, page=12, 794.97pt x 614.295pt>
+File: images/chap4/MyGraphics_Ch4.pdf Graphic file (type pdf)
+
+<use images/chap4/MyGraphics_Ch4.pdf, page 12>
+Package pdftex.def Info: images/chap4/MyGraphics_Ch4.pdf, page12 used on input 
+line 403.
+(pdftex.def)             Requested size: 433.62001pt x 272.99893pt.
+ [81] [82pdfTeX warning (ext4): destination with the same identifier (name{figu
+re.4.22}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.416 
+      pdfTeX warning (ext4): destination with the same identifier (name{figure.
+4.23}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.416 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap4/PrismMotor.png> <C:/Users/TyCoon/Documents/AFIT/CTE
+x/My_CTEx_Research/0. Complete System/Coon - Thesis/images/chap4/HawksPrism_Iso
+.png>] [83pdfTeX warning (ext4): destination with the same identifier (name{fig
+ure.4.24}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.419 
+       <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/chap4/MyGraphics_Ch4.pdf, page is rotated 90 degrees>]
+<images/chap4/HawksPrism_Optical_wAxes.png, id=2325, 523.9575pt x 130.23656pt>
+File: images/chap4/HawksPrism_Optical_wAxes.png Graphic file (type png)
+
+<use images/chap4/HawksPrism_Optical_wAxes.png>
+Package pdftex.def Info: images/chap4/HawksPrism_Optical_wAxes.png used on inpu
+t line 428.
+(pdftex.def)             Requested size: 433.62001pt x 107.7843pt.
+ [84]
+<images/chap4/SptDiagram_AlignedHawks.png, id=2330, 161.10187pt x 160.34906pt>
+File: images/chap4/SptDiagram_AlignedHawks.png Graphic file (type png)
+
+<use images/chap4/SptDiagram_AlignedHawks.png>
+Package pdftex.def Info: images/chap4/SptDiagram_AlignedHawks.png used on input
+ line 436.
+(pdftex.def)             Requested size: 173.44534pt x 172.641pt.
+
+<images/chap4/SptDiagram_MisalignedHawks.png, id=2331, 162.6075pt x 162.6075pt>
+File: images/chap4/SptDiagram_MisalignedHawks.png Graphic file (type png)
+<use images/chap4/SptDiagram_MisalignedHawks.png>
+Package pdftex.def Info: images/chap4/SptDiagram_MisalignedHawks.png used on in
+put line 438.
+(pdftex.def)             Requested size: 173.44534pt x 173.45732pt.
+)
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\chap5.tex" [85pdfTeX warning (ext4): destination with the same identif
+ier (name{figure.4.25}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \chapter
+            {Conclusions and Recommendations}pdfTeX warning (ext4): destination
+ with the same identifier (name{figure.4.26}) has been already used, duplicate 
+ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \chapter
+            {Conclusions and Recommendations} <C:/Users/TyCoon/Documents/AFIT/C
+TEx/My_CTEx_Research/0. Complete System/Coon - Thesis/images/chap4/HawksPrism_O
+ptical_wAxes.png> <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Comp
+lete System/Coon - Thesis/images/chap4/SptDiagram_AlignedHawks.png> <C:/Users/T
+yCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/Coon - Thesis/ima
+ges/chap4/SptDiagram_MisalignedHawks.png>]
+Chapter 5.
+[86
+
+] [87] [88])
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\app.tex" [89] [90]
+Appendix A.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 11.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 11.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1pcr.fd"
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\matlab/2-PS810-Zernikes/SimpleMisalignments.m")
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\matlab/2-PS810-Zernikes/RotNormLarge.m"
+Overfull \hbox (34.38475pt too wide) in paragraph at lines 2--3
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+LaTeX Font Info:    Try loading font information for TS1+pcr on input line 24.
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ts1pcr.fd"
+File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
+)
+LaTeX Font Info:    Try loading font information for OMS+pcr on input line 24.
+
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omspcr.fd"
+File: omspcr.fd 
+)
+LaTeX Font Info:    Font shape `OMS/pcr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
+
+Overfull \hbox (58.385pt too wide) in paragraph at lines 24--25
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][] 
+ []
+
+
+Overfull \hbox (10.3845pt too wide) in paragraph at lines 28--29
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[] 
+ []
+
+[91
+
+]
+Overfull \hbox (94.38536pt too wide) in paragraph at lines 30--31
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+) [92]
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\matlab/Perturbation_Theory/25mm_H-ZF10_PerturbationModel/FourSurfTest_
+S2X_S3X.m"
+Overfull \hbox (4.38445pt too wide) in paragraph at lines 4--5
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (10.3845pt too wide) in paragraph at lines 7--8
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][] 
+ []
+
+[93]
+Overfull \hbox (208.38652pt too wide) in paragraph at lines 78--79
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (16.38457pt too wide) in paragraph at lines 94--95
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][] 
+ []
+
+
+Overfull \hbox (10.3845pt too wide) in paragraph at lines 95--96
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][] 
+ []
+
+[94]
+Overfull \hbox (70.38512pt too wide) in paragraph at lines 108--109
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][] 
+ []
+
+
+Overfull \hbox (4.38445pt too wide) in paragraph at lines 113--115
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (130.38573pt too wide) in paragraph at lines 122--123
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (40.38481pt too wide) in paragraph at lines 128--129
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+)
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\matlab/Perturbation_Theory/25mm_H-ZF10_PerturbationModel/fourSurfModel
+.m"
+Overfull \hbox (16.38457pt too wide) in paragraph at lines 4--5
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][] 
+ []
+
+
+Overfull \hbox (10.3845pt too wide) in paragraph at lines 6--7
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[95]
+Overfull \hbox (4.38445pt too wide) in paragraph at lines 58--59
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+[96])
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\matlab/Perturbation_Theory/25mm_H-ZF10_PerturbationModel/RotS2X_S3X.m"
+
+Overfull \hbox (4.38445pt too wide) in paragraph at lines 3--4
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+
+Overfull \hbox (52.38493pt too wide) in paragraph at lines 20--21
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][] 
+ []
+
+)
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\matlab/Perturbation_Theory/25mm_H-ZF10_PerturbationModel/vectorSnell.m
+" [97])
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\matlab/Perturbation_Theory/25mm_H-ZF10_PerturbationModel/surfaceSensit
+ivities.m") [98]
+Appendix B.
+[99
+
+] <images/appendix/CT55329.pdf, id=2791, page=1, 1228.59pt x 794.97pt>
+File: images/appendix/CT55329.pdf Graphic file (type pdf)
+
+<use images/appendix/CT55329.pdf, page 1>
+Package pdftex.def Info: images/appendix/CT55329.pdf, page1 used on input line 
+46.
+(pdftex.def)             Requested size: 603.13918pt x 390.25536pt.
+ [100 <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/
+Coon - Thesis/images/appendix/CT55329.pdf, page is rotated 90 degrees>]
+<images/appendix/CT55329.pdf, id=2827, page=2, 1228.59pt x 794.97pt>
+File: images/appendix/CT55329.pdf Graphic file (type pdf)
+
+<use images/appendix/CT55329.pdf, page 2>
+Package pdftex.def Info: images/appendix/CT55329.pdf, page2 used on input line 
+52.
+(pdftex.def)             Requested size: 603.13918pt x 390.25536pt.
+ [101 <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/
+Coon - Thesis/images/appendix/CT55329.pdf, page is rotated 90 degrees>]
+<images/appendix/CT55329.pdf, id=2849, page=3, 1228.59pt x 794.97pt>
+File: images/appendix/CT55329.pdf Graphic file (type pdf)
+
+<use images/appendix/CT55329.pdf, page 3>
+Package pdftex.def Info: images/appendix/CT55329.pdf, page3 used on input line 
+58.
+(pdftex.def)             Requested size: 603.13918pt x 390.25536pt.
+ [102 <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/
+Coon - Thesis/images/appendix/CT55329.pdf, page is rotated 90 degrees>]
+<images/appendix/CT55329.pdf, id=2870, page=4, 1228.59pt x 794.97pt>
+File: images/appendix/CT55329.pdf Graphic file (type pdf)
+
+<use images/appendix/CT55329.pdf, page 4>
+Package pdftex.def Info: images/appendix/CT55329.pdf, page4 used on input line 
+64.
+(pdftex.def)             Requested size: 603.13918pt x 390.25536pt.
+) [103 <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System
+/Coon - Thesis/images/appendix/CT55329.pdf, page is rotated 90 degrees>]
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\thesis.bbl" [104
+
+
+] [105] [106]) [107]
+<SF298.pdf, id=2935, page=1, 614.295pt x 794.97pt>
+File: SF298.pdf Graphic file (type pdf)
+ <use SF298.pdf, page 1>
+Package pdftex.def Info: SF298.pdf, page1 used on input line 111.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: SF298.pdf Graphic file (type pdf)
+
+<use SF298.pdf, page 1>
+Package pdftex.def Info: SF298.pdf, page1 used on input line 111.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SF298.pdf Graphic file (type pdf)
+ <use SF298.pdf, page 1>
+Package pdftex.def Info: SF298.pdf, page1 used on input line 111.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SF298.pdf Graphic file (type pdf)
+ <use SF298.pdf, page 1>
+Package pdftex.def Info: SF298.pdf, page1 used on input line 111.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: SF298.pdf Graphic file (type pdf)
+
+<use SF298.pdf, page 1>
+Package pdftex.def Info: SF298.pdf, page1 used on input line 111.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [108 <C:/Users/TyCoon/Documents/AFIT/CTEx/My_CTEx_Research/0. Complete System/
+Coon - Thesis/SF298.pdf>]
+
+AED: lastpage setting LastPage
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 113.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 113.
+
+("C:\Users\TyCoon\Documents\AFIT\CTEx\My_CTEx_Research\0. Complete System\Coon 
+- Thesis\thesis.aux")
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 113.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 113.
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: C317E5765E1CDB5A87DF2D42F1D86B5F;3385.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 113.
+ ) 
+Here is how much of TeX's memory you used:
+ 12286 strings out of 494045
+ 184978 string characters out of 3145966
+ 356508 words of memory out of 3000000
+ 14448 multiletter control sequences out of 15000+200000
+ 54237 words of font info for 135 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 40i,18n,44p,3212b,1785s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Progra
+m Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program 
+Files (x86)/MiKTeX 2.9/fonts/type1/public/txfonts/rtcxr.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/txfonts/rtxi.pfb><C:/Program Files (x86)/MiK
+TeX 2.9/fonts/type1/public/txfonts/rtxmi.pfb><C:/Program Files (x86)/MiKTeX 2.9
+/fonts/type1/public/txfonts/rtxr.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/public/txfonts/txex.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/pub
+lic/txfonts/txsy.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/txfo
+nts/txsyc.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/courier/ucrr8a
+.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Fi
+les (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/
+fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (125 pages, 10474965 bytes).
+PDF statistics:
+ 3234 PDF objects out of 3580 (max. 8388607)
+ 783 named destinations out of 1000 (max. 500000)
+ 1063 words of extra memory for PDF output out of 10000 (max. 10000000)
+

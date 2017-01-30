@@ -1,0 +1,86 @@
+\contentsline {chapter}{Abstract}{iv}{schapter.1}
+\contentsline {chapter}{Dedication}{iv}{schapter.2}
+\contentsline {chapter}{Acknowledgments}{vi}{schapter.3}
+\contentsline {chapter}{List of Figures}{x}{schapter.4}
+\contentsline {chapter}{List of Tables}{xv}{schapter.5}
+\contentsline {chapter}{List of Acronyms}{xvi}{schapter.6}
+\contentsline {chapter}{\numberline {1.}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Hyperspectral Remote Sensing}{2}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}Remote Sensing}{2}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Spectroscopy}{4}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.3}Hyperspectral Remote Sensing}{5}{subsection.1.2.3}
+\contentsline {subsection}{\numberline {1.2.4}The Hypercube}{6}{subsection.1.2.4}
+\contentsline {subsection}{\numberline {1.2.5}Hyperspectral Imager Temporal Resolution}{7}{subsection.1.2.5}
+\contentsline {subsection}{\numberline {1.2.6}CTI Disadvantages}{11}{subsection.1.2.6}
+\contentsline {section}{\numberline {1.3}Research Goals}{12}{section.1.3}
+\contentsline {section}{\numberline {1.4}Organization}{12}{section.1.4}
+\contentsline {chapter}{\numberline {2.}Background}{14}{chapter.2}
+\contentsline {section}{\numberline {2.1}Space-Based, Earth-Observing Hyperspectral Imagers}{14}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}GOSAT}{14}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Landsat}{15}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Medical Tomography to Chromotomography}{16}{section.2.2}
+\contentsline {section}{\numberline {2.3}Tomographic Data Reconstruction}{18}{section.2.3}
+\contentsline {section}{\numberline {2.4}Chromotomography Research and Experimentation in Industry}{21}{section.2.4}
+\contentsline {section}{\numberline {2.5}AFIT Chromotomography Research}{22}{section.2.5}
+\contentsline {subsection}{\numberline {2.5.1}Bostick}{22}{subsection.2.5.1}
+\contentsline {subsection}{\numberline {2.5.2}Linear Ground System (GCTEx)}{24}{subsection.2.5.2}
+\contentsline {section}{\numberline {2.6}Background Analysis}{26}{section.2.6}
+\contentsline {section}{\numberline {2.7}Background Conclusion}{27}{section.2.7}
+\contentsline {chapter}{\numberline {3.}Applicable Theory}{29}{chapter.3}
+\contentsline {section}{\numberline {3.1}Propagation of Light}{29}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Reflection}{30}{subsection.3.1.1}
+\contentsline {section}{\numberline {3.2}Refraction}{31}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Absorption}{32}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}The Critical Angle}{33}{subsection.3.2.2}
+\contentsline {section}{\numberline {3.3}Direct-Vision Prism Theory}{33}{section.3.3}
+\contentsline {section}{\numberline {3.4}Vectorial Ray-Tracing}{35}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Ray-Tracing Through Refractive Surfaces}{35}{subsection.3.4.1}
+\contentsline {section}{\numberline {3.5}Perturbation Theory}{36}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Perturbation Theory Applied to Optics}{36}{subsection.3.5.1}
+\contentsline {section}{\numberline {3.6}JPL Perturbation Methodology}{37}{section.3.6}
+\contentsline {subsection}{\numberline {3.6.1}Defining the Nominal Case}{39}{subsection.3.6.1}
+\contentsline {subsection}{\numberline {3.6.2}The Perturbation Terms}{42}{subsection.3.6.2}
+\contentsline {subsection}{\numberline {3.6.3}Refracted Ray Sensitivities}{45}{subsection.3.6.3}
+\contentsline {subsection}{\numberline {3.6.4}Sensitivities and the Linear System}{47}{subsection.3.6.4}
+\contentsline {subsection}{\numberline {3.6.5}Multiple-Element Optical System Linearization}{48}{subsection.3.6.5}
+\contentsline {section}{\numberline {3.7}Principles of Autocollimation}{49}{section.3.7}
+\contentsline {section}{\numberline {3.8}Interferometry}{50}{section.3.8}
+\contentsline {subsection}{\numberline {3.8.1}The Interferometer}{51}{subsection.3.8.1}
+\contentsline {subsection}{\numberline {3.8.2}Zernike Standard Polynomials}{51}{subsection.3.8.2}
+\contentsline {section}{\numberline {3.9}Zemax, MATLAB, and DDE}{51}{section.3.9}
+\contentsline {section}{\numberline {3.10}Fabrication Tolerancing}{53}{section.3.10}
+\contentsline {section}{\numberline {3.11}Theory Conclusion}{55}{section.3.11}
+\contentsline {chapter}{\numberline {4.}Direct-Vision Prism Design, Analysis, and Test}{56}{chapter.4}
+\contentsline {section}{\numberline {4.1}Zemax Misalignment Uniqueness Investigation}{56}{section.4.1}
+\contentsline {section}{\numberline {4.2}Autocollimator Diagnostics Investigation}{64}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}The 1-Inch-Prism Diagnostic Assembly}{65}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}The Davidson Optronics D-275 Autocollimator}{65}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Prism Reflection Investigation Test \#1}{68}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Prism Reflection Investigation Test \#2}{70}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}Linearized Approximation of the Two-Prism Assembly}{72}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Linearized Perturbation Model}{74}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Analysis of the Linear model}{76}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}System Identification}{78}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Model Reduction}{79}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}The Second Reflection Applied}{80}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Direct-Vision Prism Hardware Design Methodology}{81}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Direct-Vision Prism Assembly Design Methodology}{81}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Direct-Vision Prism Sleeve Assembly Design Methodology}{83}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Sensitivity Investigation of the Hawks DVP}{84}{section.4.6}
+\contentsline {section}{\numberline {4.7}Conclusion}{85}{section.4.7}
+\contentsline {chapter}{\numberline {5.}Conclusions and Recommendations}{86}{chapter.5}
+\contentsline {section}{\numberline {5.1}DVP Characterization Investigation Conclusions}{87}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Misalignment Uniqueness Investigation Results}{87}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Autocollimator Diagnostics Investigation Results}{87}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Linearized Approximation Results}{88}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}System Identification}{88}{subsection.5.1.4}
+\contentsline {section}{\numberline {5.2}Tolerance Specification}{88}{section.5.2}
+\setcounter {tocdepth}{0}
+\contentsline {section}{\numberline {5.3}Future Work}{89}{section.5.3}
+\contentsline {chapter}{Appendix A: Matlab Code}{91}{appendix.A}
+\contentsline {section}{\numberline {A.1}Zernike Simulation}{91}{section.A.1}
+\contentsline {section}{\numberline {A.2}Linear Model Verification}{93}{section.A.2}
+\contentsline {chapter}{Appendix B: Drawings}{99}{appendix.B}
+\contentsline {section}{\numberline {B.1}DVP Sleeve Drawing}{100}{section.B.1}
+\contentsline {chapter}{Bibliography}{104}{schapter.7}

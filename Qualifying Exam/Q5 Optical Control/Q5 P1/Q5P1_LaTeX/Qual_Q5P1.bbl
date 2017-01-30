@@ -1,0 +1,13 @@
+\begin{thebibliography}{1}
+\newcommand{\enquote}[1]{``#1''}
+
+\bibitem{RedBreck}
+Redding, D.~C. and Breckenridge, W.~G., \enquote{Optical Modeling for Dynamics
+  and Control Analysis,} Vol. AIAA-90-3383-CP, C.S. Draper Laboratory, Inc.,
+  AIAA, 1990.
+
+\bibitem{xiu}
+Xiu, D., {\em Numerical Methods for Stochastic Computations\/}, Princeton
+  University Press, Princeton, N.J., 2010.
+
+\end{thebibliography}

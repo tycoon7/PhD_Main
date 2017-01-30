@@ -1,0 +1,19 @@
+Query Results from the ADS Database
+
+
+Retrieved 1 abstracts, starting with number 1.  Total number selected: 1.
+
+@INPROCEEDINGS{1991SPIE.1354..216R,
+   author = {{Redding}, D.~C. and {Breckenridge}, W.~G.},
+    title = "{Linearized ray-trace analysis}",
+booktitle = {Society of Photo-Optical Instrumentation Engineers (SPIE) Conference Series},
+     year = 1991,
+   series = {Society of Photo-Optical Instrumentation Engineers (SPIE) Conference Series},
+   volume = 1354,
+   editor = {{Lawrence}, G.~N.},
+    month = jan,
+    pages = {216-221},
+   adsurl = {http://adsabs.harvard.edu/abs/1991SPIE.1354..216R},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+

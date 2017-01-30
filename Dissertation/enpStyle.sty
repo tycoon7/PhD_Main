@@ -1,0 +1,18 @@
+ 
+%==================================================================
+%																			
+%    		ABSTRACT Environment              
+%																			
+%==================================================================
+\newenvironment{modabstract}{
+    \newpage
+    \thispagestyle{plain}
+    \addcontentsline{toc}{chapter}{Abstract}
+    \addtocontents{toc}{\protect\addvspace{10\p@}}
+    \noindent \@docdesignator               
+    \begin{center}
+	\large\bfseries Abstract
+    \end{center}
+    \vspace{2em}
+    } {\newpage}
+   

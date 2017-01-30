@@ -1,0 +1,133 @@
+\title{Proposed - Parameter Optimization Method for Dynamically Controlled Optical Systems Via Kinetic Time-domain Simulation}
+
+% typeset with pdflatex, bibtex, pdflatex, pdflatex
+
+\documentclass{aiaa-tc}
+
+ \author{Timothy E. Coon%
+         \thanks{PhD Student, ENY, WPAFB.}\\
+         \normalsize\itshape
+         AFIT, WPAFB, Ohio, 45433, USA}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper introduces, in practical terms, the theory of proposed research. The research goal is to develop a methodology and associated techniques by which to close the outermost loop on the optomechanical design process of space-based optical systems having dynamic controllers applied optimally. Currently, many design loops are integrated throughout the static design life of an optical system and these are discussed briefly. This research considers the effect of real-time kinetics on an appropriate cost functional insofar as it may influence design decisions in optical prescription parameter selection and mechanical structure parameter selection.
+\end{abstract}
+
+% \section*{Nomenclature}
+%
+% \begin{tabbing}
+%   xxxxx \= \kill % first line sets tab stop
+%   $J$ \> Jacobian Matrix \\
+%   $f$ \> Residual value vector \\
+%   $x$ \> Variable value vector \\
+%   $F$ \> Force, N \\
+%   $m$ \> Mass, kg \\
+%   $T$ \> Test \\
+%   $\Delta x$ \> Variable displacement vector \\
+%   $\alpha$ \> Acceleration, m/s\textsuperscript{2} \\[5pt]
+%   \textit{Subscript}\\
+%   $i$ \> Variable number \\
+%   $i$ \> Variable number \\
+%  \end{tabbing}
+
+\section{Introduction}
+
+This paper is written to introduce interested parties to proposed research. It is intended as a starting point for soliciting feedback on the advantage and originality assumed upon successful completion of the research. The proposed research is intended for space-based optical system design, but applies to all environments to a certain degree.
+
+\subsection{Background}
+
+Optomechanical design processes to date implement a number of design iterations, some abstract and others methodical. There are a number of useful software-based design and simulation tools utilized in various combinations and with techniques specific to industries and individual organizations.
+
+Having defined mission requirements, the next task is to design the optical system and build simulations using software packages such as Zemax(symbol). Zemax allows for some quasi-static optimization methods based on user-defined merit functions. This analysis allows the designer to minimize optical performance sensitivities such as those impacted by imperfections in realized hardware. After having established an optical prescription with optical elements located in three-dimensional space, the designer uses CAD tools to design the structure locating the surface elements precisely where the optical model prescribes. During this stage, conflicts may arise between the necessary structure and the desired optical prescription requiring changes to the original optical prescription. After a mechanical design is established the mode shapes of the structure are found using finite element analysis software. These mode shapes may then be applied to the optical model to determine the optical performance sensitivity to deflection of each significant mode shape. These structural mode shapes are then used to simulate misalignments in the optical system and the optical simulation software is used to change the optical prescription to mitigate image degradation as a result of misalignment caused by the mode shape deflection. The final design loop currently implemented is:
+
+\begin{tabbing}
+Design Loop \#1: Mission Requirements $\leftrightarrow$ Zemax \\
+Design Loop \#2: Zemax $\leftrightarrow$ CAD (Static) \\
+Design Loop \#3: Zemax $\leftrightarrow$ CAD (Mode Shape Deflections) \\
+Design Loop \#4: Actuator performance $\leftrightarrow$ CAD $\leftrightarrow$ Zemax \\
+Proposed Design Loop: End-End Dynamically Controlled System $\leftrightarrow$ Zemax $\leftrightarrow$ CAD
+\end{tabbing}
+
+\section{Proposed Research}
+
+The goal of the proposed research is the formalization of methods and techniques for optimal optical-system design given limits on the operational environment. Following the implementation of traditional design loops described above, a robust optical system design is established with mitigation of operational environment impact on image quality. A control law is then applied to the system to correct for environmental disturbances. (Burl, Yingling, Redding, etc). An optimal control law maximizes the sytem performance either with real-time robust control (Burl) or theoretically using a-priori disturbance and optimization methods (i.e. LGR collocation \& NLP). It is at this point that the research appears to have been satisfied in past work. It is proposed that the creation of a design loop linking the optomechanical design to the dynamic controller operation offers an additional means of perfomance enhancement within the operational environment. This idea is presented more thoroughly by example.
+
+\section{Example}
+
+A simple example is presented showing the impact of parameter selection in dynamic operation of a telescope. Figure~\ref{simplefig} shows a collimated input beam entering from the top parallel to the principal axis of a parabolic mirror. It strikes the parabolic mirror surface off-axis and is reflected to a reference surface at the origin. The arrows show the path and direction of the rays, the `+' symbols are the ray-surface itersection points and the dots are the vertices of the surfaces.
+
+\begin{figure}	% system layout
+ \centering
+ \includegraphics[width=0.75\textwidth]{Figures/SimpleLayout}
+ \caption{Simple System Layout}
+ \label{simplefig}
+\end{figure}
+
+Figure~\ref{KinSys} shows the dynamic system operation with white noise input disturbance torque and control torque generated by PD-feedback controller. Both the input disturbance and the control torque are applied at a point just behind the intersection of the chief ray with the parabolic mirror. The control is applied to reduce the angular pointing error of the parabolic mirror. Due to the inability of the dynamic controller to perfectly correct for the input disturbance, there will be some degradation of the image as seen at the reference surface. This degradation is quantified using rms spot size. It is determined that this system should have field of view and magnification limits given by a focal lengths between $f_min = 0.70 m$ and $f_max = 0.80 m$. It is assumed that magnification is more desireable so a cost is associated with focal lengths away from $f_min$. The total cost is then a combination of rms spot size and focal length. Figure~\ref{costPlots} shows the control vector, instantaneous cost, and running cost vs time. The running cost is merely the scaled rms spot size integrated over time plus the focal length deviation cost.
+
+\begin{figure}[htb]	% system layout
+ \centering
+ \includegraphics[width=0.75\textwidth]{Figures/DynamicSystem}
+ \caption{Kinetic System Control}
+ \label{KinSys}
+\end{figure}
+
+\begin{figure}[htb]	% system layout
+ \centering
+ \includegraphics[width=1.0\textwidth]{Figures/costPlots}
+ \caption{Control and cost plots.}
+ \label{costPlots}
+\end{figure}
+The cost plots reveal the dependence of dynamic performance on the focal length of the system. The vertical lines show the time where the minimum cost focal length changes. If we consider a finite camera integration time, the image quality can be linked directly to the running cost. For this distrbance profile and this particular cost function, the longer focal length yields better performance for integration times greater than about 0.475 seconds.
+\bigskip
+
+\section{Conclusion}
+
+The illustration of this simulation demonstrate the dependence of optimal parameter selection on the system performance in the dynamic environment. Furthermore, generalizations are difficult to make. Unlike techniques such as frequency anlysis, it is not possible to characterize a design parameter as ``better" given specific values such as system natural frequency. Instead, we must consider the performance of a system design for a specified input disturbance and the conclusions drawn may be different for longer or shorter simulation times. Because we draw a conclusion for a known input disturbance, it will be necessary to define the stochastics of the input disturbance, then implement Monte Carlo or Polynomial Chaos methods in order to draw conclusions about the optimal parameter set.
+
+Elements of this research are summarized in the table below.
+
+\begin{table}
+  \centering
+  \caption{Research Elements}
+  \label{t:researchElements}
+  \begin{tabular}{cc}
+       \# & Element \\\hline
+        1 &  Optical system design and simulation (linear \& nonlinear) \\
+        2 &  Control system design and simulation (linear \& nonlinear) \\
+        3 &  Environment noise uncertainty models \\
+        4 &  Dynamic optimal control \\
+        5 &  Finite element analysis 
+  \end{tabular}
+\end{table}
+
+The longer focal length accrues less cost when the control input is greater for the range considered here. At first glance, this seems counterintuitive because a longer focal length is more susceptible to being off-target given a specified angular error. However, notice the solid angle of the beam at the focal point is smaller for a longer focal length. This means an angular error results in less enlargement of the rms spot radius for a longer focal length and rms spot radius is the only image quality cost. If deviation of the chief ray were also a considered cost, then the results may be different.
+
+Assume I know the integration time of my camera is 0.3 seconds. At this time, for the presented simulation, the shorter focal length yields better performance for this time. If we open the design space to include any focal length in the range, then we will likely find a focal length between $f_max$ and$f_min$ to yield better performance. The focus of this research is the method by which to determine this optimal design parameter, or, in general, the set of optimal design parameters for an optical system.
+
+Effectively, the dynamic optimization proposed here is an enhancement on the design loop considering the optical sensitivities to misalignments in the optical system. Whereas, before, the sensitivities may be calculated with the optical prescription perturbed according to the significant mode shapes, a stochastic dynamic control estimate allows the designer to evaluate the degree to which nominal optical performance should be sacrificed to reduce sensitivities based on the ability of control actuators operating in response to the simulated environment.
+
+When you optimize an optical prescription by reducing the sensitivity of optical performance to mode shape deflections, the nominal optical performance is degraded. I am not sure how this process is carried out, but \bf{I don't see any way of determining the trade-off between mitigating sensitivities and sacrificing nominal performance without some characterization of the dynamic operation in the time domain}. Effectively, this is saying that a frequency analysis is not adequate for determining the adjustment to the optical prescription.
+
+It doesn't matter how much you try to move or damp out the natural frequencies, the controller is never able to completely reject a random disturbance input. The response lag time and actuator dynamics keep the system from performing perfectly.
+
+Frequency-domain analysis does not allow the engineer to account for time or for absolute magnitude. Time-domain analysis does not allow the engineer to account for the scope of inputs and outputs possible.
+
+% \section*{Appendix}
+%
+% An appendix, if needed, should appear before the acknowledgments.
+% Use the 'starred' version of the \verb|\section| commands to avoid
+% section numbering.
+%
+% \section*{Acknowledgments}
+%
+% A place to recognize others or simply thank Kleb and Wood for this template.
+%
+% \bibliographystyle{aiaa}
+% \bibliography{references}
+
+\end{document}

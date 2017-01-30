@@ -1,0 +1,49 @@
+\BOOKMARK [0][-]{schapter.1}{Abstract}{}% 1
+\BOOKMARK [0][-]{schapter.2}{Dedication}{}% 2
+\BOOKMARK [0][-]{schapter.3}{Acknowledgments}{}% 3
+\BOOKMARK [0][-]{schapter.4}{List of Figures}{}% 4
+\BOOKMARK [0][-]{schapter.5}{List of Tables}{}% 5
+\BOOKMARK [0][-]{schapter.6}{List of Acronyms}{}% 6
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 7
+\BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.2}{Hyperspectral Remote Sensing}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.3}{Research Goals}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.4}{Organization}{chapter.1}% 11
+\BOOKMARK [0][-]{chapter.2}{Background}{}% 12
+\BOOKMARK [1][-]{section.2.1}{Space-Based, Earth-Observing Hyperspectral Imagers}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.2}{Medical Tomography to Chromotomography}{chapter.2}% 14
+\BOOKMARK [1][-]{section.2.3}{Tomographic Data Reconstruction}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.4}{Chromotomography Research and Experimentation in Industry}{chapter.2}% 16
+\BOOKMARK [1][-]{section.2.5}{AFIT Chromotomography Research}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.6}{Background Analysis}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.7}{Background Conclusion}{chapter.2}% 19
+\BOOKMARK [0][-]{chapter.3}{Applicable Theory}{}% 20
+\BOOKMARK [1][-]{section.3.1}{Propagation of Light}{chapter.3}% 21
+\BOOKMARK [1][-]{section.3.2}{Refraction}{chapter.3}% 22
+\BOOKMARK [1][-]{section.3.3}{Direct-Vision Prism Theory}{chapter.3}% 23
+\BOOKMARK [1][-]{section.3.4}{Vectorial Ray-Tracing}{chapter.3}% 24
+\BOOKMARK [1][-]{section.3.5}{Perturbation Theory}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.6}{JPL Perturbation Methodology}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.7}{Principles of Autocollimation}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.8}{Interferometry}{chapter.3}% 28
+\BOOKMARK [1][-]{section.3.9}{Zemax, MATLAB, and DDE}{chapter.3}% 29
+\BOOKMARK [1][-]{section.3.10}{Fabrication Tolerancing}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.11}{Theory Conclusion}{chapter.3}% 31
+\BOOKMARK [0][-]{chapter.4}{Direct-Vision Prism Design, Analysis, and Test}{}% 32
+\BOOKMARK [1][-]{section.4.1}{Zemax Misalignment Uniqueness Investigation}{chapter.4}% 33
+\BOOKMARK [1][-]{section.4.2}{Autocollimator Diagnostics Investigation}{chapter.4}% 34
+\BOOKMARK [1][-]{section.4.3}{Linearized Approximation of the Two-Prism Assembly}{chapter.4}% 35
+\BOOKMARK [1][-]{section.4.4}{System Identification}{chapter.4}% 36
+\BOOKMARK [1][-]{section.4.5}{Direct-Vision Prism Hardware Design Methodology}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.6}{Sensitivity Investigation of the Hawks DVP}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.7}{Conclusion}{chapter.4}% 39
+\BOOKMARK [0][-]{chapter.5}{Conclusions and Recommendations}{}% 40
+\BOOKMARK [1][-]{section.5.1}{DVP Characterization Investigation Conclusions}{chapter.5}% 41
+\BOOKMARK [1][-]{section.5.2}{Tolerance Specification}{chapter.5}% 42
+\BOOKMARK [1][-]{section.5.3}{Future Work}{chapter.5}% 43
+\BOOKMARK [0][-]{appendix.A}{Appendix A: Matlab Code}{}% 44
+\BOOKMARK [1][-]{section.A.1}{Zernike Simulation}{appendix.A}% 45
+\BOOKMARK [1][-]{section.A.2}{Linear Model Verification}{appendix.A}% 46
+\BOOKMARK [0][-]{appendix.B}{Appendix B: Drawings}{}% 47
+\BOOKMARK [1][-]{section.B.1}{DVP Sleeve Drawing}{appendix.B}% 48
+\BOOKMARK [0][-]{schapter.7}{Bibliography}{}% 49

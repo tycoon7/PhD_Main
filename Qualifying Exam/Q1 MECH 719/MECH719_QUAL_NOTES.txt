@@ -1,0 +1,15 @@
+#1 - Compute the FRFs from the data using frequency domain techniques (Lab #3). Measurement type can be determined from the FRF plots because there will be a phase shift of 90 deg (?) for each derivative.
+
+#2 - The damping and spring constants can be found from the natural frequencies and damping ratios which can be found from the measured data.
+
+#3 - I assume the input is a force
+
+#4 - Initial conditions are not necessary for frequency analysis
+
+#5 - Clean up the FRFs by averaging
+
+#6 - x1 is a velocity measurement by comparison with the calculated bode plots. At low frequencies, it is 90 degrees ahead and at high frequencies, it is 90 degrees behind.
+
+#7 - x2 is a displacement measurement by comparison with calculated bode plots. At low frequency, it is in-phase, then goes out-of-phase, then in-phase at high frequencies
+
+

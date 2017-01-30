@@ -1,0 +1,19 @@
+<NotepadPlus>
+    <Project name="CoonThesis">
+        <File name="abstract.tex" />
+        <File name="acronyms.tex" />
+        <File name="afit-etd.cls" />
+        <File name="app.tex" />
+        <File name="chap1.tex" />
+        <File name="chap2.tex" />
+        <File name="chap3.tex" />
+        <File name="chap4.tex" />
+        <File name="chap5.tex" />
+        <File name="enpStyle.sty" />
+        <File name="enpThesis.sty" />
+        <File name="mcode.sty" />
+        <File name="packages.tex" />
+        <File name="ref.bib" />
+        <File name="thesis.tex" />
+    </Project>
+</NotepadPlus>

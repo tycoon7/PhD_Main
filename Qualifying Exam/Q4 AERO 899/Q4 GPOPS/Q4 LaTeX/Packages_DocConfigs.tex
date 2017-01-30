@@ -1,0 +1,51 @@
+\documentclass[12pt,letterpaper]{article} % Use A4 paper with a 12pt font size - different paper sizes will require manual recalculation of page margins and border positions
+
+% \usepackage{titlesec}
+% \titleformat*{\section}{\LARGE\bfseries}
+% \titleformat*{\subsection}{\Large\bfseries}
+% \titleformat*{\subsubsection}{\large\bfseries}
+% \titleformat*{\paragraph}{\large\bfseries}
+% \titleformat*{\subparagraph}{\large\bfseries}
+
+\usepackage{pdfpages}
+\usepackage[framed,numbered,autolinebreaks,useliterate]{mcode}
+\usepackage{marginnote} % Required for margin notes
+\usepackage{wallpaper} % Required to set each page to have a background
+\usepackage{lastpage} % Required to print the total number of pages
+% \usepackage[left=1.3cm,right=4.6cm,top=1.8cm,bottom=4.0cm,marginparwidth=3.4cm]{geometry} % Adjust page margins
+\usepackage[left=2in,right=1.0cm,top=1.95cm,bottom=2.0cm,marginparwidth=4cm]{geometry} % Adjust page margins
+\reversemarginpar
+
+\usepackage{mathrsfs,amsmath} % Required for equation customization
+\usepackage{amssymb} % Required to include mathematical symbols
+\usepackage{xcolor} % Required to specify colors by name
+\usepackage[numbered,framed]{mcode}
+
+\usepackage{fancyhdr} % Required to customize headers
+\setlength{\headheight}{30pt} % Increase the size of the header to accommodate meta-information
+\pagestyle{fancy}\fancyhf{} % Use the custom header specified below
+\renewcommand{\headrulewidth}{0pt} % Remove the default horizontal rule under the header
+
+\setlength{\parindent}{0cm} % Remove paragraph indentation
+\newcommand{\tab}{\hspace*{2em}} % Defines a new command for some horizontal space
+
+\newcommand\BackgroundStructure{ % Command to specify the background of each page
+\setlength{\unitlength}{1mm} % Set the unit length to millimeters
+
+\setlength\fboxsep{0mm} % Adjusts the distance between the frameboxes and the borderlines
+\setlength\fboxrule{0.5mm} % Increase the thickness of the border line
+% \put(10, 10){\fcolorbox{black}{blue!10}{\framebox(155,247){}}} % Main content box
+% \put(165, 10){\fcolorbox{black}{blue!10}{\framebox(37,247){}}} % Margin box
+% \put(10, 262){\fcolorbox{black}{white!10}{\framebox(192, 25){}}} % Header box
+% \put(137, 263){\includegraphics[height=23mm,keepaspectratio]{logo}} % Logo box - maximum height/width: 
+\put(48, 10){\fcolorbox{black}{white!10}{\framebox(159,246){}}}   % Main content box
+\put(10, 10){\fcolorbox{black}{blue!3}{\framebox(38,246){}}}     % Margin box
+\put(10, 258){\fcolorbox{black}{white!10}{\framebox(197, 15){}}} % Header box
+\put(10, 256){\includegraphics[height=18mm,keepaspectratio]{logo}} % Logo box - maximum height/width: 
+}
+
+% define new column types for which the width can be set. Code found at address below. (http://tex.stackexchange.com/questions/12703/how-to-create-fixed-width-table-columns-with-text-raggedright-centered-raggedlef)
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}

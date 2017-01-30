@@ -1,0 +1,66 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: thesis.aux
+The style file: thesnumb3.bst
+Database file #1: ref.bib
+Warning--entry type for "AVIRIS" isn't style-file defined
+--line 447 of file ref.bib
+Warning--entry type for "Kulesa" isn't style-file defined
+--line 524 of file ref.bib
+Warning--entry type for "OlympusMicro" isn't style-file defined
+--line 780 of file ref.bib
+Warning--entry type for "DavidsonOptronics" isn't style-file defined
+--line 791 of file ref.bib
+Warning--entry type for "microradian" isn't style-file defined
+--line 803 of file ref.bib
+Warning--entry type for "Roberts" isn't style-file defined
+--line 834 of file ref.bib
+Warning--entry type for "Shippert" isn't style-file defined
+--line 913 of file ref.bib
+Warning--entry type for "W|A_TaylorSine" isn't style-file defined
+--line 1001 of file ref.bib
+Warning--entry type for "DarkKnight" isn't style-file defined
+--line 1020 of file ref.bib
+Warning--entry type for "GDT" isn't style-file defined
+--line 1040 of file ref.bib
+Warning--entry type for "GOSAT" isn't style-file defined
+--line 1050 of file ref.bib
+Warning--entry type for "JapGOSAT" isn't style-file defined
+--line 1059 of file ref.bib
+Warning--entry type for "Landsat" isn't style-file defined
+--line 1068 of file ref.bib
+Warning--entry type for "RedOrbit" isn't style-file defined
+--line 1078 of file ref.bib
+Warning--entry type for "RemoteSensing" isn't style-file defined
+--line 1089 of file ref.bib
+Warning--entry type for "SpectralSignatures" isn't style-file defined
+--line 1099 of file ref.bib
+Warning--entry type for "JunkScience" isn't style-file defined
+--line 1120 of file ref.bib
+Warning--to sort, need author or key in RedOrbit
+Warning--to sort, need author or key in RemoteSensing
+Warning--to sort, need author or key in JunkScience
+Warning--to sort, need author or key in DarkKnight
+Warning--to sort, need author or key in GOSAT
+Warning--to sort, need author or key in JapGOSAT
+Warning--to sort, need author or key in SpectralSignatures
+Warning--to sort, need author or key in Landsat
+Warning--to sort, need author or key in W|A_TaylorSine
+Warning--to sort, need author or key in GDT
+Warning--empty booktitle in Bostick09
+Warning--can't use both volume and number fields in Bostick09
+Warning--missing institution in Sandia05
+Warning--can't use both author and editor fields in Kevorkian
+Warning--can't use both volume and number fields in Kevorkian
+Warning--empty booktitle in Mooney95
+Warning--can't use both volume and number fields in Mooney95
+Warning--empty booktitle in Mooney00
+Warning--can't use both volume and number fields in Mooney00
+Warning--empty booktitle in Mooney98
+Warning--can't use both volume and number fields in Mooney98
+Warning--empty booktitle in Mooney97
+Warning--can't use both volume and number fields in Mooney97
+Warning--empty booktitle in ODellSPIE
+Warning--can't use both volume and number fields in ODellSPIE
+Warning--empty booktitle in RedBreck
+Warning--can't use both author and editor fields in Shigley
+Warning--empty note in SweeneyNotes
+(There were 45 warnings)

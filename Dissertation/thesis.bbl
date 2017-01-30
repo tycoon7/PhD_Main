@@ -1,0 +1,312 @@
+\begin{thebibliography}{10}
+\newcommand{\enquote}[1]{``#1''}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+
+\bibitem{W|A_TaylorSine}
+\enquote{Taylor Series Expansion of Sine}.
+\newblock Wolfram|Alpha.
+\newblock Http://www.wolframalpha.com/input/?i=taylor+series+expansion+of+sine.
+
+\bibitem{JunkScience}
+\enquote{The Real 'Inconvenient Truth'}, December 2012.
+\newblock \urlprefix\url{http://junksciencearchive.com/Greenhouse/index.html}.
+
+\bibitem{DarkKnight}
+\enquote{The Dark Knight Unofficial Movie Blog}, February 2013.
+\newblock
+  \urlprefix\url{http://www.moviechronicles.com/batman-dark-knight/batman-images/stills/}.
+
+\bibitem{RedOrbit}
+\enquote{Electromagnetic Spectrum}.
+\newblock RedOrbit Website, January 2013.
+\newblock
+  \urlprefix\url{http://www.redorbit.com/education/reference_library/space_1/universe/2574670/electromagnetic_spectrum/}.
+\newblock EM Spectrum Image.
+
+\bibitem{GOSAT}
+\enquote{GOSAT Project}, February 2013.
+\newblock \urlprefix\url{http://www.gosat.nies.go.jp/index_e.html}.
+
+\bibitem{JapGOSAT}
+\enquote{GOSAT Project}, February 2013.
+\newblock \urlprefix\url{www.ccsr.u-tokyo.ac.jp}.
+
+\bibitem{Landsat}
+\enquote{Landsat Mission}, February 2013.
+\newblock \urlprefix\url{http://landsat.usgs.gov/}.
+
+\bibitem{SpectralSignatures}
+\enquote{What is a spectral signature in remote sensing?}, February 2013.
+\newblock
+  \urlprefix\url{http://www.extension.org/pages/40071/what-is-a-spectral-signature-in-remote-sensing}.
+
+\bibitem{GDT}
+\enquote{What is Geometric Dimensioning and Tolerancing}, February 2013.
+\newblock
+  \urlprefix\url{http://www.engineersedge.com/training_engineering/What_Is_GD&T.htm}.
+
+\bibitem{RemoteSensing}
+\enquote{What is Remote Sensing?}, February 2013.
+\newblock \urlprefix\url{http://www.g-step.co.uk/index.php/faqs}.
+
+\bibitem{Bostick10}
+Bostick, R.~L., G.~P. Perram, and R.~F. Tuttle.
+\newblock \enquote{Instrumental systematic errors in a chromotomographic
+  hyperspectral imaging system}.
+\newblock \emph{Proc. IEEE Aerospace Conf}, 1--15. 2010.
+
+\bibitem{Bostick}
+Bostick, Randall~L.
+\newblock \emph{Development and characterization of a Chromotomosynthetic
+  Hyperspectral Imaging System}.
+\newblock Ph.D. thesis, Air Force Institute of Technology, 20.
+
+\bibitem{Bostick08}
+Bostick, Randall~L. and Glen~P. Perram.
+\newblock \enquote{Hyperspectral Imaging Using Chromotomography: A Fieldable
+  Visible Instrument for Transient Events}.
+\newblock \emph{International Journal of High Speed Electronics and Systems},
+  18, Issue 3:519--529, 2008.
+
+\bibitem{Bostick09}
+Bostick, Randall~L., Glen~P. Perram, and Ronald Tuttle.
+\newblock \enquote{Characterization of spatial and spectral resolution of a
+  rotating prism chromotomographic hyperspectral imager}.
+\newblock volume 7319, 731903. SPIE, 2009.
+
+\bibitem{Campbell}
+Campbell, James~B.
+\newblock \emph{Introduction to Remote Sensing}.
+\newblock The Guilford Press, New York, fourth edition, 2007.
+
+\bibitem{D275}
+Davidson Optronics.
+\newblock \emph{Davidson Optronics D-275 Autocollimating Alignment Telescope
+  Users Manual}.
+
+\bibitem{Dearinger}
+Dearinger, Anthony~J.
+\newblock \emph{Simulating a Chromotomographic Sensor for Hyperspectral Imaging
+  in the Infrared}.
+\newblock Master's thesis, Air Force Institute of Technology, 2004.
+
+\bibitem{Descour}
+Descour, Michael and Eustace Dereniak.
+\newblock \enquote{Computed-tomography imaging spectrometer: experimental
+  calibration and reconstruction results}.
+\newblock \emph{Appl. Opt.}, 34(22):4817--4826, Aug 1995.
+\newblock \urlprefix\url{http://ao.osa.org/abstract.cfm?URI=ao-34-22-4817}.
+
+\bibitem{Ebizuka}
+Ebizuka, Noburu, Hideo Yokota, Fumioshi~Kajuino andKoji S.~Kawabata, Masanori
+  Iye, and Shoji Sato.
+\newblock \enquote{Novel Direct Vision Prism and Wollaston Prism Assembly for
+  Diffraction Limit Applications}.
+\newblock Eli Atad-Ettedhui and Dietrich Lernke (editors), \emph{Booktitle},
+  volume 7018, S--1 -- S--6. 2008.
+
+\bibitem{Sandia05}
+Ford, Bridget~K., Jose~S. Salazar, and Mark~P. Wilson.
+\newblock \emph{Reconstruction Algorithm Development and Assessment for a
+  Computed Tomography Based-Spectral Imager}.
+\newblock Technical report, Albuquerque, NM, 2005.
+
+\bibitem{Gould}
+Gould, Malcom~G.
+\newblock \emph{Reconstruction of Chromotomographic Imaging System Infrared
+  Hyperspectral Scenes}.
+\newblock Master's thesis, Air Force Institute of Technology, 2005.
+
+\bibitem{Gustke}
+Gustke, Kevin~C.
+\newblock \emph{Reconstruction Algorithm Characterization and Performance
+  Monitoring in Limited-Angle Chromotomography}.
+\newblock Master's thesis, Air Force Institute of Technology, Wright-Patterson
+  Air Force Base, Ohio, 2004.
+
+\bibitem{Hagen11}
+Hagen, Nathan and Tomasz~S. Tkaczyk.
+\newblock \enquote{Compound Prism Design Principles, 1}.
+\newblock \emph{Applied Optics}, 50:4998--5011, 2011.
+
+\bibitem{HawksATF}
+Hawks, Michael~R.
+\newblock \enquote{ATF Testing}.
+\newblock Conversation, November 2012.
+
+\bibitem{Hecht}
+Hecht, Eugene.
+\newblock \emph{Optics}.
+\newblock Addison-Wesley, forth edition, 2002.
+
+\bibitem{AVIRIS}
+{Jet Propulsion Laboratory}.
+\newblock \enquote{Airborn Visible/Infrared Imaging Spectrometer}.
+\newblock Online, Feb 2012.
+\newblock \urlprefix\url{http://aviris.jpl.nasa.gov/aviris/}.
+
+\bibitem{RealRayTracing}
+Josep~Arasa, Javier~Alda.
+\newblock \enquote{Real Ray Tracing}.
+\newblock \emph{Encyclopedia of Optical Engineering}. Marcel Dekker, Inc.,
+  2004.
+\newblock DOI: 10.1081/E-EOE 120027488.
+
+\bibitem{Kevorkian}
+Kevorkian, J. and J.D. Cole.
+\newblock \emph{Perturbation Methods in Applied Mathematics}, volume Applied
+  Mathematical Sciences.
+\newblock Springer-Verlag, 1981.
+
+\bibitem{Kulesa}
+Kulesa, Craig.
+\newblock \enquote{What is Spectroscopy?}, February 2013.
+\newblock
+  \urlprefix\url{http://loke.as.arizona.edu/~ckulesa/camp/spectroscopy_intro.html}.
+
+\bibitem{Lemaster}
+LeMaster, Daniel~A.
+\newblock \emph{Design and Model Verification of an Infrared Chromotomographic
+  Imaging System}.
+\newblock Master's thesis, Air Force Institute of Technology, 2004.
+
+\bibitem{Mooney95}
+Mooney, Jonathan~M.
+\newblock \enquote{Angularly multiplexed spectral imager}.
+\newblock volume 2480, 65--77. SPIE, 1995.
+\newblock \urlprefix\url{http://link.aip.org/link/?PSI/2480/65/1}.
+
+\bibitem{Mooney00}
+Mooney, Jonathan~M., Myoung~H. An, Andrzej~K. Brodzik, and Richard Tolimieri.
+\newblock \enquote{Data restoration in chromotomographic hyperspectral
+  imaging}.
+\newblock volume 4123, 150--161. SPIE, 2000.
+
+\bibitem{Mooney98}
+Mooney, Jonathan~M. and Andrzej~K. Brodzik.
+\newblock \enquote{New iterative algorithm for restoration of chromotomographic
+  images}.
+\newblock volume 3438, 274--285. SPIE, 1998.
+\newblock \urlprefix\url{http://link.aip.org/link/?PSI/3438/274/1}.
+
+\bibitem{Mooney99}
+Mooney, Jonathan~M. and Andrzej~K. Brodzik.
+\newblock \enquote{Convex projections algorithm for restoration of
+  limited-angle chromotomographic images}.
+\newblock \emph{J. Opt. Soc. Am. A}, 16(2):246--257, Feb 1999.
+
+\bibitem{Mooney97}
+Mooney, Jonathan~M., Andrzej~K. Brodzik, and Myoung~H. An.
+\newblock \enquote{Principal component analysis in limited-angle
+  chromotomography}.
+\newblock volume 3118, 170--178. SPIE, 1997.
+\newblock \urlprefix\url{http://link.aip.org/link/?PSI/3118/170/1}.
+
+\bibitem{Niederhauser}
+Niederhauser, Jason~D.
+\newblock \emph{Design and Characterization of a Space Based Chromotomographic
+  Hyperspectral Imaging Experiment}.
+\newblock Master's thesis, Air Force Institute of Technology, Wright-Patterson
+  Air Force Base, Ohio, 2011.
+
+\bibitem{ODell}
+O'Dell, Daniel~C.
+\newblock \emph{Development and Demonstration of a Field-Deployable Fast
+  Chromotomographic Imager}.
+\newblock Master's thesis, Air Force Institute of Technology, Wright-Patterson
+  Air Force Base, Ohio, 2010.
+
+\bibitem{ODellSPIE}
+O'Dell, Daniel~C., Randy Bostick, Michael~R. Hawks, Eric~D. Swenson,
+  Jonathan~T. Black, Richard~G. Cobb, and Glen~P. Perram.
+\newblock \enquote{Chromotomographic imager field demonstration results}.
+\newblock volume 7668, 766804. SPIE, 2010.
+
+\bibitem{OlympusMicro}
+Olympus~America, Inc.
+\newblock \enquote{Basic Electromagnetic Wave Properties}, February 2013.
+\newblock
+  \urlprefix\url{http://www.olympusmicro.com/primer/java/wavebasics/index.html}.
+
+\bibitem{DavidsonOptronics}
+Optronics, Davidson.
+\newblock \enquote{Principles of Autocollimation}.
+\newblock Davidson Optronics website, November 2013.
+\newblock
+  \urlprefix\url{http://www.davidsonoptronics.com/principles-of-autocollimation}.
+
+\bibitem{microradian}
+Radian, Micro.
+\newblock \enquote{Principles of Autocollimation}.
+\newblock \urlprefix\url{http://www.micro-radian.com/Principles.html}.
+
+\bibitem{RedBreck}
+Redding, David~C. and William~G. Breckenridge.
+\newblock \enquote{Optical Modeling for Dynamics and Control Analysis}.
+\newblock volume AIAA-90-3383-CP. C.S. Draper Laboratory, Inc., AIAA, 1990.
+
+\bibitem{MissingCone}
+Renjen, Sanjeev and Tom~S. Huang.
+\newblock \enquote{Experimental Results on the Missing Cone Problem in Computer
+  Aided Tomography}.
+\newblock \emph{IEEE}, 0195-4210/81/0000/0566:566--570, 1981.
+
+\bibitem{Roberts}
+Roberts, L.~Michael.
+\newblock \enquote{Mercury Vapour Lamp Spectrum}.
+\newblock Wikipedia, February 2013.
+\newblock
+  \urlprefix\url{http://en.wikipedia.org/wiki/File:Mercury_Vapour_Lamp_Spectrum.jpg}.
+
+\bibitem{Shaw}
+Shaw, Gary~A. and Hsiao hua K.~Burke.
+\newblock \enquote{Spectral Imaging for Remote Sensing}.
+\newblock \emph{Lincoln Laboratory Journal}, 14(1):1--28, 2003.
+
+\bibitem{Shigley}
+Shigley, Joseph~E.
+\newblock \emph{Mechanical Engineering Design}.
+\newblock McGraw-Hill, 7th edition, 2004.
+
+\bibitem{Shippert}
+Shippert, Peg.
+\newblock \enquote{Introduction to Hyperspectral Image Analysis}, November
+  2012.
+\newblock \urlprefix\url{http://spacejournal.ohio.edu/pdf/shippert.pdf}.
+
+\bibitem{Sue}
+Su'e, Chad~B.
+\newblock \emph{Characterization of a Hyperspectral Chromotomographic Imaging
+  Ground System}.
+\newblock Master's thesis, Air Force Institute of Technology, 2012.
+
+\bibitem{SweeneyNotes}
+Swenson, Eric~D.
+\newblock \enquote{AFIT ENY MECH 632 Intermediate Spacecraft Dynamics and
+  Control Course Notes}, May 2012.
+
+\bibitem{PRM1Z8}
+Thorlabs, Inc., 435 Route 206 North, Newton, NJ 07860.
+\newblock \emph{PRM1Z7 Motorized Rotation Stage User Guide (HA0209T)}, rev d
+  edition, February 2011.
+
+\bibitem{CR1Z7}
+Thorlabs, Inc., 56 Sparta Ave, Newton, NJ 07860.
+\newblock \emph{CR1-Z7, CR1/M-Z7 Motorized Rotation Stage Operating Manual
+  (17053-D02)}, rev d edition, August 2012.
+
+\bibitem{Wyant}
+Wyant, James~C. and Katherine Creath.
+\newblock \enquote{Basic Wavefront Aberration Theory for Optical Metrology}.
+\newblock \emph{Applied Optics and Optical Engineering}, XI, 1992.
+
+\bibitem{Zemax}
+Zemax Development Corporation.
+\newblock \emph{Zemax User's Manual}, Feb 2011.
+
+\bibitem{ZygoMan}
+Zygo Corporation.
+\newblock \emph{MetroPro Reference Guide OMP-0347}, 2004.
+
+\end{thebibliography}

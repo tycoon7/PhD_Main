@@ -1,0 +1,9 @@
+\begin{thebibliography}{1}
+\newcommand{\enquote}[1]{``#1''}
+
+\bibitem{sutton:85ar}
+Sutton, K., \enquote{Air Radiation Revisted,} {\em Thermal Design of
+  Aeroassisted Orbital Transfer Vehicles\/}, edited by H.~F. Nelson, Vol.~96,
+  AIAA, New York, 1985, pp. 419--441.
+
+\end{thebibliography}

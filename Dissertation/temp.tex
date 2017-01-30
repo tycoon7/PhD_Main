@@ -1,0 +1,337 @@
+Early Bostick and matravadi spectral, spatial limit
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+It is also worth noting that tomographic reconstruction have a limited-angle problem. The projection angle in which the object cube enters must be acute otherwise the object cube will not be contained within the chromotomographic projection plane.
+
+The works of Manatravadi and Bostick have provided insight on the spatial and spectral resolution of the AFIT's CTI instrument. Both concluded that the upper bound of the spectral resolution is limited by how much the disperse the Rayleigh criterion
+
+The spatial resolution is limited by
+ In other words, if you have a diffraction-limited optical system, then the upper bound on the spatial resolution is also diffraction limited. Consider a monochromatic object, the prism will shift the scene accordingly through the \ac{DVP}, but the image formed will remain diffraction-limited in the absence of aberrations.
+
+Both Mandtravadi and Bostick concluded that the spectral resolution is ultimately limited by the dispersion of the prism. They considered point sources and used the Rayleigh criterion\cite{Hecht} as the ability to discern the spectral contents.
+
+Bostick did analysis of the effects of systemic errors and aberrations and how the degrade the spectral resolution. Bostick was able to quantitatively observe how aberrations, such as tilt and defocus impacted the spectral resolution. Aberrations will be discussed in depth in Chapter 3. He generated the following table:
+
+\begin{table}[htb] 
+\label{tbl:systemErrors} % is used to refer this table in the text 
+\caption{Systematic Errors} % title of Table 
+\centering % used for centering table 
+\begin{tabular}{| c | c | c | c | c| } % centered columns (3 columns)
+\hline
+Systematic & Spectral  & Spatial & Spectral & Spatial \\ 
+Error & Resolution & Resolution & Peak Shift &  Peak Shift \\
+\hline % inserts single horizontal line
+Tilt of Detector Array & - & - & - & X \\
+Estimation of $\mathrm{d}_3$ & - & - & X & - \\
+Estimation of Prism Angular Dispersion & - & - & X & - \\
+Prism Misalignment in Mount & - & - & X & - \\
+Prism Mount Misalignment & X & X & X & X \\
+Estimation of Prism Rotation Angle & - & X & - & - \\
+\hline %inserts single line 
+\end{tabular} 
+\end{table}
+
+Mantravadi built a model demonstrating how chromatic aberrations impacted the spectral resolution. He observed that there is a "sweet spot" in which the spectral resolution was best; however, his results could not be validated.
+
+These results will be compared with the simulation results describe in Chapt 3 and Chap 4.
+%TODO:insert a blurb about LeMaster?!?
+
+Flow chart moved to appendix
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+See Figure~\ref{fig:simFlowChart} for a flowchart of the simulation.
+
+
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{images/chap3/flowchart}
+\caption{Flowchart of the Simulation}
+\label{fig:simFlowChart}
+\end{center}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Test Case}
+
+The simulation results for mercury pen lamp test case are shown in Figures~\ref{fig:simResults1} and \ref{fig:simResults2}. 
+
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{images/chap4/recon_example}
+\caption{Simulation results using 25 projections}
+\label{fig:simResults1}
+\end{center}
+\end{figure}
+
+Figure~\ref{fig:simResults1} shows the simulated scene at one projection, the shifted projections added, and then the reconstructed scene after the filter has been applied for the 435nm wavelength. As shown in the reconstructed scene, artifacts exist and can be removed furthermore by increasing the filtering parameter. However, the filtering parameter also lowers the signal intensity so the reconstructed seen needs more projections to maintain its integrity. The results of 100 projections and an increased filtering parameter are shown in Figure~\ref{fig:simResults2}.
+
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{images/chap4/recon_example100}
+\caption{Simulation results using 100 projections}
+\label{fig:simResults2}
+\end{center}
+\end{figure}
+
+On visual inspection, the higher filtering parameter produces a better reconstructed image. 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%TODO:modify this!!!
+Chromotomographic devices operate under similar principles to medical \ac{CT} systems. In medical \ac{CT} scans, x-rays are passed through the body and measured by detectors. These projections are collected as the x-ray source and detector are moved in opposition about the body. In this way, projections are captured from multiple view angles. This set of projections is then used to reconstruct slices through the body's internal structures. The fundamental difference between standard x-ray tomography and chromotomography is that the third dimension of the chromotomographic object cube is spectral rather than spatial.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The effective focal length of the system is expressed as
+\begin{equation}
+\label{eq:feff}
+f_{eff} = -\frac{f_1}{f_2}f_3
+\end{equation}
+where $f_1$, $f_2$, $f_3$ are the focal lengths of L1, L2, L3 respectively.
+
+Equation~\eqref{eq:specConst} assumes the object is on the optical axis so the angular magnification is negligible.
+
+Angular magnification is given by the following equation:
+\begin{equation}
+\label{eq:angResolution}
+M_{\theta}=-\frac{f_1}{f_2}
+\end{equation}
+where $f_1$ and $f_2$ are the focal lengths of L1 and L2, respectively. The negative sign denotes that the image is inverted if both focal lengths are positive.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Our interpretation of the projection angle is governed by two assumptions: 1) adjacent spectral bands are displaced by one pixel on the focal plane, and 2) the volume object elements are assigned a cubic shape. This first assumption is easily justified since it is consistent with scanned slit configurations. The second assumption is completely arbitrary, but has the benefit that the Fourier transform of the object will be a cube. If we accept these two assumptions, then it follows that the missing cone half angle is 45 degrees. For our system prism based design, this amounts to sweeping out a 3D frequency space by means of a plane whose normal lies in the $\xi-\nu$ plane and rotates about the $l$ axis as shown in Figure~\ref{fig:missingCone} for a few projections.
+
+\begin{figure}[htb]
+\begin{center}
+\label{fig:missingCone}
+\includegraphics[width=0.75\textwidth]{images/chap2/missingCone}
+\caption{Three-dimensional, frequency-space interpretation of the missing cone. Each plane corresponds to a unique projection and azimuth angle.\cite{Descour}}
+\end{center}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%
+Mooney showed in \cite{Mooney95} that the sequence of spatial tomographic projections $g(x_1,x_2,\phi)$ is found by summing each tomographic projection of the three-dimensional spatial-spectral object cube $f(x_1,x_2,\lambda)$ with respect to the spectral variable, $\lambda$:
+
+%%%%%%%%%%%%%%%%%%%%%
+The missing cone is pivotal for understanding why the need for more complex algorithms are needed to fill in the gaps of information. There several methods on tackling this challenge in literature and some are discussed in Section~\ref{sec:reconDevelop}. All algorithms share the reconstruction have a system transfer , developed in the succeeding paragraphs. 
+%%TODO:yuck, fix this sentence
+
+Equation~\eqref{eq:fourierProjection} is the reconstruction kernel. Essentially the measured data at each projection is the sum of all the spectral point spread functions created by the prism convolved with the desired hypercube. All of the reconstruction begin with this development and emphasize the importance of knowing the exact spectral shift caused by the prism. . The reconstruction algorithms 
+
+%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Other Prism Based CTI instuments}
+
+There are several educational/government/commerical CTIs in literature, most of the devices created are in the MWIR or LWIR. However, Solid State Scientific offers a CTIs in the visible, MWIR, and LWIR regions. Their visible instrument will be used as a comparison. Table so and so There visible camera has the following specifications listed from a brochere on their website\cite{SSSBrochere}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ %%TODO:insert table
+
+In lit, a lot of MWIR/LWIR but we focus on the visible CTI from SSS as a reference. The SSS CTI claims the following:
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Fast Reconstruction Algorithm
+As shown in Section~\ref{sec:reconKernel}, Equation~\ref{eqn:linSystem} demonstrated that for each spatial frequency the measured data cube, $G(\bar{\xi},\phi)$, is related to the desired hypercube,$F(\bar{\xi},\lambda)$ by the \ac{STF}. Since the direct inversion is ill-posed, Deming uses the filtered backprojection method similar to the work described by \cite{Bernhardt}. In order to backproject, the Hermitian adjoint is applied to the \ac{STF} is applied resulting in
+
+\begin{equation}
+\label{eq:backProjection}
+F'(\bar{\xi},\lambda) = [A^{H}G](\tilde{\xi},\lambda)=\int_{0}^{2 \pi} e^{2 \pi i k(\lambda)\bar{\xi}\cdot \bar{p}_\phi} G(\xi,\phi) \mathrm{d}\phi,
+\end{equation}
+where F' is this and that.
+
+He then develops how to filter out the residual effects. Ultimately, he uses a filtering parameter, $\mu$, from the medical CT field. He develops that for each spatial frequency we build the hypercube as
+
+\begin{equation}
+\label{eq:filteredCube}
+\tilde{F}_\mu(\bar{\xi},\omega_\lambda) = \frac{\tilde{F}'(\xi,\omega_\lambda)}{\mu+\tilde{M}(\xi,\omega_\lambda)}
+\end{equation}
+
+where 
+\begin{equation}
+\label{eq:filter}
+\tilde{M}(\xi,\omega_\lambda) = \mathcal{F}\left\{M(\bar{\xi},\lambda)\right\}
+\end{equation}
+and M is
+\begin{equation}
+\label{eq:Bessel}
+M(\bar{\xi},\lambda)=2 \pi J_0 (2 \pi k(\lambda) \xi_r)
+\end{equation}
+
+The reconstruction algorithm can be summarized as follows. Separately for each spatial frequency $\bar{\xi}$, the regularized minimum-norm solution $F_{\mu}(\bar{\xi},\lambda)$ is computed by first backprojecting the data, $G(\bar{\xi},\phi)$ using Equation~\ref{eq:backProjection} to compute the preliminary (unfiltered) image cube $F'(\bar{\xi},\lambda)$. This image cube is then filtered by Fourier transforming relative to $\lambda$ to compute $\tilde{F}'(\bar{\xi},\omega_\lambda)$, applying the filter described by Equation~\ref{eq:filteredCube} to compute $\tilde{F}^{\mu}(\bar{\xi},\omega_\lambda)$ to obtain $F_{\mu}(\bar{\xi},\lambda)$. The best value for the regularization parameter $\mu$ in the filtering will depend upon the noise level in the data.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+In literature, there are essentially two categories of reconstruction algorithms for filling-in the cone of missing information: filtered backpojection technique modeled from the medical tomography field\cite{Bernhardt} or an iterative process using \ac{POCS} or Estimation Theory. 
+
+Filtered backprojections essentially "shift-and-add" the collected projection images. For each projection angle, $m$, of the spectral bin, $n$, the projected image is shifted by the conjugate of Equation~\eqref{eq:Aelement}. This centers the projected imaged for the given spectral bin. For all $M$ projections, the shifted projection images are summed resulting in a "stack" of shifted projected images. As the shifted projected images are summed, the information within the spectral bin increases its structural integrity and overcome the residual artifacts from the other spectral bin content. Filtering mechanisms are applied at either each successive shift or after summing the shifted images to reduce the residual artifacts. The filtered backprojection algorithm is computationally efficient as Fourier Transforms and matrix multiplications are required and only one iteration is needed.
+
+%%TODO:insert the O'Dell pic of shift and add
+
+The iterative reconstruction algorithms achieve recovery of the unknown object by utilizing \emph{a priori} information about the image. Typically, an initial guess (often arbitrary) about the unknown object is made, which is then subjected to a sequence of corrections, forcing it to satisfy a number of desirable characteristics. This sequence of corrections is applied repetitively until convergence occurs. Mooney \emph{et al} developed algorithms\cite{SVDPOCS98,SVDPOCS99} that used \ac{SVD} to find the pseudo-inverse of the STF to find the initial estimate of the object cube and then used POCS find the optimal solution. Gould developed an reconstruction algorithm using Estimation Theory that maximizes the expectation of the unknown data using STF to produce the maximum likelihood estimate of the object\cite{Gould}.
+
+A computationally efficient reconstruction algorithm is desirable for AFIT. The space-based CTI has embedded processing and runs the risk of overheating\cite{DK}. Lowering the computational demands of the algorithm reduces the risk of overheating. In that spirit, a computationally efficient filtered backprojection algorithm developed by Deming in \cite{Deming} is implemented for this thesis.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ac{AFIT} is ultimately interested in fielding a \ac{CTI} aboard the \ac{ISS} to detect transient events, such as bomb detonations, from space. Prior to developing a spaced-based \ac{CTI}, a ground-based version has been built as an intermediate step. The ground-based instrument is called \ac{CTEx} was built to demonstrate the technology and learn lessons from its fabrication. \ac{AFIT} decided to focus on developing a \ac{CTI} in the visible region where the use of \ac{COTS} components are readily available and easier to integrate. 
+%%TODO:learn lessons...cut of fix these two sentences
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+However, it is important to realize the lateral shift is constant for all wavelengths and is symmetric for all rotations. Figure~\ref{fig:transverseOffsetHgPen} displays a mercury pen lamp point source at four orthogonal projection angles.
+
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{images/chap2/transverseOffsetHgPen}
+\caption{Demonstration of the transverse offset.}
+\label{fig:transverseOffsetHgPen}
+\end{center}
+\end{figure}
+
+For each projection, the 435nm, 546nm, and 576nm emission lines are shown with the 435nm line being the outermost. Lookin
+
+
+Qualitatively, the transverse offset is not symmetric. If the offset was referenced from the from one projection to the next projection, the relative distance from each of the remaining three projections is given in Table~\ref{tbl:offsetDistances}.
+
+%%TODO: insert coordinates and Radius of the circle
+\begin{table}[htb] 
+\label{tbl:offsetDistances} % is used to refer this table in the text 
+\caption{The amount of pixel difference from each projection} % title of Table 
+\centering % used for centering table 
+\begin{tabular}{ c c } % centered columns (3 columns)
+\hline
+Projection & Distance (pixels) \\  % inserts table heading 
+\hline % inserts single horizontal line
+0degrees to 90degrees & 24.69\\
+90degrees to 180degrees & 19.9 \\
+180degrees to 270degrees & 23.85 \\
+270degrees to 0degrees & 23.6 \\
+\hline %inserts single line 
+\end{tabular} 
+\end{table}
+
+The spectral lines of the mercury pen lamp remain the same distance for each projection, however the deviation from the offset from the center is changing. This will become critical in identifying the source of the transverse offset.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+
+The results of the PTC of the It is obvious that the slope is non-linear, therefore the system gain is nonlinear. From Janesick, the camera exhibits both V/V and V/e$^-$ nonlinearity. V/V nonlinearity is primarily caused by the pixel's source follower amplifier while V/e$^-$ is related to sense node diode capacitance change\cite{janesick}. A characteristic of V/V nonlinearity is the slope does not follow the shot noise curve. A characteristic of the V/e$^-$ nonlinearity is that the slope of the FPN does not have a slope of 1 on a log-log plot. When  V/e$^-$ non-linearity is present, conventional photon transfer analysis is not applicable.
+
+%Table of results
+\begin{table}[htb] 
+\caption{PTC Results} % title of Table 
+\label{table:PTC} % is used to refer this table in the text 
+\centering % used for centering table 
+\begin{tabular}{ c c c } % centered columns (3 columns)
+\hline
+Parameter & Value & Uncertainty\\  % inserts table heading 
+\hline % inserts single horizontal line
+$K_{ADC}$ (e$^-$/DN)			& 143.12  	& $\pm$ 7.73\\
+Read noise (e$^-$)				& 34.87 	& $\pm$ 7.92\\
+\hline %inserts single line 
+\end{tabular} 
+\end{table}
+
+
+The sensitivity of the camera is low. The poor sensitivity stems from the V/V and V/e$^-$ non-linearity as the camera performs lower than the shot noise curve\cite{janesick}. The non-linearity is significantly influencing the output statistics thereby reducing the system gain. The camera has an large amount of FPN and without removing the FPN the PTC's do not exhibit the same qualities as the plots described in Section~\ref{sec:PTCtheory}. However, a variance PTC can be constructed to remove FPN. The scale is no longer on a log-log plot and the signal is now plotted against the signal variance. The system gain is the slope of the curve and the intercept of the variance axis is the read noise. 
+
+
+The QE of the camera was calculated from the wavelength from 400nm to 740nm in increments of 20nm. The QE measurements were taken at lower frame rate of 100fps in order to increase the integration time to achieve a higher signal. Operating at a lower frame rate has no impact on QE measurements. The results are shown in Figure~\ref{fig:qePlot} below.
+
+\begin{figure}[htb]
+\begin{center}
+\label{fig:qePlot}
+\includegraphics[width=0.75\textwidth]{images/chap2/QE}
+\caption{Quantum Efficiency}
+\end{center}
+\end{figure}
+
+The camera's QE has a peak response at 460nm of 0.42 and remains above 0.20 over the entire wavelength range. As expected, the shorter wavelengths have lower QE due to reflections. At the longer wavelengths, QE drops off because it is more difficult to generate photo-electrons as the energies approach the required band gap energy. The QE measurements published by the camera vendor advertise QE's above 0.50 from 450nm to 650nm; however, these measurements published were for a newer model\cite{visionresearch}. The QE oscillates over the spectral range and the oscillation is more pronounced if smaller increments are used and is averaged out with 20nm increments. The shape of the QE curve matches the relative QE measurements made by O'Dell\cite{ODell}.
+
+For the sake of this thesis, it will be ignored.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Motivation for Model}
+
+The need for a model is three-fold.
+
+1) The first reason for the model is to determine the root of the transverse offset and investigate how the chromatic aberrations limit the performance of the GCTEx. Additionally, an investigation into how the other geometric aberrations impact system performance. Along with how detector noise, particularly fixed pattern noise, impacts the system performance.
+
+2) The model serves as a utility for evaluating the developing a reconstruction algorithm.Despite previous efforts at AFIT, the algorithm predominately used has been the shift and add algorithm. Albeit it has its utility, it remains largely ineffective for producing reliable hypercubes. The main reason why it is ineffective is because it does not handle the aberrations and the transverse offset. 
+
+3) The last reason for the model is to get an idea what the operating modes are! How fast should the prism be spun before it degrades performance, how many projections are required to produce adequate hypercubes. What is the impact of the prism error and how it effects the reconstruction algorithm.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Geometric Image Simulation}
+%%TODO:modify or take out
+Zemax also offers the Geometric Image Simulation which allows a geometric ray trace of all the wavelengths inputed. The rays generated by each pixel are chosen randomly from coordinates within the pixel cell. The entrance pupil coordinates are also chosen randomly for each ray. The distribution of rays is uniform over the pixel and over the circular paraxial entrance pupil (if ray aiming is used, then there may be some pupil distortion). For the text IMA files, the number of rays generated by each pixel is equal to the pixel intensity times the number of wavelengths times the ray density. The wavelength used for each ray is selected randomly in proportion to the wavelength weights. For the binary IMA files, the number of rays generated from each pixel is proportional to the ray density times the fractional intensity relative to 256.
+
+This tool is best suited simulating the effects of chromatic aberrations along with Seidel aberrations in which the Point Spread Function has been severely degraded. Additionally, the Image Simulation fails to account for image blurring whereas this simulation the accounts for them.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+The Laplacian Mean Square Error (LMSE) has emphasis on the edges of the scene. This metric will gage the sharpness of the edges, offset in edge position, and missing edges. A larger value corresponds to a poor image quality and is defined as
+\begin{equation}
+\label{eq:LMSE}
+LSME = \frac{\sum_{j=1}^{M} \sum_{k=1}^{N} \left[O(x_{j,k} - O(x'_{j,k})\right]^2}{\sum_{j=1}^{M} \sum_{k=1}^{N} \left|x_{j,k}\right|}
+\end{equation}
+where the Laplacian operator, $O(x_{j,k})$ is
+\begin{equation}
+\label{eq:LMSEoperator}
+O(x_{j,k}) = x_{(j+1),k}+x_{(j-1),k}+x_{j,(k+1)}+x_{j,(k-1)}-4x_{j,k}.
+\end{equation}
+The metrics in which the reconstruction algorithm is based off image quality measures used to gage performance in compressing digital images. Since compression and the reconstruction process lose information original content, the image quality metrics are suited for measuring the reconstructions performance. There are two categories of image quality metrics used: pixel-difference-based and correlation based measures\cite{Bayram,Damera-Venkata}. 
+
+A common pixel-difference-based metric is the \ac{MSE}. For an image where there are $M$ and $N$ number of pixels in the row and column directions, respectively, the \ac{MSE} is given by
+\begin{equation}
+\label{eq:MSE}
+MSE = \frac{1}{MN} \sum_{j=1}^{M} \sum_{k=1}^{N} \left(x_{j,k}-x'_{j,k}\right)^2,
+\end{equation}
+where $x_{j,k}$ denotes pixel $(j,k)$ of the original image and $x'_{j,k}$ pixel $(j,k)$ of the reconstructed image. Higher values of \ac{MSE} corresponds to poor image quality. 
+
+
+\ac{SC} is a correlation based metric that, as its name implies, measures how well the structure of the reconstructed image compares with the actual object:
+\begin{equation}
+\label{eq:SC}
+SC = \frac{\sum_{j=1}^{M} \sum_{k=1}^{N} \left(x_{j,k}\right)^2}{\sum_{j=1}^{M} \sum_{k=1}^{N} \left(x'_{j,k}\right)^2},
+\end{equation}
+where larger values of \ac{SC} denotes poor image quality. Together, these metrics provide an objective method of the reconstructions performance. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Prism Angle Error and Detector Noise Tests}
+
+\ac{AFIT} had difficulties accurately measuring the prism angles in the past. To determine the effects of how prism angle error impacts reconstruction, two types of errors are investigated:  a constant error and a Gaussian distributed error. Using the simulation results from Section~\ref{sec:polyScene}, the error in prism angle was injected into the reconstruction algorithm. For each type of error, the amount of prism angle error was doubled for each iteration. The first increment of error was set to the resolution of the encoder, 0.088 degrees. The Gaussian distributed error uses a normal distributed random variable where the mean is the prism error for that increment. 
+
+
+Plot of the MSE degrading. 
+
+Spectrum... talk about the yellow
+
+
+
+
+As stated in Section~\ref{sec:phantomCamera}, a large amount of fixed pattern noise is visibly observed from data collected by the high-speed camera. Again using the simulation results from the polychromatic test, fixed-pattern noise and shot noise (the noise associated with the random arrival of photons) were coupled into to each projection simulated. Fixed-pattern noise and shot noise are simulated using techniques described by Janesick in \cite{Janesick}. 
+
+still to be done.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Another pixel-difference-based metric of interest is the \ac{PSNR}. It is defined as the ratio of the peak signal power to average noise power. This will serve as a measurement to describe the noise effects of the filtering parameter in the reconstruction algorithm. The PSNR is defined by
+\begin{equation}
+\label{eq:PSNR}
+PSNR = 10 \log_{10} {\frac{(2^n-1)^2}{MSE}}
+\end{equation}
+where n is the image bit depth. The noise is assumed to be uncorrelated with the signal. A lower value reflects poor image quality.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Figure~\ref{fig:tiltPrism} shows the radial shift of the undeviated wavelength of 36 equally-spaced projections caused by the resulting tilt.
+
+\begin{figure}[htb]
+\begin{center}
+\includegraphics[width=0.75\textwidth]{images/chap3/tiltPrism}
+\caption{Transverse offset of the undeviated wavelength caused by an asymmetric tilt of the internal prism angles.}
+\label{fig:tiltPrism}
+\end{center}
+\end{figure}
+
+ but it can be conclusively stated the transverse offset is the result of an imperfect prism
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

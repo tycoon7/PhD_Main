@@ -1,0 +1,65 @@
+*****************************************************************
+      SolidWorks Corporation - IGES Processor Status Report
+*****************************************************************
+=================================================================
+General Information
+=================================================================
+Sending System Product I.D.  : C:\Users\Timothy Coon\Google Drive\AFIT\PhD Research\Telescope Design\Adaptive_optics_final\Adaptive optics final.IGS
+Receiving System Product I.D.: 
+File Name                    : C:\Users\Timothy Coon\Google Drive\AFIT\PhD Research\Telescope Design\Adaptive_optics_final\Adaptive optics final.IGS
+Sending System               : HarmonyWare Translators
+Preprocessor Version         : HarmonyWare IGES v1.7.10
+File Creation Date           : 20150127.000336
+Model Creation Date          : 20150127.000336
+Units                        : MM
+Model Space Scale            : 1
+Author                       : 
+Organization                 : 
+
+
+=================================================================
+Entity Processing Information
+=================================================================
+
+
+=================================================================
+Precision analysis of IGES file:
+=================================================================
+  Most prevalent number of significant digits:              14
+  Highest number of significant digits:                     14
+  Average number of significant digits:                13.8434
+  Maximum distance to origin:                          2143.28
+  Minimum distance to origin:                          1966.96
+  Effective number of significant digits:              12.6325
+
+
+=================================================================
+Entity Summary
+=================================================================
+-----------------------------------------------------------------
+Type Name                                         Count Converted
+---- ----                                         ----- ---------
+126  Rational B-spline curve                        399       399
+128  Rational B-spline surface                      209       209
+186  Manifold Solid B-rep Object                     38        38
+406  Property                                       209       209
+502  Vertex list                                     38        38
+504  Edge entity                                     38        38
+508  Loop entity                                    209       209
+510  Face entity                                    209       209
+514  Shell entity                                    38        38
+_________________________________________________________________
+
+
+=================================================================
+Result Summary
+=================================================================
+SolidWorks Feature Type                Count
+-----------------------                -----
+Solid feature(s)                       38
+Surface feature(s)                     0
+Curve/Sketch feature(s)                0
+--------------------------------------------
+Start time: Tuesday, January 27, 2015 00:06:52
+Finish time: Tuesday, January 27, 2015 00:08:06
+Processing time: 0 days, 00 hours, 01 mins, 14 secs

@@ -1,0 +1,20 @@
+Tips for running GPOPS
+
+Use batch() when you want to use MATLAB while GPOPS is running:
+This doesn't display the output, but there must be a way to do so
+
+Start matlabpool with a number of "labs" (lab = core?)
+matlabpool open 4
+
+create object and start script.m
+job = batch('script')
+
+when you think it is done, or close use wait to recognize. This will not 
+allow you to enter commands anymore
+wait(job)
+
+when you know it is done, load the data
+load(job)
+
+when you are done with the data, destroy the object
+destroy(job)

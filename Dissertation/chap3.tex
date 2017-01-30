@@ -1,0 +1,557 @@
+\chapter{Applicable Theory}
+\label{ch:applicableTheory}
+
+In the previous chapter, it was established that the performance of spinning-prism \acf{CTI} is severely and negatively impacted by misalignment and misidentification of a \acf{DVP} used as the dispersive element. The methods reviewed in Section~\ref{sec:GCTEx} used prior to this research to characterize the prism by direct measurement of detector plane displacements have resulted in inadequate precision and degraded resolution. The investigation presented in Chapter~\ref{ch:DVP} addresses this shortfall by seeking a means to characterize the \ac{DVP} assembly through accurate and precise definition of each \ac{DVP} assembly surface orientation. To define these orientations, precision optical measurement tools are used to make reasonable observations. These observations are the outputs of the \ac{DVP} system and the inputs are then defined as the surface orientations. Implementing a linear approximation of the \ac{DVP} system, the properties of a nominal prism assembly are used to solve for the combination of surface orientation vectors which produce the measured output. The desired outcome is a method of applying mathematical techniques to measurable quantities for the determination of lens surface orientation with arc second precision relative to a fixed structural coordinate system. A review of the theory and design methodology applicable to these research objectives is presented in this chapter.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Propagation of Light}
+\label{sec:propLight}
+
+Light is propagating electromagnetic energy made up of electric and magnetic waves which oscillate sinusoidally in-phase and orthogonal to each other, each displacing tangent to the direction of propagation as shown in Figure~\ref{fig:EM_Wave}. This energy requires no medium to travel, but material properties of a medium significantly impact the propagation of an electromagnetic wave. As an electromagnetic wave traverses through a medium, photons contact atoms at some rate proportional to the optical density of the medium and the wavelength. Though these contacts occur and tend to deviate the path of the light, they cancel each other in all but the direction of initial momentum and the wave direction persists in a homogenous medium~\cite{Hecht}. Eventually, the wave encounters a new medium with different electromagnetic properties. At this point, the wave is subject to change as described by the law of conservation of energy in Equation \eqref{eq:waveEnergy}~\cite{Hecht}.
+
+\begin{figure}[htb]		% EM_Wave
+\centering
+\includegraphics[width=0.6\textwidth]{images/chap3/EM_Wave}
+\caption{An electromagnetic wave is comprised of orthogonal electric and magnet waves with amplitudes oscillating in-phase~\cite{OlympusMicro}.}
+\label{fig:EM_Wave}
+\end{figure}
+
+\begin{table}		% waveEnergy - Simplified equation from Hecht (4.58)
+\centering
+\begin{equation}
+\label{eq:waveEnergy}
+\varepsilon_{total} = \varepsilon_{reflected} + \varepsilon_{transmitted} + \varepsilon_{absorbed}
+\end{equation}
+\begin{tabular}{lll}
+$\varepsilon$ & $\equiv$ & $\textit{energy}$
+\end{tabular}
+\end{table}
+
+\subsection{Reflection}
+\label{sec:reflection}
+At the interface where two mediums of differing density meet, an electromagnetic wave collides with a layer of unpaired atomic oscillators about $\lambda/2$ thick~\cite[p. 96]{Hecht}. The layer of unpaired atomic oscillators is responsible for the partial reflection. Partial reflection occurs whether the transition is into a material of higher density, called external reflection, or into a material of lower density, called internal reflection. For an air-to-glass or glass-to-air interface, the reflected energy is about $4\%$ for a wave incident perpendicular to the surface. The vectorial form of the conservation of momentum dictates the direction of the reflected wave and is summarized by the law of reflection, Equation~\eqref{eq:lawOfReflection}, from which it is stated that the angle of incidence is equal to the angle of reflection in the plane of incidence shown in Figure~\ref{fig:planeOfIncidence}~\cite{Hecht}.
+
+\begin{table}		% lawOfReflection
+\centering
+\begin{equation}
+\label{eq:lawOfReflection}
+\phi_i = \phi_s
+\end{equation}
+\begin{tabular}{lll}
+$\phi_i$ & $\equiv$ & $\textit{angle of incidence}$\\
+$\phi_s$ & $\equiv$ & $\textit{angle of reflection}$
+\end{tabular}
+\end{table}
+
+\begin{figure}[htb]		% planeOfIncidence
+\centering
+\includegraphics[width=0.6\textwidth,page=5,trim=5cm 5cm 5cm 5cm]{images/chap3/MyGraphics_Ch3}
+\caption{Illustration of the plane of incidence for a reflected ray.}
+\label{fig:planeOfIncidence}
+\end{figure}
+
+
+\section{Refraction}
+\label{sec:refraction}
+In addition to the possibility of reflection, some or all of the photons colliding with a new medium are transmitted through. The optical density of the medium is quantified as the index of refraction, $n$, which is defined in Equation~\eqref{eq:nSpeed}. The effect on an electromagnetic wave entering an abrupt new medium is known as refraction and described by Snell's Law in the plane of incidence, Equation~\eqref{eq:snellsLaw}, and is represented graphically in Figure~\ref{fig:snellsLaw}. Figure~\ref{fig:reflectionRefraction} illustrates the common scenario in which some of the light is reflected and some is refracted. 
+
+% Snell's Law is validated using Fermat's principle of least time and the relationship between the index of refraction and the speed of light propagation through that medium, Equation~\eqref{eq:nSpeed}.
+
+\begin{table}		% nSpeed
+\centering
+\begin{equation}		% nSpeed
+n = c/v
+\label{eq:nSpeed}
+\end{equation}
+\begin{tabular}{lll}
+$n$ & $\equiv$ & $\textit{index of refraction}$\\
+$c$ & $\equiv$ & $\textit{speed of light in vacuum } \mathrm{(3{\times}10^8\frac{\textrm{m}}{\textrm{s}})}$\\
+$v$ & $\equiv$ & $\textit{speed of light in the medium}$
+\end{tabular}
+\end{table}
+
+\begin{table}		% snellsLaw
+\centering
+\begin{equation}		% snellsLaw
+n_i\sin{(\phi_i)} = n_r\sin{(\phi_r)}
+\label{eq:snellsLaw}
+\end{equation}
+\begin{tabular}{lll}
+$n_i$ & $\equiv$ & $\textit{incident ray medium index of refraction}$\\
+$\phi_i$ & $\equiv$ & $\textit{angle of incidence}$\\
+$n_r$ & $\equiv$ & $\textit{refracted ray medium index of refraction}$\\
+$\phi_r$ & $\equiv$ & $\textit{angle of refraction}$
+\end{tabular}
+\end{table}
+
+\begin{figure}[htb]		% Reflection and Refraction Figures
+\begin{center}
+\subfigure[]{
+\includegraphics[width=0.45\textwidth,page=1,trim=10cm 7cm 10cm 7cm,clip]{images/chap3/MyGraphics_Ch3}
+\label{fig:snellsLaw}}
+\subfigure[]{
+\includegraphics[width=0.45\textwidth,page=2,trim=10cm 7cm 10cm 7cm,clip]{images/chap3/MyGraphics_Ch3}
+\label{fig:reflectionRefraction}}
+\caption{(a) Illustration of Snell's Law and (b) reflection and refraction shown at the same interface viewed in the plane of incidence.}
+\end{center}
+\end{figure}
+
+\subsection{Absorption}
+\label{sec:Absorption}
+Absorption is the attenuation of an electromagnetic wave due to the transfer of to the medium. The effects of absorption are not considered in this research except to realize that the amount of electromagnetic energy that is transmitted through a prism is affected by the prism glass material which must be selected for the design spectral range~\cite[pp. 67-68]{Hecht}.
+
+% The probability that the photon can be absorbed is directly related to the energy of the photon and the energy levels of the atom it contacts. The energy of an incident photon is directly related to its frequency by Planck's constant and the relationship of Equation~\eqref{eq:plancksLaw}. The amount of absorbed electromagnetic energy is, therefore, proportional the frequency at which it oscillates~\cite{Hecht}. The level of absorption in a standard prism is negligible on the scale of the experiments herein and quantitative effects of absorption are, therefore, not considered in this thesis. The effects of absorption are, however, imperative to reflection and the frequency dependence of refraction at an interface~\cite[pp. 67-68]{Hecht}.
+
+% \begin{table}		% plancksLaw
+% \centering
+% \begin{equation}		% plancksLaw
+% E = h\nu
+% \label{eq:plancksLaw}
+% \end{equation}
+% \begin{tabular}{lll}
+% $E$ & $\equiv$ & $\textit{constituent photon energy}$\\
+% $h$ & $\equiv$ & $\textit{Planck's Constant } \mathrm{(6.626 {\times} 10^{-34} J{\cdot} s)}$\\
+% $\nu$ & $\equiv$ & $\textit{speed of light in the medium}$
+% \end{tabular}
+% \end{table}
+
+\subsection{The Critical Angle}
+\label{sec:criticalAngle}
+The critical angle is the maximum angular difference between the surface normal, $\hat{N}$, and the incident ray direction vector, $\hat{i}$, for which refraction occurs across a surface. For any angle, $\phi_i$, greater than the critical angle, the incident photons are reflected by the surface~\cite{Hecht}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Direct-Vision Prism Theory}
+\label{sec:prismTheory}
+
+Prisms are refractive elements of planar geometry that utilize the frequency dependence of the refractive index to separate the different frequency components of the incident light. The interested reader is referred to \cite{Hecht} for a thorough treatment of dispersion and the frequency dependence of the index of refraction. For the research presented here, it is necessary only to consider that the deviation angle is a nonlinear function of wavelength  as shown in Figure~\ref{fig:bostickDispersion}.
+
+\begin{figure}[htb]		% bostickDispersion
+\centering
+\includegraphics[width=0.75\textwidth]{images/chap3/deviationAngle}
+\caption{Plot of the deviation angle as a function of vacuum wavelength for the Bostick \acl{DVP} reveals the nonlinear relationship~\cite{Niederhauser}.}
+\label{fig:bostickDispersion}
+\end{figure}
+
+A \ac{DVP}, or Amici prism~\cite{Hagen11}, is an assembly of prisms designed as a chromatic dispersion element. A \ac{DVP} is unique in that it disperses a spectral range about the optical axis as shown in Figure~\ref{fig:layout}. A defining design parameter of a \ac{DVP} is its undeviated wavelength, the wavelength of light that passes through the \ac{DVP} as if the \ac{DVP} were not there. As seen in Figure~\ref{fig:bostickDispersion}, the undeviated wavelength ($\lambda$ $\cong$ 550 nm) is not in the center of the spectral range of interest due to the nonlinearity of the dispersion.
+
+A \ac{DVP}, in general, is a precisely-designed assembly of prisms having varied profiles of dispersion as a function of wavelength. As the visible light passes through one prism, the angular chromatic separation is in one direction normal to the original light path. The dispersed light then passes through the second prism which rotates the light back towards its original path, but at a different angle because of geometry and a different index of refraction. The resultant beam retains a wavelength-dependent angular spread, but now about one wavelength, the undeviated wavelength, which assumes the direction of the original light path~\cite{Ebizuka} \cite{Bostick09}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Vectorial Ray-Tracing}
+\label{sec:vectRayTrace}
+
+Ray-tracing is a means by which any ray is traced through an optical system, defining the exact light path and is a procedure by which to model the optical performance of a system. The results are as accurate and precise as the specifications of the optical system elements~\cite{Hecht}. The procedure is simply a step-by-step process of tracing the rays (being straight lines) between surfaces and computing the effects on each ray at each surface by applying the laws of reflection and refraction. Ray-tracing is, in general, a nonlinear process and calculations must be applied sequentially. It is noted that, because the ray-tracing considers the light to be a ray, the wave properties of light (i.e. diffraction) and their impact on the propagation are assumed negligible for the analysis presented~\cite{Hecht}.
+
+\subsection{Ray-Tracing Through Refractive Surfaces}
+\label{sec:refractiveRayTrace}
+Generalized ray-tracing in three-dimensional vector space with refractive surfaces is accomplished by application of the vectorial form of Snell's Law, called the refraction equation. The refraction equation is obtained from Snell's Law in the incident plane, Equation~\eqref{eq:snellsLaw}, by taking the directions to be vectors of unitary magnitude and expressing the modulus of the vector cross product as Equation~\eqref{eq:crossProduct}~\cite{RealRayTracing}. Because the vectors are unitary vectors, the modulus of their cross product reduces to $\sin(\phi_i)$, which substitutes into Snell's Law to form the refraction equation, Equation~\eqref{eq:refractionEquation}.
+
+\begin{equation}		% crossProduct
+\vert\vec{i}\times\vec{N}\vert = \vert\vec{i}\vert\vert\vec{N}\vert\sin(\phi_i)
+\label{eq:crossProduct}
+\end{equation}
+
+\begin{table}			% refractionEquation
+\centering
+\begin{equation}		% refractionEquation
+n_i\vert\hat{i}\times\hat{N}\vert  = n_r\vert\hat{r}\times\hat{N}\vert 
+\label{eq:refractionEquation}
+\end{equation}
+\begin{tabular}{lll}
+$n_i$        & $\equiv$ & $\textit{incident ray medium index of refraction}  $\\
+$\hat{i}$  & $\equiv$ & $\textit{incident ray unitary direction vector}        $\\
+$\hat{N}$ & $\equiv$ & $\textit{surface unitary normal vector}                    $\\
+$n_r$         & $\equiv$ & $\textit{refracted ray medium index of refraction}$\\
+$\hat{r}$  & $\equiv$ & $\textit{refracted ray unitary direction vector}       $
+\end{tabular}
+\end{table}
+
+Given an incident three-dimensional unitary incident ray direction vector, Equation \eqref{eq:refractionEquation} is applied at the intersection point of the incident ray and a refractive surface, resulting in an exact expression for the direction vector of the refracted ray. Knowing the unitary incident ray direction vector and the unitary surface normal vector at each intersection point enables the designer to trace the light path through a series of optical refractive surfaces.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Linear Systems Theory}
+% \label{sec:linSysTheory}
+
+% The primary driver in modeling any system is simplification and can be directly qualified in terms of mathematical computation complexity. The study of linear systems is useful not only because many real systems exhibit linear relationships naturally, but also because nonlinear systems are able to be approximated by a linear system. Linear systems exhibit characteristics that  It is for this reason that the optical system of a \ac{DVP} is linearized using the theory presented in the following sections.
+
+% A linear system exhibits superposition and homogeneity. Superposition implies that the response to the sum of individual inputs is the sum of each isolated input's response. Homogeneity is similar being that a constant multiple of an input yields a response that is the same constant multiplied by the response of the isolated original input.
+
+% A linear system of equations is represented by the matrix equation Ax=b.
+
+% \subsection{Singular-Value Decomposition}
+
+% (Expand this as necessary to cover the linear analysis concepts used in system ID)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Perturbation Theory}
+\label{sec:pertTheory}
+
+\begin{quote}
+In essence, a perturbation procedure consists of constructing the solution for a problem involving a small parameter $\varepsilon$... ...when the solution for the limiting case $\varepsilon = 0$ is known. The main mathematical tool used is asymptotic expansion with respect to a suitable asymptotic sequence of functions of $\varepsilon$.
+In a regular perturbation problem a straightforward procedure leads to an approximate representation of the solution. The accuracy of this approximation does not depend on the value of the independent variable and gets better for smaller values of $\varepsilon$~\cite{Kevorkian}.
+\end{quote}
+
+\subsection{Perturbation Theory Applied to Optics}
+\label{sec:pertTheoryOptics}
+The description above is a summary of perturbation theory. The goal is to apply perturbation theory to develop a linear set of equations that describes the ray-trace through the optical system. As such, the small parameter, $\varepsilon$, is a small deviation (or perturbation) in position or orientation of a ray or optical interface. The solution of the nominal case, $\varepsilon = 0$, is found by exact ray-tracing in the standard application of Snell's Law, Equation~\eqref{eq:snellsLaw}. The asymptotic sequence is the Taylor Series expansion of the sine of the perturbation angle shown in Equation~\eqref{eq:taylorSine1} and~\eqref{eq:taylorSine2}~\cite{W|A_TaylorSine}. For a linear approximation optical ray-trace, only the first term is retained and, together with the expression of Snell's Law, becomes Equation~\eqref{eq:taylorSnell}, often referred to as the small-angle approximation of Snell's Law. As the name implies, the small-angle approximation is increasingly more accurate for small angles and is consistent with the perturbation theory description above. Equation~\eqref{eq:taylorSnell} approximates the perturbation of the refracted ray direction as a function of the perturbation of the incident ray direction as shown in Figure \ref{fig:anglePerturbation}. The limit imposed on the small angle approximation is illustrated in Figure \ref{fig:SmallAngleApprox_Nom0} where it is shown that the approximation contributes less than $1\%$ error up through a 0. 30 radian $(17^{\circ})$ angle. the maximum allowable perturbation angle is dictated by the accuracy requirement of the analysis. As shown in Figures~\ref{fig:SmallAngleApprox_Nom0} through~\ref{fig:SmallAngleApprox_Nom10}, the accuracy of the approximation is degraded with larger nominal incident angles, $\phi_i$.
+
+\begin{equation}			% taylorSine1
+\sin (\phi) = \displaystyle\sum_{k=0}^{\infty}\frac{(-1)^kx^{1+2k}}{(1+2k)!}
+\label{eq:taylorSine1}
+\end{equation}
+
+\begin{equation}			% taylorSine2
+\label{eq:taylorSine2}
+\sin (\phi) = \phi - \frac{\phi^3}{3!} + \frac{\phi^5}{5!} + \cdots
+\end{equation}
+
+\begin{figure}[htb]		% anglePerturbation
+\centering
+\includegraphics[width=0.75\textwidth,page=3,trim=10cm 7cm 10cm 7cm,clip]{images/chap3/MyGraphics_Ch3}
+\caption{Change in the angle of the refracted ray as a result of a perturbation of the incident ray direction.}
+\label{fig:anglePerturbation}
+\end{figure}
+
+\begin{equation}			% taylorSnell
+\textrm{d}\phi_2 = \frac{n_1}{n_2}\textrm{d}\phi_1
+\label{eq:taylorSnell}
+\end{equation}
+
+\begin{figure}[h]			% smallAngleApprox
+\begin{center}
+\subfigure[]{
+\includegraphics[width=0.48\textwidth,trim=1.5cm 6.5cm 2cm 7.5cm,clip]{images/chap3/SmallAngleApprox_Nom0}
+\label{fig:SmallAngleApprox_Nom0}}
+\subfigure[]{
+\includegraphics[width=0.48\textwidth,trim=1.5cm 6.5cm 2cm 7.5cm,clip]{images/chap3/SmallAngleApprox_Nom10}
+\label{fig:SmallAngleApprox_Nom10}}
+\subfigure[]{
+\includegraphics[width=0.48\textwidth,trim=1.5cm 6.5cm 2cm 7.5cm,clip]{images/chap3/SmallAngleApprox_Nom20}
+\label{fig:SmallAngleApprox_Nom20}}
+\subfigure[]{
+\includegraphics[width=0.48\textwidth,trim=1.5cm 6.5cm 2cm 7.5cm,clip]{images/chap3/SmallAngleApprox_Nom30}
+\label{fig:SmallAngleApprox_Nom30}}
+\caption{The small-angle approximation applied to Snell's Law to calculate the refracted ray angle perturbation, $\textrm{d}\phi_r$, is less accurate with larger incident ray perturbation angles, $\textrm{d}\phi_i$, and larger nominal incident ray angles, $\phi_i$.}
+\label{fig:smallAngleApprox}
+\end{center}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{JPL Perturbation Methodology}
+\label{sec:pertJPL}
+
+The linearization method reviewed in this section is entirely the work of \ac{JPL} and its affiliates as named in the cited references and is simply summarized here, in part. In preparation for the recent generation of large, space-based telescopes, \ac{JPL} in Pasadena, California has developed a simplified mathematical model for analysis and control of the most sensitive aspects of complex telescope arrays. The goal of the method is a linear mathematical model accurate enough to be used for state estimation as well as real-time control and optimization. The resulting method is, in its entirety, applicable to a broad range of analysis and has been successfully implemented in the alignment and testing of the \ac{NASA} James Webb Space Telescope. The pieces of \ac{JPL} comprehensive modeling methods which have been implemented in this research are reviewed in this section. The modeling methodology developed and implemented by \ac{JPL} is primarily focused on reflective optics and the extrapolation to refractive systems is somewhat anecdotal, but is used in a similar fashion and with the same level of utility. The refractive linearization methodology is applied to an assembly of prisms with flat surfaces assumed. 
+
+The model-linearization methodology is based on perturbation theory as presented generally in Section \ref{sec:pertTheory}. The first step in modeling perturbations is to establish the nominal case, that for which the error is zero ($\varepsilon = 0$). 
+
+\subsection{Defining the Nominal Case}
+\label{sec:nominalCase}
+
+When modeling reflective and refractive systems alike, three separate ray parameters are required in order to fully define the incident ray as it traverses a refractive surface, Figure~\ref{fig:incidentRayDefined}. The first is the three-dimensional unitary direction vector of the incident ray, $\hat{i}_j = \hat{r}_{j-1}$, which, as a unitary vector, is defined by the three direction cosines with respect to an arbitrary coordinate system. Next, a three-dimensional vector, the beamwalk $\alpha_j$, is defined as the transverse offset of the incident ray normal to the chief ray. The third and final parameter defining a ray is the scalar optical path length of the vector through each segment of the ray-trace, $L_i$. To begin a nominal ray-trace, each of these parameters must be defined for the starting incident ray within a reference frame. The ray parameters are expressed relative to the surfaces by referencing the known vertex of the first surface. The incident ray is defined relative to the vertex by a vector from the vertex to the point of origin, $\vec{p_j}$, and one to the point of termination, $\vec{\rho_j}$. Many of the terms in Figure~\ref{fig:incidentRayDefined} are not necessary for the ray-trace through a prism assembly with assumed-flat surfaces.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,page=9,trim=0cm 6cm 15cm 6cm,clip]{images/chap3/MyGraphics_Ch3}
+\caption{Illustration of the terms necessary to completely define the incident ray for the linearization of the ray-trace through a generic conic section refractive surface~\cite{RedBreck}.}
+\label{fig:incidentRayDefined}
+\begin{tabular}{cll} \\
+$f$ & $\equiv$ & $\textit{focal length of the conic section}$ \\
+$\hat{i}$ & $\equiv$ & $\textit{incident ray unitary direction vector }(\hat{r}_{j-1})$ \\
+$\hat{r}$ & $\equiv$ & $\textit{reflected or refracted ray unitary direction vector}(\hat{r}_{j})$ \\
+$\hat{N}$ & $\equiv$ & $\textit{surface unitary normal at the ray intersection}$ \\
+$\hat{\psi}$ & $\equiv$ & $\textit{principle axis unitary direction vector}$ \\
+$L$ & $\equiv$ & $\textit{scalar optical path length}$ \\
+$\vec{p}$ & $\equiv$ & $\textit{vector from the vertex to the point of origin}$ \\
+$\vec{\rho}$ & $\equiv$ & $\textit{vector from the vertex to the point of intersection}$ \\
+$\vec{\alpha}$ & $\equiv$ & $\textit{beamwalk}$
+\end{tabular}
+\end{figure}
+
+ To completely define the system, the surface is identified by the principle axis unitary direction vector, $\hat{\psi}$ and the normal vector. For fixed, flat surfaces, the normal vector does not vary with position, thus, $\hat{N} = \hat{\psi}$. For surfaces defined by a conic-section-of-revolution, an expression for the normal vector as a function of the position on the surface is defined using conic-section parameters.
+ 
+ For the analysis of prisms with assumed-flat surfaces, the identification of beamwalk, $\alpha_j$, and optical path length, $L_i$, are not necessary. A complete linear model of the system with the given assumptions is achieved with only the incident ray direction, $\hat{i}_j = \hat{r}_{j-1}$. Likewise, the effect of surface translation offers no additional information and only the effect of surface rotations are considered as described in Section~\ref{sec:thePerturbations}.
+ 
+ The nominal case for a refractive optical system is defined by exact ray-trace analysis using the vectorial form of the refraction equation, Equation \eqref{eq:refractionEquation}. It is advantageous to develop the model in coordinate-free notation such that the vectorial refraction equation defines the refracted ray direction vector as a function of the incident ray direction vector and both are able to be represented in any arbitrary coordinate frame. The exact refracted ray unitary direction vector is given as a function of the incident ray direction vector by Equation~\eqref{eq:exactRefraction} as derived by Redding and Breckenridge~\cite{RedBreck}. Applying Equation~\eqref{eq:exactRefraction} at each surface in sequence provides an exact trace of a ray through the refractive system given the starting incident ray direction, the material indices, and the normal vector at each ray-surface intersection. The unitary direction vector of each refracted ray must be recorded to be used in the calculation of sensitivities.
+ 
+\begin{table}		% exactRefraction
+\centering
+\begin{equation}
+\label{eq:exactRefraction}
+\hat{r} = \mu \hat{i} -  \frac{(1-\mu ^2)}{\sqrt{1-\mu ^2+\mu ^2(\hat{N}\circ\hat{i})^2}-\mu (\hat{N}\circ\hat{i})}\hat{N}
+\end{equation}
+\begin{tabular}{cll}
+$\hat{r}$ & $\equiv$ & $\textit{refracted ray direction vector}$  \\
+$\hat{i}$ & $\equiv$ & $\textit{incident ray direction vector}$     \\
+$\hat{N}$ & $\equiv$ & $\textit{surface unitary normal vector}$ \\
+$\mu$ & $\equiv$ & $\textit{ratio of the indices of refraction} \ \left (\mu  = \frac{n_i}{n_r} \right)$ \\
+$\circ$ & $\equiv$ & $\textit{dot product operator}$
+\end{tabular}
+\end{table}
+
+\subsection{The Perturbation Terms}
+\label{sec:thePerturbations}
+The perturbation terms are those small errors in the incident ray parameters and surface geometry parameters that deviate the model away from the nominal case described by Equation~\eqref{eq:exactRefraction}. The possible perturbations at a single, flat, refractive surface interface are a change of the incident ray direction, d$\hat{i}_{act}$, seen in Figure~\ref{fig:vectSmallAngle} or a rotation of the surface normal vector, $\vec{\theta}$, seen in Figure~\ref{fig:surfaceRotate}. Recalling that the goal is the linearization of the ray-trace definition, the observation is made of the small-angle approximation, Equation \eqref{eq:taylorSnell}, that the angle describing the change in the incident ray with respect to the normal vector, $\textrm{d}\phi_i$, is no longer within a sine function. The equivalent approximation applied vectorially is achieved by assuming the deviations of unitary direction vectors are tangent to the nominal direction vectors. Mathematically, this equates to using the tangent as an approximation for the sine of an angle. The approximation is summarized by Figure \ref{fig:vectSmallAngle} and Equation \eqref{eq:vectSmallAngle} where the error is the difference between the actual rotation perturbation, d$\hat{i}_{act}$, and the approximate rotation perturbation, d$\hat{i}_{approx}$. The approximation is the same whether changing the angle of the incident ray or the angle of the surface normal. The approximation of the perturbed ray angle is exact at the nominal case and degrades with higher perturbation angles.
+
+\begin{figure}[htb]		% vectSmallAngle
+\centering
+\includegraphics[width=0.75\textwidth,page=4,trim=3cm 3cm 3cm 3cm,clip]{images/chap3/MyGraphics_Ch3}
+\caption{Illustration of the change in the direction of the nominal incident ray, d$\hat{i}_{nom}$, and the vector used to approximate the change, d$\hat{i}_{approx}$. The direction of the perturbed incident ray, $\hat{i}_{pert}$, is approximated directly from $\hat{i}_{nom}$ and d$\hat{i}_{approx}$ assumed normal to $\hat{i}_{nom}$.}
+\label{fig:vectSmallAngle}
+\end{figure}
+
+\begin{figure}		% surfaceRotate
+\centering
+\includegraphics[width=0.5\textwidth,page=8,trim=0cm 4.5cm 16cm 5cm,clip]{images/chap3/MyGraphics_Ch3}
+\caption{Illustration of the change in the nominal direction of a refracted ray as a result of surface rotation perturbation.}
+\label{fig:surfaceRotate}
+\end{figure}
+
+\begin{subequations}		% vectSmallAngle
+\label{eq:vectSmallAngle}
+\begin{align}
+	\label{eq:vectSmallAngle1}
+	\vert \hat{i}_{nom} \times \hat{i}_{pert}  \vert &= \vert \hat{i}_{nom}\vert \vert \hat{i}_{pert} \vert \sin(\textrm{d}\phi_i) \\
+	\label{eq:vectSmallAngle2}
+	\textrm{d}\hat{i}_{approx}  &= \hat{i}_{nom} \cdot \tan(\textrm{d}\phi_i) \\
+	\label{eq:vectSmallAngle3}
+	\hat{i}_{pert}  &= \hat{i}_{nom} + \textrm{d}\hat{i}_{act} \\
+	\label{eq:vectSmallAngle4}
+	\hat{i}_{pert}  &\approx \hat{i}_{nom} + \textrm{d}\hat{i}_{approx}
+\end{align}
+\end{subequations}
+
+The angle describing the rotation perturbation, $\vec{\theta}$, of a surface is the cross product of the nominal surface normal vector with the perturbed surface normal vector, Equation~\eqref{eq:NormVectorRotate}. The rotation perturbation is then a vector normal to the plane of rotation and has a magnitude equal to the modulus of the sine of the perturbation angle. This is exactly the case of an eigenaxis rotation~\cite{SweeneyNotes}, in which the unitary vector normal to the plane of rotation is the eigenaxis and the angle of rotation is the eigenangle. With eigenangle and eigenaxis notation, the exact euler angles and euler rotation order is determined for input into Zemax without loss of accuracy.
+
+\begin{equation}
+\label{eq:NormVectorRotate}
+\vert \hat{N}_{nom} \times \hat{N}_{pert}  \vert = \vert \hat{N}_{nom}\vert \vert \hat{N}_{pert} \vert \sin(\vert \vec{\theta} \vert)
+\end{equation}
+
+\subsection{Refracted Ray Sensitivities}
+\label{sec:refractedRaySensitivities}
+The sensitivities  are derivative cross-dyadics expressing the change in the refracted ray as a result of a change in the incident ray or surface geometry at the nominal ray-trace, thus, the sensitivities are exact in the limit as error decreases to zero. The result from multiplication of the partial derivatives by the perturbation terms is a vector which is perpendicular to the nominal refracted ray expressing the perturbation of the refracted ray. As stated before, this approximation is equivalent to the small-angle approximation of Snell's Law in the incident Plane. Because only flat refractive surfaces are considered, only the incident ray direction perturbations and surface rotation perturbations affect the refracted ray direction (i.e. the incident ray angle does not change with intersection point). The sensitivity to incident ray angle perturbations is expressed in Equation~\eqref{eq:idr_di}~\cite{RedBreck}. Notice that the sensitivity term of Equation~\eqref{eq:idr_di} is specified as for perturbations in the angle of approach (AOA) only. The angle of the incident ray affects the refracted ray angle in the general case also by intersecting a point on the surface with a different normal vector, but for the assumed flat surfaces, the normal vector is constant for all intersection points. The sensitivity, $\left(\frac{\partial\hat{r}}{\partial\hat{i}}\right)_{AOA}$, Equation~\eqref{eq:idr_di} is given by Equation \eqref{eq:dr_di_AOA}~\cite{RedBreck}.
+
+\begin{table}[H]			% idr_di
+\centering
+\begin{equation}		% idr_di
+\label{eq:idr_di}
+\textrm{d}\hat{r} = \left(\dfrac{\partial\hat{r}}{\partial\hat{i}}\right)_{AOA}  \textrm{d}\hat{i}
+\end{equation}
+\begin{tabular}{cll}
+d$\hat{i}$ & $\equiv$ & $\textit{change in incident ray direction vector}$ \\
+d$\hat{r}$ & $\equiv$ & $\textit{change in refracted ray direction vector}$ \\
+$AOA$ & $\equiv$ & $\textit{angle of arrival}$
+\end{tabular}
+\end{table}
+
+\begin{table}[H]		% dr_di_AOA
+\centering
+\begin{subequations}		% dr_di_AOA
+\begin{align}
+	\label{eq:dr_di_AOA}
+	\left(\dfrac{\partial\hat{r}}{\partial\hat{i}}\right)_{AOA} &= \mu \left[I_{3x3}+\frac{\mu}{\cos(\phi_b)}\hat{N}\hat{i}^T\right]\cdot \vec{P}_N \\[3mm]
+	\label{eq:cosPhiB}
+	\cos(\phi_b) &= \sqrt{1-\mu^2\hat{i}\circ(\vec{P}_N \cdot \hat{i})} \\[3mm]
+	\label{eq:projectionDyadic}
+	\vec{P}_N &= -\hat{N}^\times \cdot \hat{N}^\times
+\end{align}
+\end{subequations}
+\begin{tabular}{cll}
+$\mu$  & $\equiv$ & $\textit{ratio of the indices of refraction} \ \left (\mu  = \frac{n_i}{n_r} \right)$ \\
+$I_{3x3}$ & $\equiv$ & $\textit{identity matrix}$ \\
+d$\hat{r}$ & $\equiv$ & $\textit{change in refracted ray direction vector}$ \\
+$\hat{N}$ & $\equiv$ & $\textit{surface normal unitary direction vector}$ \\
+$\vec{P}_N$ & $\equiv$ & $\textit{projection dyadic onto the surface normal}$ \\
+$\hat{N}^\times$ & $\equiv$ & $\textit{skew-symmetric matrix of the normal vector}$ \\
+$\circ$ & $\equiv$ & $\textit{dot product operator}$ \\
+$\cdot$ & $\equiv$ & $\textit{matrix multiplication}$
+\end{tabular}
+\end{table}
+
+The surface is subject to perturbations of rotation or translation, but only rotations impact parameters of the refracted ray through a flat surface. Similar to the refracted ray sensitivity to incident ray angle perturbations, the refracted ray sensitivity to surface rotation perturbations is given in Equation~\eqref{eq:Thdr_dTh}. Note that, for a surface rotation perturbation, there must be specified a point of rotation. If the point of rotation is not at the intersection point of the ray under consideration and the surface, then the rotation perturbation also causes a translation perturbation, but has no impact with the flat surface assumption. The sensitivity, $\mathrm{ \dfrac{\partial\hat{r}}{\partial\vec{\theta}}}$, Equation~\eqref{eq:Thdr_dTh} is given by Equations~\eqref{eq:dr_dTh}, \eqref{eq:dr_dN}, and \eqref{eq:dN_dTh}~\cite{RedBreck}.
+
+\begin{table}			% Thdr_dTh
+\centering
+\begin{equation}		% Thdr_dTh
+\label{eq:Thdr_dTh}
+\textrm{d}\hat{r} = \left ( \frac{\partial\hat{r}}{\partial\vec{\theta}} \right ) \vec{\theta}
+\end{equation}
+\begin{tabular}{cll}
+$\vec{\theta}$ & $\equiv$ & $\textit{rotation perturbation}$ \\
+\end{tabular}
+\end{table}
+
+\begin{subequations}		% dr_dTh		% dr_dN		% dN_dTh
+\begin{align}
+	\label{eq:dr_dTh}
+	\frac{\partial\hat{r}}{\partial\vec{\theta}} &= \frac{\partial\hat{r}}{\partial\hat{N}} \cdot \frac{\partial\hat{N}}{\partial\vec{\theta}} \\
+	\label{eq:dr_dN}
+	\frac{\partial\hat{r}}{\partial\hat{N}} &= -\left(\frac{(1-\mu ^2)}{\sqrt{1-\mu ^2+\mu ^2(\hat{N}\cdot\hat{i})^2}-\mu (\hat{N}\cdot\hat{i})}\right)\left(I_{3x3}+\frac{\mu }{\cos(\phi_b)}\hat{N}\hat{i}^T\right) \\
+	\label{eq:dN_dTh}
+	\frac{\partial\hat{N}}{\partial\vec{\theta}} &= -\hat{N}^\times
+\end{align}
+\end{subequations}
+
+\subsection{Sensitivities and the Linear System}
+\label{sec:sensitivitiesLinearSystem}
+Combining the perturbations of both sensitivities above, a linear system of equations describing the change in refraction angle of a single refracted ray direction vector, d$\hat{r}$, through a single surface is, in matrix form, Equation \eqref{eq:dr}~\cite{RedBreck}. d$\hat{r}$ is used along with the refracted ray direction from the nominal case to express the approximation of the perturbed refracted ray as Equation~\eqref{eq:perturbedRefractedRayDirection}~\cite{RedBreck}.
+
+\begin{equation}		% dr
+\label{eq:dr}
+\left\{ \textrm{d}\hat{r} \right\}_{3x1} = \left[ \dfrac{\partial \hat{r}}{\partial \hat{i}}, \dfrac{\partial \hat{r}}{\partial \vec{\theta}} \right]_{3x6} \begin{Bmatrix} \textrm{d}\hat{i} \\ \vec\theta \end{Bmatrix}_{6x1}
+\end{equation}
+
+\begin{table}[H]		% perturbedRefractedRayDirection
+\centering
+\begin{equation}		% perturbedRefractedRayDirection
+\label{eq:perturbedRefractedRayDirection}
+\hat{r}_{pert} = \hat{r}_{nom} + \textrm{d}\hat{r}
+\end{equation}
+\begin{tabular}{lll}
+$\hat{r}_{pert}$ & $\equiv$ & $\textit{perturbed refracted ray unitary direction vector}$\\
+$\hat{r}_{nom} $ & $\equiv$ & $\textit{nominal refracted ray unitary direction vector}$\\
+$\textrm{d}\hat{r}$ & $\equiv$ & $\textit{refracted ray unitary direction vector perturbation vector}$
+\end{tabular}
+\end{table}
+
+\subsection{Multiple-Element Optical System Linearization}
+Equation~\eqref{eq:dr} describes the perturbation of the output ray direction resulting from small perturbations of the incident ray as well as the angle of the single refractive surface. Normally, a lens system has more than one optical surface, so the system of equations must be expanded to include the sensitivity of the output ray direction to small perturbations of each surface angle as well as the sensitivity to original incident ray direction perturbations. It is noted that the perturbations in a system have a cascading effect whereby the perturbation of the original incident ray or a surface is propagated through each subsequent surface to the output ray. This cascade effect is represented by the calculation of the sensitivity to the original input ray direction in Equation~\eqref{eq:drn_dr0}, composed of Equation~\eqref{eq:dr_di_AOA} applied at each surface, and the sensitivity to a rotation vector describing the perturbation of surface $j$ in Equation~\eqref{eq:drn_dThj}, composed of Equations~\eqref{eq:dr_di_AOA} and \eqref{eq:dr_dTh}. In matrix form, the linearized multi-element beam train system of a prism assembly is expressed as Equation~\eqref{eq:prismLinSys}~\cite{RedBreck}.
+
+\begin{table}[H]		% drn_dr0		% drn_dThj
+\centering
+\begin{subequations}
+\label{eq:sensitivities}
+\begin{align}
+	\label{eq:drn_dr0}
+	\frac{\partial\hat{r}_n}{\partial\hat{r}_0} &= \frac{\partial\hat{r}_n}{\partial\hat{r}_{n-1}} \cdots \frac{\partial\hat{r}_1}{\partial\hat{r}_0} \\[3mm]
+	\label{eq:drn_dThj}
+	\frac{\partial\hat{r_n}}{\partial\vec{\theta}_j} &= \frac{\partial\hat{r_n}}{\partial\hat{r}_{n-1}} \cdots \frac{\partial\hat{r}_{j+1}}{\partial\hat{r}_j} \frac{\partial\hat{r}_j}{\partial\vec{\theta}_j}
+\end{align}
+\end{subequations}
+\begin{tabular}{lll}
+$\hat{r}_n$ & $\equiv$ & $\textit{unitary direction vector of refracted ray from last surface}$ \\
+$\hat{r}_0$ & $\equiv$ & $\textit{direction vector of incident ray to first surface}$ \\
+$\vec{\theta}_j$ & $\equiv$ & $\textit{rotation vector describing perturbation of surface j}$ 
+\end{tabular}
+\end{table}
+
+\begin{equation}		% prismLinSys
+\label{eq:prismLinSys}
+\left \{ 
+	\begin{array}{c}
+	\hspace{1mm} \\
+	\textrm{d}\hat{r}_{n} \\
+	\hspace{1mm}
+	\end{array}
+\right \}_{3x1} = 
+\left [ 
+	\begin{array}{ccccc}
+	\hspace{1mm} \\
+	\dfrac{\partial\hat{r}_n}{\partial\hat{r}_0} & \dfrac{\partial\hat{r}_n}{\partial\vec{\theta}_n} & \dfrac{\partial\hat{r}_n}{\partial\vec{\theta}_{n-1}} & \cdots & \dfrac{\partial\hat{r}_n}{\partial\vec{\theta}_1} \\
+	\hspace{1mm}
+	\end{array}
+\right ]_{3x(3+3n)}
+\left \{
+	\begin{array}{c}
+	\textrm{d}\hat{r}_{0} \\
+	\vec{\theta}_{n} \\
+	\vec{\theta}_{n-1} \\
+	\vdots \\
+	\vec{\theta}_1
+	\end{array}
+\right \}_{(3+3n)x1}
+\end{equation}
+
+% \subsection{Reflected Ray Sensitivities}
+% \label{sec:reflectedRaySensitivities}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Principles of Autocollimation}
+\label{sec:principlesOfAutocollimation}
+
+Autocollimators are optical instruments used to measure the relative angle of light with high precision. The utility of an autocollimator is shown in Figure~\ref{fig:autocollAngle}, where it is clear that the light returned from the tilted surface focuses to a point that is shifted away from the center of the detecting surface where the beam reflected perpendicular to the detector surface focuses to a point. The shift dimension is a function of the return beam direction and is defined by Equation \eqref{eq:transverseDisp}, similar to Equation \eqref{eq:radialDisp}.
+
+\begin{figure}[H]		% autocollAngle
+\centering
+\includegraphics[width=1\textwidth]{images/chap3/AutocollimatorAngle}
+\caption{Diagram of an autocollimator~\cite{microradian}.}
+\label{fig:autocollAngle}
+\end{figure}
+
+\begin{table}[H]		% eqs:transverseDisp
+\centering
+\begin{subequations}
+\label{eq:transverseDisp}
+\begin{align}
+	r_x = f\sin{\theta_x} \\
+	r_y = f\sin{\theta_y}
+\end{align}
+\end{subequations}
+\begin{tabular}{cll}
+$r_x$ & $\equiv$ & $\textit{x-direction transverse displacement at the detector}$\\
+$r_y$ & $\equiv$ & $\textit{y-direction transverse displacement at the detector}$\\
+$f$ & $\equiv$ & $\textit{focal length of the objective lens}$\\
+$\theta_x$ & $\equiv$ & $\textit{angle of incoming light measured in the xz-plane}$\\
+$\theta_y$ & $\equiv$ & $\textit{angle of incoming light measured in the yz-plane}$
+\end{tabular}
+\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Interferometry}
+\label{sec:interferometry}
+The use of interferometry is proposed in this research as a means of precisely measuring the output angle of the light ray exiting the prism assembly. Interferometry is capable of measuring the shape a beam wavefront to within small fractions of the reference wavelength~\cite{ZygoMan}.
+
+\subsection{The Interferometer}
+\label{sec:interferometer}
+An interferometer measures the interference pattern of two intersecting beams of light. One of the beams is known precisely and used for the reference wavefront. The interference pattern enables the precise definition of the wavefront of the second beam.
+
+\subsection{Zernike Standard Polynomials}
+\label{sec:zernikes}
+The Zernike polynomials are an orthogonal basis which describes the shape of a circular beam wavefront. Though there are an infinite number of Zernike polynomials, the standard set of Zernike polynomials describing wavefront error comprises the first 37 independent terms. For this research, only the second and third polynomials (the first-order polynomials) are relevant as they completely describe the wavefront changes through a prism assembly with assumed-flat surfaces. The second and third Zernike polynomials are listed in Table~\ref{tbl:zernTable}. The radius, $\rho$, and the angle, $\theta$, are as shown in Figure~\ref{fig:zernCircle}. The wavefront described by each of these tilt terms is shown in Figure~\ref{fig:zernTilts}. It is possible to represent any wavefront with a linear combination of the first-order Zernike standard polynomials.
+
+\begin{table}[htb] 
+\caption{The first-order Zernike standard polynomials used to represent the X- and Y-tilt of the wavefront. For the ideal prism assembly, only the first-order Zernikes are necessary to describe the shape of the wavefront~\cite{Wyant,Sue,Zemax}} % title of Table 
+\label{tbl:zernTable}
+\centering % used for centering table 
+\begin{tabular}{ c c c} % centered columns (4 columns)
+\hline
+Term \# & Polynomial & Description\\  % inserts table heading 
+\hline % inserts single horizontal line
+1 & $4^{1/2}\rho \cos(\theta)$ & X-tilt\\
+2 & $4^{1/2}\rho \sin(\theta)$ & Y-tilt\\
+\end{tabular} 
+\end{table}
+
+\begin{figure}[htb]		% zernCircle
+\centering
+\includegraphics[width=.5\textwidth,page=10,trim=0cm 8cm 18cm 0cm,clip]{images/chap3/MyGraphics_Ch3}
+\caption{Vector representation of the Zernike standard polynomial variables necessary to define the shape of a circular wavefront. $\rho$ is the radius normalized to the max value of one at the edge of the pupil.}
+\label{fig:zernCircle}
+\end{figure}
+
+\begin{figure}[htb]		% zernTilts
+\centering
+\includegraphics[width=1\textwidth,page=11,trim=0cm 8cm 8cm 0cm,clip]{images/chap3/MyGraphics_Ch3}
+\caption{Illustration of (a) X-Tilt and (b) Y-Tilt of a beam wavefront defined by Zernike standard polynomials 1 and 2, respectively.}
+\label{fig:zernTilts}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Zemax, MATLAB, and DDE}
+Zemax is an optical design software package, enabling computer models of a lens system to be built geometrically and intuitively. Zemax implements ray-trace analysis methods to generate comprehensive simulations which are be used to predict optical responses and performance measures. For this research, Zemax simulations are considered as the reference in qualifying results, quantifying performance, and verifying the linearized optical models.
+
+Zemax makes use of an interface tool known as \ac{DDE}. \ac{DDE} enables Windows programs to command the Zemax software to make changes to user-defined settings and extract Zemax analysis results. Computer code utilizing DDE is then able to automate Zemax simulations from a Windows environment, thereby allowing many operations to be carried-out quickly without real-time user interaction. MATLAB is able to establish a \ac{DDE} link with Zemax and access most of the Zemax DDE functions using a library of MATLAB functions known as MZDDE available through Mathworks. The functions in the MZDDE library are called to perform basic user tasks such as to enter new values for the lens diameter in the Zemax Lens Data Editor. Using the MZDDE library of functions, large amounts of tedious simulation data is be extracted from Zemax models quickly, allowing for analysis of results that is based on large data sets obtained in a short amount of time.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Fabrication Tolerancing}
+\label{sec:fabTol}
+
+Fabrication tolerancing is the link closing the gap between mechanical design and physical hardware. A nominal mechanical design specifies exact dimensions which cannot be achieved in fabrication. Regardless of the precision of a machine or process, fabrication requires that a range of acceptable values be specified for any dimension. It is possible to realize hardware within a prescribed range defined as the tolerance of a dimension. Dimension tolerances are specified in a number of ways, each not necessarily being equivalent. The specification of mechanical design geometry is a broad and easily-confused topic and considerable ongoing effort is made to standardize the language and practices of geometric dimensioning and tolerancing \ac{GDT}. \ac{GDT} is a language currently based on the standard of ASME Y14.5-2009, published by ASME, founded as the American Society of Mechanical Engineers~\cite{GDT}. \ac{GDT} is a vast and detailed discipline, the details of which will not be reviewed here. 
+
+\ac{GDT} is of paramount importance to the design of hardware. Design tolerances drive important factor such as cost, schedule, and feasibility in manufacturing~\cite{Shigley}. Tolerance specifications which are excessively small drive the cost and schedule higher at exponential rates, causing new practices to be implemented, new equipment to be purchased, or even the determination that the specification cannot be achieved. It is for these reasons that the engineer seeks a design that allows for a larger tolerance to be specified. However, tolerancing is required to specify the bounds for which a fabricated part remains functional. By specifying tolerances that are too loose, the possibility exists for hardware that is within specifications to be incapable of performing in its intended application. \ac{GDT} is the tool by which the determination and attainment of a balanced design is achieved.
+
+The difficulty in fabricating the \ac{DVP} for \ac{CTEx} is an example of the importance of \ac{GDT}. In Chapter~\ref{ch:DVP}, the optical design of a \ac{DVP} for \ac{CTEx} is presented. Though an optical design exists, the mechanical design has not yet been specified for fabrication. The reason for the work stoppage is that fabrication tolerances have yet to be defined which meet the optical performance requirements and are within shop capabilities. One goal of this research is to develop a method to specify \ac{DVP} tolerancing to enable fabrication.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Theory Conclusion}
+The theory presented in Chapter~\ref{ch:applicableTheory} is utilized in Chapter~\ref{ch:DVP} for the investigation and analysis of prism assemblies. The theory of light propagation offers the equations necessary for a mathematical representation of the ray-trace through an optical system. Optical measurement devices and the measurement data offer input into the mathematical representation for real-system analysis.

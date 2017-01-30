@@ -1,0 +1,117 @@
+% Tim Coon - 9 December, 2014
+% Qualifying Exam, Question #5, Part 1
+% With no active control, characterize the evolution of the focal point
+% distribution in response to the random disturbance input.
+clear; close all; clc;
+
+global R f R1 R2 CoM_dist rho1 rho2 phi1 phi2 I m c k r0 sigma t0 tf
+
+% Geometry
+R = 0.5;                    % (m) mirror radius of curvature
+f = R/2;                    % (m) mirror focal length
+R1 = 2*R/pi;                % (m) dist to CoM from y-axis
+R2 = R-2*R/pi;              % (m) dist to CoM from x-axis
+CoM_dist = norm([R1,R2]);   % (m) Vertex to CoM vector length
+rho1 = [-R2; R1];           % (m) CoM to (x1,y1) vector
+rho2 = [R1; -R2];           % (m) CoM to vertex (x2,y2) vector
+phi1 = atan(R2/R1);         % (m) angle of rho1 wrt x-axis
+phi2 = atan(R1/R2);         % (m) angle of rho2 wrt x-axis
+cos_phi1 = cos(phi1);
+sin_phi1 = sin(phi1);
+cos_phi2 = cos(phi2);
+sin_phi2 = sin(phi2);
+
+% Properties
+% How do I "scale" these?
+R = 0.5;
+I = 1;
+m = 1;
+c = 10;
+k = 50;
+r0 = 0.1;
+sigma = 0.1;
+t0 = 0;
+tf = 5;
+
+%% generate sample realizations and determine statistics of resulting focal-
+% point-evolution ball radius
+nreals = 10;
+radius = zeros(nreals,1);
+% D = zeros(100,100,nreals);
+for i = 1:nreals
+    [t,z,radius(i),D] = Q5_Realization();
+end
+
+meanRadius = mean(radius);
+stdRadius = std(radius);
+
+%% Plot the last realization
+x      = z(:,1);
+xd     = z(:,2);
+y      = z(:,3);
+yd     = z(:,4);
+alpha  = z(:,5);
+alphad = z(:,6);
+Dx     = D(:,1);
+Dy     = D(:,2);
+Dt     = linspace(t0,tf,100);
+
+% mirror vertex position
+x2_nom = rho2(1);
+y2_nom = rho2(2);
+x2  = x2_nom + x + CoM_dist*alpha*cos_phi2;
+y2  = y2_nom + y + CoM_dist*alpha*sin_phi2;
+
+% focal point position
+xfoc_nom = x2_nom;
+yfoc_nom = y2_nom + f;
+% xfoc = x2 + f*sin(alpha);
+% yfoc = y2 + f*cos(alpha);
+dxfoc = (x2-x2_nom) + f*sin(alpha);
+dyfoc = (y2-y2_nom) + f*cos(alpha);
+
+figure()
+% suptitle('Motion Plots')
+subplot(221)
+plot(x,y)
+title('CoM Motion'); xlabel('x'); ylabel('y');
+axis equal
+subplot(222)
+plot(dxfoc,dyfoc)
+hold on
+tc = linspace(0,2*pi,50);
+xc_m = meanRadius*cos(tc)+xfoc_nom;
+yc_m = meanRadius*sin(tc)+yfoc_nom;
+plot(xc_m,yc_m)
+xc_std1 = (meanRadius - stdRadius)*cos(tc) + xfoc_nom;
+yc_std1 = (meanRadius - stdRadius)*sin(tc) + yfoc_nom;
+xc_std2 = (meanRadius + stdRadius)*cos(tc) + xfoc_nom;
+yc_std2 = (meanRadius + stdRadius)*sin(tc) + yfoc_nom;
+plot(xc_std1,yc_std1,'--k',xc_std2,yc_std2,'--k')
+hold off
+xlim([xfoc_nom-2*meanRadius, xfoc_nom+2*meanRadius]);
+ylim([yfoc_nom-2*meanRadius, yfoc_nom+2*meanRadius]);
+axis equal
+legend('Pos','Mean','Std')
+title('Focal Point Motion & Max Radius Stats'); xlabel('x'); ylabel('y');
+subplot(223)
+plot(t,x,t,y)
+legend('x','y')
+title('CoM Linear Disp'); xlabel('time'); ylabel('Displacement');
+subplot(2,2,4)
+plot(t,alpha)
+title('Mirror Angular Disp'); xlabel('time'); ylabel('Angle (rad)');
+
+figure()
+plot(Dt,Dx,Dt,Dy)
+legend('Dx','Dy')
+title('Distubance input at Vertex'); xlabel('time'); ylabel('Displacement');
+
+% arrow setup
+Start = [x,y];
+Stop  = [dxfoc,dyfoc];
+
+% figure()
+% arrow(Start,Stop,'Length',0.3,'BaseAngle',15,'TipAngle',25)
+% axis square; axis equal
+

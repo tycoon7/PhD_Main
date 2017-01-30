@@ -1,0 +1,151 @@
+% Tim Coon - 9 December, 2014
+% Qualifying Exam, Question #5, Part 1
+% With no active control, characterize the evolution of the focal point
+% distribution in response to the random disturbance input.
+clear; close all; clc;
+
+global f rho1 rho2 phi1 phi2 Pc phi Pc_mag P0 I0 I m c k r0 sigma t0 tf
+
+% Geometry
+% e1 = 1;                     % (-) eccentricity of parabola
+% e2 = 0;                     % (-) eccentricity of reference surface
+% e = [e1 e2];
+% psi1 = [0; 1; 0];           % (-) principle axis of parabola
+% psi2 = [0;-1; 0];           % (-) principle axis of reference surface
+% psi = [psi1 psi2];
+x1 = -0.4;                  % (m) left edge of mirror
+D = 0.25;                   % (m) clear aperture of mirror
+x2 = x1 + D;                % (m) right edge of mirror
+f = 1;                      % (m) focal length of mirror
+den = 0.1;                  % (kg/m) length density of mirror
+[Pc,P1,P2,m,I] = calcConicCentroid(x1,x2,f,den);
+rho1 = P1 - Pc;                     % (m) vector from CoM to point 1
+rho2 = P2 - Pc;                     % (m) vector from CoM to point 2
+phi1 = atan(abs(rho1(1)/rho1(2)));     % (m) angle of rho1 wrt  y-axis
+phi2 = atan(abs(rho2(1)/rho2(2)));     % (m) angle of rho2 wrt -y-axis
+phi  = atan(abs(Pc(1)/Pc(2)));         % {m) angle of Pc wrt -y-axis
+Pc_mag = norm(Pc);                 % (m) magnitude of CoM vector wrt vertex
+cos_phi1 = cos(phi1);
+sin_phi1 = sin(phi1);
+cos_phi2 = cos(phi2);
+sin_phi2 = sin(phi2);
+P0 = [x1+D/2; 4; 0];       % starting point of chief ray
+I0 = [0; -1; 0];            % initial direction of chief ray
+
+% Properties
+% How do I "scale" these?
+c = 1;
+k = 5;
+r0 = 1;
+sigma = 0.2;
+t0 = 0;
+tf = 2;
+
+%% generate sample realizations and determine statistics of resulting focal-
+% point-evolution ball radius
+% nreals = 10;
+% radius = zeros(nreals,1);
+% for i = 1:nreals
+%     [t,z,radius(i),spotSize(:,i),D] = Q5_Realization();
+% end
+% meanRadius = mean(radius);
+% stdRadius = std(radius);
+% meanSpotSize = mean(spotSize,1);
+% save('sim_10reals_100states_randImpulse.mat')
+load('1_sim_10reals_100states_randImpulse.mat')
+stdSpotSize = std(spotSize,0,1);
+avgMeanSpotSize = mean(meanSpotSize);
+stdMeanSpotSize = std(meanSpotSize);
+
+
+%% Plot the last realization
+x      = z(:,1);
+xd     = z(:,2);
+y      = z(:,3);
+yd     = z(:,4);
+alpha  = z(:,5);
+alphad = z(:,6);
+Dx     = D(:,1);
+Dy     = D(:,2);
+Dt     = linspace(t0,tf,100);
+
+% mirror vertex position
+Vx_nom = -Pc(1);
+Vy_nom = -Pc(2);
+Vx  = Vx_nom + x + Pc_mag*alpha*cos(phi);
+Vy  = Vy_nom + y + Pc_mag*alpha*sin(phi);
+
+% focal point position
+xfoc_nom = Vx_nom;
+yfoc_nom = Vy_nom + f;
+xfoc = Vx + f*sin(alpha);
+yfoc = Vy + f*cos(alpha);
+dxfoc = (xfoc-xfoc_nom);
+dyfoc = (yfoc-yfoc_nom);
+
+h(1) = figure();
+% suptitle('Motion Plots')
+% plot CoM motion
+plot(x,y)
+title('CoM Motion'); xlabel('x'); ylabel('y');
+axis equal
+
+% plot focal point motion
+h(2) = figure();
+plot(dxfoc,dyfoc)
+hold on
+tc = linspace(0,2*pi,50);
+xc_m = meanRadius*cos(tc);
+yc_m = meanRadius*sin(tc);
+plot(xc_m,yc_m)
+xc_std1 = (meanRadius - stdRadius)*cos(tc);
+yc_std1 = (meanRadius - stdRadius)*sin(tc);
+if xc_std1 <= 0
+    xc_std1 = 0;
+end
+if yc_std1 <= 0
+    yc_std1 = 0;
+end
+xc_std2 = (meanRadius + stdRadius)*cos(tc);
+yc_std2 = (meanRadius + stdRadius)*sin(tc);
+plot(xc_std1,yc_std1,'--k',xc_std2,yc_std2,'--k')
+hold off
+xlim([-2*meanRadius, 2*meanRadius]);
+ylim([-2*meanRadius, 2*meanRadius]);
+axis equal
+legend('Pos','Mean','Std')
+title('Focal Point Motion & Max Radius Stats'); xlabel('x'); ylabel('y');
+
+% plot CoM directional displacements
+h(3) = figure();
+plot(t,x,t,y)
+legend('x','y')
+title('CoM Linear Disp'); xlabel('time'); ylabel('Displacement');
+
+% plot mirror angular displacement
+h(4) = figure();
+plot(t,alpha)
+title('Mirror Angular Disp'); xlabel('time'); ylabel('Angle (rad)');
+
+h(5) = figure();
+plot(Dt,Dx,Dt,Dy)
+legend('Dx','Dy')
+title('Distubance input at Node #2'); xlabel('time'); ylabel('Displacement');
+
+h(6) = figure();
+plot(t,spotSize(:,1),t,meanSpotSize(end)*ones(length(t),1))
+plot(t,
+legend('Spot Size','Mean Size')
+title('Detector Plane Spot Size Evolution'); xlabel('time'); ylabel('Spot Size');
+
+
+% arrow setup
+% Start = [x,y];
+% Stop  = [dxfoc,dyfoc];
+
+% figure()
+% arrow(Start,Stop,'Length',0.3,'BaseAngle',15,'TipAngle',25)
+% axis square; axis equal
+
+savefig(h,'AllFiguresFile.fig')     % open with openfig()
+

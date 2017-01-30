@@ -1,0 +1,68 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Engineering Calculation Paper
+% LaTeX Template
+% Version 1.0 (20/1/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Dmitry Volynkin (dim_voly@yahoo.com.au)
+%
+% Revisions:
+% TEC 5-29-2014 Updated for MATH 605 and OENG 644
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\input{packages_DocConfigs}
+
+%----------------------------------------------------------------------------------------
+%	HEADER INFORMATION
+%----------------------------------------------------------------------------------------
+
+\fancyhead[r]{\begin{tabular}{L{3cm} R{3cm} | L{3cm} R{5cm}} % The header is a table with 4 columns
+\textbf{Author}   & Tim Coon & \textbf{Page}         & \thepage/\pageref{LastPage} \\
+\textbf{Date}      & 11/22/14 & \textbf{Course}      & MECH 622 \\
+\textbf{Description} & Qual Q\#2     & \textbf{Reference} & Cobb \& Dillsaver \\
+\end{tabular}}
+
+%----------------------------------------------------------------------------------------
+\begin{figure}[h]
+	\centering
+		\includegraphics[width=1.0\textwidth]{Q2 MECH622 Problem Statement.pdf}
+	\caption{caption}
+	\label{fig:Q2 MECH622 Problem Statement}
+\end{figure}
+\begin{document}
+% \includepdf[pages={1}]{Q2 MECH622 Problem Statement.pdf}
+
+
+
+
+\AddToShipoutPicture{\BackgroundStructure} % Set the background of each page to that specified above in the header information section
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT CONTENT
+%----------------------------------------------------------------------------------------
+
+\input{Problem_1}
+
+
+%\input{Problem_2}
+%\input{Problem_3}
+%\input{Problem_4}
+
+
+\ClearShipoutPicture
+% \includepdf[pages={1}]{../OENG644_HW1_P2.pdf}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

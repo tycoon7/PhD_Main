@@ -1,0 +1,46 @@
+% FBD = MAD
+\begin{figure}
+% \centering
+% FBD
+\subfigure[]{
+\begin{tikzpicture}[scale=2]
+\def\f{4}
+\def\xmin{-4} \def\xmax{-2}
+\def\ymin{0}  \def\ymax{1}
+\def\fx{0} \def\fy{\f}
+
+% draw FBD arrows
+% \draw (-.25,-.25) node[auto] {0};
+% \draw[->,thick] (\xmin,\ymin) -- (\xmax,\ymin) node[right] {$x$};
+% \draw[->,thick] (\ymin,\ymin) -- (\ymin,\ymax) node[above] {$y$};
+
+% draw off-axis parabolic section
+\draw[color=blue,very thick] plot [domain=-4:-2] (\x,{((\x)^2)/(4*\f)});
+\draw[color=blue,thick] plot [domain=-4:-2] (\x,{((\x)^2)/(4*\f)-0.1});
+\draw[-,color=blue,thick] (-4,{((-4)^2)/(4*\f)-0.1}) -- (-4,{((-4)^2)/(4*\f)});
+\draw[-,color=blue,thick] (-2,{((-2)^2)/(4*\f)-0.1}) -- (-2,{((-2)^2)/(4*\f)});
+
+\end{tikzpicture}}
+
+% MAD
+\subfigure[]{
+\begin{tikzpicture}[scale=2]
+\def\f{4}
+\def\xmin{-4} \def\xmax{-2}
+\def\ymin{0}  \def\ymax{1}
+\def\fx{0} \def\fy{\f}
+
+% draw FBD arrows
+% \draw (-.25,-.25) node[auto] {0};
+% \draw[->,thick] (\xmin,\ymin) -- (\xmax,\ymin) node[right] {$x$};
+% \draw[->,thick] (\ymin,\ymin) -- (\ymin,\ymax) node[above] {$y$};
+
+% draw off-axis parabolic section
+\draw[color=blue,very thick] plot [domain=-4:-2] (\x,{((\x)^2)/(4*\f)});
+\draw[color=blue,thick] plot [domain=-4:-2] (\x,{((\x)^2)/(4*\f)-0.1});
+\draw[-,color=blue,thick] (-4,{((-4)^2)/(4*\f)-0.1}) -- (-4,{((-4)^2)/(4*\f)});
+\draw[-,color=blue,thick] (-2,{((-2)^2)/(4*\f)-0.1}) -- (-2,{((-2)^2)/(4*\f)});
+
+\end{tikzpicture}
+}
+\end{figure}

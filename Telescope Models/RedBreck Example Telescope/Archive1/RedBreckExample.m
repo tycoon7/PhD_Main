@@ -1,0 +1,124 @@
+% CTEx Telescope
+clear all; close all; clc;
+
+% Mirror Parameters
+f1 = inf;                           % (m) focal length of SSM
+f2 = 1.1633;                        % (m) focal length of OAP1
+f3 = 0.1454;                        % (m) focal length of OAP2
+f4 = inf;                           % (m) focal length of FSM
+f5 = inf;                           % (m) focal length of beamsplitter  
+f6 = inf;                           % (m) focal length of REF
+e1 = 0;                             % (-) eccentricity of SSM
+e2 = 1;                             % (-) eccentricity of OAP1
+e3 = 1;                             % (-) eccentricity of OAP2
+e4 = 0;                             % (-) eccentricity of FSM
+e5 = 0;                             % (-) eccentricity of beamsplitter
+e6 = 0;                             % (-) eccentricity of reference surface
+V1 = [-1.20; 1.67; 0.00];           % (m) vertex, SSM
+V2 = [-0.87; 0.45; 0.00];           % (m) vertex, OAP1
+V3y = V2(2)+f2-f3;
+V3 = [-0.87; V3y;  0.00];           % (m) vertex, OAP2
+V4 = [-0.60; 0.20; 0.00];           % (m) vertex, FSM
+V5 = [ 0.00; 0.20; 0.00];           % (m) vertex, BSp
+V6 = [ 0.00; 0.00; 0.00];           % (m) vertex, RS
+Thz1 = 225;                         % (deg)
+Thz2 = 90;                          % (deg)
+Thz3 = 90;                          % (deg)
+Thz4 = 315;                          % (deg)
+Thz5 = 225;                         % (deg)
+Thz6 = 90;                          % (deg)
+psi = [1; 0; 0];        % (-) principal axis is the same for each miror locally
+R1b = rotz(-Thz1);
+R2b = rotz(-Thz2);
+R3b = rotz(-Thz3);
+R4b = rotz(-Thz4);
+R5b = rotz(-Thz5);
+% psi1 = [cosd(Thz1); sind(Thz1); 0];   % (-) principal axis direction
+% psi2 = [cosd(Thz2); sind(Thz2); 0];   % (-) principal axis direction
+% psi3 = [cosd(Thz3); sind(Thz3); 0];   % (-) principal axis direction
+% psi4 = [cosd(Thz4); sind(Thz4); 0];   % (-) principal axis direction
+% psi5 = [cosd(Thz5); sind(Thz5); 0];   % (-) principal axis direction
+% psi6 = [cosd(Thz6); sind(Thz6); 0];   % (-) principal axis direction
+
+e = [e1 e2 e3 e4 e5 e6];
+f = [f1 f2 f3 f4 f5 f6];
+V = [V1 V2 V3 V4 V5 V6];
+psi = [psi psi psi psi psi psi];
+Thz = [Thz1 Thz2 Thz3 Thz4 Thz5 Thz6];
+
+%% 
+
+% build mirror objects
+for s = 1:length(e)
+    M(s) = MirrorClass(e(s),f(s),V(:,s),psi(:,s),rotz(-Thz(s)));
+end
+
+% build ray struct
+ray.seg = struct('P1',{},'I1',{});
+ray(1).seg(1).P1 = [-1.5; 1.67; 0];
+ray(1).seg(1).I1 = [1; 0; 0];
+ray(2).seg(1).P1 = [-1.5; 1.72; 0];
+ray(2).seg(1).I1 = [1; 0; 0];
+ray(3).seg(1).P1 = [-1.5; 1.62; 0];
+ray(3).seg(1).I1 = [1; 0; 0];
+ray(4).seg(1).P1 = [-1.5; 1.67; -0.05];
+ray(4).seg(1).I1 = [1; 0; 0];
+ray(5).seg(1).P1 = [-1.5; 1.67; 0.05];
+ray(5).seg(1).I1 = [1; 0; 0];
+
+% reflect
+nrays = 5;
+for r = 1:nrays
+    for s = 1:length(e)
+        [ray(r).seg(s+1).P1,ray(r).seg(s+1).I1] = ...
+                    M(s).reflect(ray(r).seg(s).P1,ray(r).seg(s).I1);
+    end
+end
+
+%% plot
+
+figure(1)
+hold on
+for r = 1:nrays
+    for s = 1:length(e)
+        % intersection points
+        plot3(ray(r).seg(s).P1(1),ray(r).seg(s).P1(2),ray(r).seg(s).P1(3),'g+','MarkerSize', 30);
+        quiver3(ray(r).seg(s).P1(1),ray(r).seg(s).P1(2),ray(r).seg(s).P1(3),...
+                ray(r).seg(s).I1(1),ray(r).seg(s).I1(2),ray(r).seg(s).I1(3),'Color','r')
+    end
+%     plot3(ray(r).seg(1).P1(1),ray(r).seg(1).P1(2),ray(r).seg(1).P1(3),'Color','r')
+end
+for j=1:length(e)
+    plot3(V(1,j),V(2,j),V(3,j),'.','MarkerSize',20);
+end
+axis equal
+xlabel('x'); ylabel('y');
+% view(3)
+
+% plot(P1(1),P1(2),'g+','MarkerSize', 30)     % starting point
+% plot(P2(1),P2(2),'g+','MarkerSize', 30)     % intersection point m1
+% plot(P3(1),P3(2),'g+','MarkerSize', 30)     % intersection point m2
+% plot(P4(1),P4(2),'g+','MarkerSize', 30)     % intersection point m3
+% plot(P5(1),P5(2),'g+','MarkerSize', 30)     % intersection point m4
+% plot(P_rs(1),P_rs(2),'g+','MarkerSize', 30)     % intersection point RS
+% plot(F1(1),F1(2),'r+','MarkerSize', 30)     % focal point m1
+% plot(F2(1),F2(2),'r+','MarkerSize', 30)     % focal point m2
+% plot(F3(1),F3(2),'r+','MarkerSize', 30)     % focal point m3
+% plot(F4(1),F4(2),'r+','MarkerSize', 30)     % focal point m4
+% plot(F5(1),F5(2),'r+','MarkerSize', 30)     % focal point RS
+% plot(V1(1),V1(2),'.','MarkerSize',20)       % vertex m1
+% plot(V2(1),V2(2),'.','MarkerSize',20)       % vertex m2
+% plot(V3(1),V3(2),'.','MarkerSize',20)       % vertex m3
+% plot(V4(1),V4(2),'.','MarkerSize',20)       % vertex m4
+% plot(V5(1),V5(2),'.','MarkerSize',20)       % vertex RS
+% quiver(P1(1),P1(2),I1(1),I1(2),'Color','r') % vector i1
+% quiver(P2(1),P2(2),I2(1),I2(2),'Color','r') % vector i2
+% quiver(P3(1),P3(2),I3(1),I3(2),'Color','r') % vector i3
+% quiver(P4(1),P4(2),I4(1),I4(2),'Color','r') % vector i4
+% quiver(P5(1),P5(2),I5(1),I5(2),'Color','r') % vector i5
+% hold off
+
+
+
+
+

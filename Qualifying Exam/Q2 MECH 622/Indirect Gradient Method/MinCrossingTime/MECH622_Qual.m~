@@ -1,0 +1,77 @@
+% Tim Coon
+% Qualifying Exam Question #2, MECH 622
+% 11/17/2014
+% Adapted from Bryson P4_3_5
+
+% clear; close all; clc;
+
+%------------ given ------------------------
+global c1 c2 xf yf Vmax w Vwx Vwy
+Vwind = 6*0.514;            % (m/s)
+Awind = deg2rad(130);       % (rad)
+Vwx = Vwind*cos(Awind);     % (m/s)
+Vwy = Vwind*sin(Awind);     % (m/s)
+% Vmax = 32*0.514;            % (m/s) max river velocity
+Vmax = Vr_ms(i);
+w = 200;    % (m)
+c1 = 0.7;   % coefficient for Vx
+c2 = 0.5;   % coefficient for Vy
+%---final states (posiion)
+xf=115;     % (m)
+yf=w;       % (m)
+%---Set initial states [u x v y]
+x0 = 85;    % (m)
+y0 = 0;     % (m)
+s0=[x0 y0]';
+ns=length(s0);  % number of state variables
+
+%------------ guesses ------------------------
+%---Set initial guess for final time
+tf0=100;
+%---Set number of time steps
+N=200;
+%---Set initial guess for control input (just try all zeros)
+nc=1;               % number of control inputs
+th0=zeros(N,1);     % theta is the sail angle wrt global +x
+
+%------------ nlp setup ------------------------
+%---Set number of equality and inequality constraints
+ncons=2;        % total number of constraints (neqcons+nineqcons)
+neqcons=2;      % number of equality constraints
+%---Define design vector, independent design variables in fmincon
+% [theta deltaT]
+% u0=[th0; tf0/N];
+u0_data = load('u0_guess.mat');
+u0 = u0_data.u;
+%---Define a vector holding all of the dimensions
+dims=[N ns nc ncons];
+name='dvdp';
+% bounds on the input
+lb = Awind-(3*pi/4); ub = Awind-(pi
+% Set options for fmincon
+options = optimset('GradObj','off','Display','Iter','GradConstr','off','MaxIter',1e6,'MaxFunEvals',1e7);
+u = fmincon(@(u0)Obj_MECH622_Qual(u0,s0,name,dims),u0,[],[],[],[],[],[],...
+                        @(u0)Constr_MECH622_Qual(u0,s0,name,dims),options);
+
+%% Retrieve state vector at optimum, organize for plotting
+[f,g,s]=Obj_MECH622_Qual(u,s0,name,dims);
+x=s(1,:);
+y=s(2,:);
+th=[u(1:N)]*180/pi;
+tf=N*u(N+1);
+t=tf*[0:1/N:1];
+
+%% Plot
+figure(1);
+plot(x,y,'b.',x(N+1),y(N+1),'ro');
+grid;
+xlabel('x');
+ylabel('y');
+%
+figure(2);
+stairs(t(1:end-1),th);
+grid;
+% axis([0 1 -50 0]);
+ylabel('\theta (deg)');
+
+

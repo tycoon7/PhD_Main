@@ -1,0 +1,167 @@
+\chapter{Background}
+\label{ch:bkgnd}
+
+In this chapter is presented the applicable history of \acf{CTI} research conducted at AFIT as well as research conducted in industry as it impacts the work detailed herein. \ac{CTI} is a technology built significantly as an extension of the theory developed for medical-based tomography where it is used extensively with admired success. This chapter first presents the current field of space-based hyperspectral imaging by identification of recent, advanced orbiting hyperspectral imager instruments and their missions. Secondly, the theory and instrumentation of tomography as applied in the medical field is presented as the basis for \ac{CTI} theory and hardware design. Thirdly, industry \ac{CTI} research efforts are reviewed to illustrate possibilities and set the foundation for the development efforts at \ac{AFIT}. Finally, by reviewing the results of previous experiments conducted at \ac{AFIT}, the need is established for the inquiry and investigation into characterization and fabrication of a \acl{DVP}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Space-Based, Earth-Observing Hyperspectral Imagers}
+\label{sec:hyperspectralImagers}
+
+\subsection{GOSAT}
+GOSAT, launched in January 2009 is equipped with \ac{FTS} and \ac{CAI} with the mission to monitor CO$_2$ and CH$_4$ levels in Earth's atmosphere. \ac{FTS} is able to detect the spectral signature of CO$_2$ and CH$_4$. \ac{CAI} monitors the cloud coverage over the \acl{FOV} that \ac{FTS} observes. Correcting for the cloud coverage, the volume of gas species is quantified as the column abundance ``expressed as the number of the gas molecules in a column above a unit surface area"~\cite{GOSAT}. \ac{CAI} only observes very narrow bands, but \ac{FTS} is capable of wide-band observation with a spectral resolution of 5 cm and spatial resolution of over a 10 km diameter \ac{FOV}.
+
+\begin{figure}[htb]		% GOSAT
+\begin{center}
+\subfigure[]{
+\includegraphics[width=0.4\textwidth]{images/chap2/GOSAT-3}
+\label{fig:GOSATpic}}
+\subfigure[]{
+\includegraphics[width=0.5\textwidth]{images/chap2/FTS_specs}
+\label{fig:FTS_specs}}
+\caption{(a) An artist rendition of the GOSAT satellite and (b) table of FTS specifications~\cite{GOSAT}~\cite{JapGOSAT}.}
+\label{fig:GOSAT}
+\end{center}
+\end{figure}
+
+\subsection{Landsat}
+The Landsat program is an ongoing effort to capture satellite imagery of Earth since the launch of its first satellite in 1972~\cite{Landsat}. The joint \ac{NASA} and \ac{USGS} program successfully launched the eighth satellite of its forty-year history in February of 2013. Just as its predecessors, Landsat~8 has onboard a multispectral remote-sensing instrument. This generation of instrument is known as the \ac{OLI} and senses in nine wide spectral bands over the spectral range of 0.433 to 1390 \textmu m. Though this spectrum is defined in Section~\ref{sec:HSI} as the hyperspectral bandwidth, the imager is considered multispectral because the spectral resolution is low. As a trade for low spectral resolution, Landsat~8 is able to generate high-spatial-resolution images with minimal integration time. The objective of Landsat~8 is the observation and recording of Earth's surface and atmosphere over an extended period of time. As such, those events that exhibit significant changes at a rate less than the Landsat~8 earth coverage period of 16 days are not to be resolved continuously.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Medical Tomography to Chromotomography}
+\label{sec:medicalTomtoChrom}
+%"2D" and "3D" assumes spatial dimensions. Should I write this somewhere?
+State-of-the-art imaging technology is paramount to many recent advancements in medicine and is applied in a variety of medical devices on a daily basis. Especially well-known is the \ac{CAT} scanner which is responsible for saving and improving countless lives by providing medical doctors with images of internal body structure. This and other tomographic imagers are capable of generating two-dimensional images at a particular cross-section of a three-dimensional object as shown in Figure~\ref{fig:CircularTomography}. By constructing two-dimensional images at small increments along the z-direction, a resolved three-dimensional image representation is be constructed. Figure~\ref{fig:CircularTomography} illustrates how one distinct cross-section of an object is imaged.
+
+\begin{figure}[htb]		% CircularTomography
+\centering
+\includegraphics[width=0.75\textwidth]{images/chap2/CircularMedicalTomography}
+\caption{Circular tomography creates resolved images of 3D object cross sections by convolving multiple images at various projection angles each focused on the tomographic plane, $\mathrm{P_0}$~\cite{Bostick}.}
+\label{fig:CircularTomography}
+\end{figure}
+
+The medical tomography discussed is an example of \ac{CTI} theory applied to physical structure with three spatial dimensions and is the intuitive application of the technology. For a spectrometer, the observation target is spectrally-diverse \acl{EM} energy in a two-dimensional field of view and the projected images are less intuitive. This abstracted scenario is explained with the hypercube of Figure~\ref{fig:hypercube} which represents the spectral information as a spatial dimension. Relating this representation to medical tomography, instead of a source and film rotating opposite each other to create multiple projection angles as shown in Figure~\ref{fig:CircularTomography}, electromagnetic waves are passed through a \ac{DVP} to separate, angularly, the energy as a function of wavelength as shown in Figure~\ref{fig:layout}. The image formed by one distinct bandwidth is positioned radially offset from the image formed by a different bandwidth on the same detector plane as shown in Figure~\ref{fig:objectCubeProj}. Each slice of the hypercube, representing the intensity distribution of a finite bandwidth (range of wavelengths) over the \ac{FOV}, is displaced along an angled path to the detector plane arriving at some distance normal to the prism orientation. As the \ac{DVP} rotates, the image at each finite bandwidth maintains orientation, but is translated circularly at a constant radial offset as shown in Figure~\ref{fig:DispAngles4}.
+ 
+ \begin{figure}[htb]	% layout
+\centering
+\includegraphics[width=1\textwidth]{images/chap2/layout}
+\caption{Rotating-prism CTI System Layout~\cite{Sue}}.
+\label{fig:layout}
+\end{figure}
+ 
+\begin{figure}[htb]		% objectCubeProj
+\centering
+\includegraphics[width=0.75\textwidth]{images/chap2/objectCubeProj}
+\caption{Hypercube projections through a direct-vision prism~\cite{Sue}.}
+\label{fig:objectCubeProj}
+\end{figure}
+
+\begin{figure}[h]		% DispAngles4
+\begin{center}
+\subfigure[]{
+\includegraphics[width=0.3\textwidth,trim=6cm 5cm 3cm 5cm,clip,angle=270]{images/chap2/Dispersed_180deg}
+\label{fig:Dispersed_0deg}}
+\subfigure[]{
+\includegraphics[width=0.3\textwidth,trim=6cm 5cm 3cm 5cm,clip,angle=270]{images/chap2/Dispersed_90deg}
+\label{fig:Dispersed_90deg}}
+\subfigure[]{
+\includegraphics[width=0.3\textwidth,trim=6cm 5cm 3cm 5cm,clip,angle=270]{images/chap2/Dispersed_0deg}
+\label{fig:Dispersed_180deg}}
+\subfigure[]{
+\includegraphics[width=0.3\textwidth,trim=6cm 5cm 3cm 5cm,clip,angle=270]{images/chap2/Dispersed_270deg}
+\label{fig:Dispersed_270deg}}
+\caption{\textmd{Simulated images through a \acl{DVP} showing three distinct wavelengths, 0.606, 0.535, and 0.465 \textmu m as red, green, and blue, respectively. Each subsequent image differs by a rotation of the direct-vision prism of 90 degrees about the optical axis. (a) $0^\circ$, (b) $90^\circ$ (c) $180^\circ$, (d) $270^\circ$}}
+\label{fig:DispAngles4}
+\end{center}
+\end{figure}
+
+\section{Tomographic Data Reconstruction}
+Computer reconstruction algorithms are able to convolve the images collected at various projection angles using image processing theory. The details of the reconstruction are not provided here, but the interested reader is referred to publications by Mooney et al.~\cite{Mooney95}~\cite{Mooney97}~\cite{Mooney98}~\cite{Mooney99}~\cite{Mooney00}, Sandia Labs~\cite{Sandia05}, Gustke~\cite{Gustke}, Bostick~\cite{Bostick}, and Su'e~\cite{Sue} for more information. Nevertheless, a conceptual introduction to the reconstruction methods is presented here. Figure~\ref{fig:DispAngles4} provides useful visualization of simulated images taken through a \ac{DVP} at multiple rotation angles. Three infinitesimal wavelengths are simulated in each of the subfigures depicting the focal plane where an image is formed by each wavelength. The spectral distinctions of the images are observed as a spatial displacement and are easily identified by the false color added for this demonstration. Four simulations are shown, each distinguished from the others by the rotation angle of the \ac{DVP} about the optical axis. Figure~\ref{fig:Dispersed_0deg} is the projected image formed when the \ac{DVP} is at the angle as seen in Figure~\ref{fig:layout} and is defined as the zero-degree angle. In each of the subfigures, the three images at distinct wavelengths overlap each other and cause the spatial features to be less discernible. The blurring due to overlap is even more profound without artificial coloring and for the case of a spectrally-continuous scene. This is analogous to the blurring of a single projection in medical x-ray imaging where the physical cross sections of a bone or other object overlap on the film. The methods to reconstruct the image at a particular wavelength require convolving multiple images such that the spatial scene at one infinitesimal spectral band constructively interferes. Constructive interference in convolution is accomplished by first translating the total image such that the image at the spectrum of interest is at the same location in each total image. For example, align the blue wavelength in each projection image of Figure~\ref{fig:DispAngles4} by shifting Subfigure~\ref{fig:Dispersed_0deg} down by the offset distance to center the blue image. In the same way, shift Subfigure~\ref{fig:Dispersed_90deg} to the left by the offset distance, Subfigure~\ref{fig:Dispersed_180deg} up by the offset distance, and Subfigure~\ref{fig:Dispersed_270deg} to the right by the offset distance. Convolving the shifted images, the blue image constructively interferes at the center while the red and green images arbitrarily interfere. As the number of projections at distinct angles increases, the image at the blue wavelength increases contrast while images at other wavelengths start to appear as noise in the background. In this same way, the two-dimensional image of any wavelength on the detector plane is able to be extracted from the data. In practice, reconstruction is accomplished in Fourier space and is theoretically limited by what is known as the cone of missing information~\cite{MissingCone}~\cite{Mooney00}.
+
+The advantages that tomography affords hyperspectral imaging is compendiously stated in the 2005 Sandia National Laboratories Report~\cite{Sandia05} by the excerpt below. Details of the data collection methods and reconstruction algorithms which prove these claims are not presented here. The interested reader is directed to the Sandia Report \cite{Sandia05} for a thorough investigation of the claim.
+
+\begin{quote}
+While staring sensors lend themselves toward wide-field monitoring, detection and identification of transient events, they are not easily adapted to hyperspectral imaging. Multiple spectral filters are used to add moderate spectral information; however, the need for high temporal rates requires that these filters operate with broad spectral bandwidths. For staring sensors one must consider unconventional methods to move from low to high spectral (i.e., multispectral to hyperspectral) resolution. Chromotomographic systems offer significant advantages of more conventional systems (filter wheels, AOTF, LCTF).$^{1,2}$ Most notably, due to their integration of signal at each pixel, hyperspectral data is be collected with higher temporal and spectral resolutions and higher signal to noise ratios (SNR).
+\end{quote}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Chromotomography Research and Experimentation in Industry}
+\label{sec:industryResearch}
+
+One of the first significant developments of \ac{CTI} instrumentation and theory is in the research of Mooney et al.~\cite{Mooney95}~\cite{Mooney97}. This instrument design has been the basis for most subsequent work in developing the technology as is the \ac{CTEx} project at \ac{AFIT}. Mooney et al. showed successful operation of \ac{CTI} utilizing a rotating \ac{DVP} and also showed the limitation of data reconstruction as a consequence of angled projections whereby spatial and spectral information at certain frequencies are unresolved. This limitation is known as the cone of missing information as the lost information is visualized as an empty cone in Fourier space. To rectify this limitation and fill in the inherent gaps, Brodzik and Mooney later developed the method of \ac{POCS} for estimating the lost information inside of the missing cone~\cite{Mooney99}.
+
+Sandia National Laboratories performed a study which established quality metrics to assess the applicability of a ``non-conventional spectral imaging systems to missions associated with space-based optical sensors"~\cite{Sandia05}. The instrument design and reconstruction method used was based on Mooney's work. As such, their analysis was also subject to the cone of missing information. The Sandia study utilized \ac{POCS} in order to extract the most information possible from the collected imagery.
+% I'll add more about the Sandia Report if somebody asks for it
+
+The general design of a spinning-prism \ac{CTI} instrument is based on the work of Mooney et al. and the components are illustrated in Figure~\ref{fig:layout}. Referring to Figure~\ref{fig:layout}, the elements starting from the object on the left are described. The object itself is a spectrally-diverse, two-dimensional scene at a far distance from the instrument. The first lens, L$_1$, focuses the light to an image point where the field stop, F.S., limits the field of view and, therefore, the utilization of the detector plane. Lens two, L$_2$ collimates the diverging rays before the signal passes through the spinning \ac{DVP} which disperses the light radially and translates the image circularly. The third lens, L$_3$, focuses the collimated light at multiple angles to form images on the detector plane which are radially offset from each other. The collection and processing of the spatially-spread data is outlined in Section~\ref{sec:medicalTomtoChrom}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{AFIT Chromotomography Research}
+\label{sec:afitResearch}
+
+Over the last few years, significant \ac{CTI} research and development has been performed at \ac{AFIT}, resulting in several generations of instrumentation. The first successes in \ac{CTI} development at \ac{AFIT} were through the dissertation work of Bostick, before the space-based concept of \ac{CTEx}. Many lessons have been learned with regard to critical components such as the front-end telescope, the prism motor, fast-speed camera technology, and the \ac{DVP}. The focus of this research is on understanding design and integration subtleties of the \ac{DVP} and the \ac{AFIT} research applicable to this goal is reviewed here.
+
+\subsection{Bostick}
+Experiments conducted by Bostick were performed with a two-glass prism assembly depicted in Figure~\ref{fig:BostickPrism}~\cite{Bostick}. Bostick points out that the radial displacement of the image on the detector plane $r(\lambda)$, shown in Figure~\ref{fig:BostickPrism}(a) is the parameter which defines the spectral performance of the system. Bostick derives the equation of the radial displacement as Equation~\eqref{eq:radialDisp}, a function of the deviation angle which varies with wavelength. The paramount conclusion to be made from these relationships is that the angular dispersion must be known for all wavelengths of interest in order to identify extracted spectral information.
+ 
+\begin{figure}[htb]		% BostickPrism
+\centering
+\includegraphics[width=1\textwidth,page=1,trim=2cm 5cm 2cm 5cm,clip]{images/chap2/MyGraphics_Ch2}
+\caption{(a) The Bostick system layout and (b) the Bostick direct-vision prism~\cite{Bostick}.}
+\label{fig:BostickPrism}
+\end{figure}
+
+\begin{equation}		% radialDisp
+\label{eq:radialDisp}
+r(\lambda) = D_6tan(\phi(\lambda))
+\end{equation}
+
+The reconstruction algorithms which generate hypercube data sets require the wavelength-dependent radial displacement function, $r(\lambda)$. A prism is designed to a specification that determines the radial displacement to an exact profile. However, unavoidable fabrication and alignment imperfections result in tangible hardware which deviates from the equipment specification, though controlled to within a required tolerance. As a result, the actual radial offset differs from the design. In addition, other unplanned displacements as a result of fabrication and integration alignment imperfections exist in other hardware. Bostick presents a method for diagnosing and correcting for these unplanned displacements, referring to them as systematic errors~\cite{Bostick10}. Bostick explores five types of systematic error and determines, analytically, the effect each error has on displacement as seen by the detector plane~\cite{Bostick}. With an analytical representation, Bostick determines the error kernels correcting for each systematic error and applies the error kernels to the reconstruction algorithm in Fourier space. These error kernels, shown with a depiction of their respective errors in Figure~\ref{fig:BostickSystemErrorTable}, are used to determine the tolerances imposed on prism fabrication, mounting, and characterization.
+
+\begin{figure}[htb]		% BostickSystemErrorTable
+\centering
+\includegraphics[width=1\textwidth]{images/chap2/BostickSystemErrorTable}
+\caption{Systematic errors and their respective error kernels~\cite{Bostick}}.
+\label{fig:BostickSystemErrorTable}
+\end{figure}
+
+\subsection{Linear Ground System (GCTEx)}
+\label{sec:GCTEx}
+In the development of the most recent \ac{CTEx} ground instrument, Niederhauser describes the method implemented to characterize the Bostick \ac{DVP} assembly deviation angle~\cite{Niederhauser}. The method utilized a known emission spectrum masked by a pinhole to simulate a point source. The point source was then imaged through the \ac{GCTEx} instrument while changing only the \ac{DVP} rotation angle about the prism motor axis. Tracing the path followed by several wavelengths of light as the prism rotated, the center of rotation, as well as the displacement of each spectral line was calculated as a function of prism motor rotation angle~\ref{fig:transverseOffset2}. When the results of the deviation measurements were compared with the deviation angle vs. wavelength curve produced from a Zemax model of the \ac{DVP}, Niederhauser found up to a 1\% difference at the wavelength tested. The deviation angle is calculated with respect to the undeviated wavelength defined as that infinitesimal spectral band which remains fixed on the \ac{FPA} as the prism rotates. Niederhauser also identified an offset in the transverse direction (normal to the dispersion direction) at the detector plane as a result of \ac{DVP} fabrication error. This transverse offset is shown in Figure~\ref{fig:transverseOffset2}.
+
+\begin{figure}[htb]		% transverseOffset2
+\centering
+\includegraphics[width=0.75\textwidth]{images/chap2/transverseOffset2}
+\caption{Illustration of the transverse offset. As the prism rotated, the wavelength of interest traced the path shown by the dotted line. The path traced by the undeviated wavelength is shown by the center solid line. The undeviated wavelength is closer to the optical axis marked by the dot at every prism angle and the radius of its trace is defined as the transverse offset. Using trigonometry, the radial dispersion distance is calculated.~\cite{Niederhauser}.}
+\label{fig:transverseOffset2}
+\end{figure}
+
+Completion and utilization of the latest \ac{GCTEx} system was accomplished by Su'e~\cite{Sue}. Su'e describes the effect that the transverse offset has on the reconstruction if unaccounted for. He also details a method of correcting for the measured transverse offset and demonstrated the successful application of this correction applied to the reconstruction algorithm as seen in Figure \ref{fig:transCorr}. It is clear from comparison of this data that a transverse offset of this magnitude is significant and must be accounted for.
+
+\begin{figure}[h]		% transCorr
+\begin{center}
+\subfigure[]{
+\includegraphics[width=2.75in,height=2.75in]{images/chap2/AFtUncorr}
+\label{fig:AF_Tuncorrected}}
+\subfigure[]{
+\includegraphics[width=2.75in,height=2.75in]{images/chap2/AFtCorr}
+\label{fig:AF_TCorrected}}
+\caption{Reconstructed Air Force bar chart (a) without transverse offset correction and (b) the same data set reconstructed with the transverse offset correction applied. The original image was illuminated by a monochromatic source~\cite{Sue}.}
+\label{fig:transCorr}
+\end{center}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Background Analysis}
+\label{sec:backgroundAnalysis}
+
+Previous work in \ac{CTI} development has been revisited. Furthering the capabilities of the \ac{CTEx} instrument requires building on the work already done. From the operation of the \ac{GCTEx} system, it was seen that there is a significant detrimental impact on the quality of data reconstruction as a result of prism misalignments. To address the error, Bostick makes available the quantification of prism misalignments relative to the impact they have on the reconstruction algorithm. It is left, then, to transfer this quantification to acceptable deviations from perfect models and compare these with limits imposed on available fabrication methods.
+
+Assuming that the claimed 1\% difference in the measured deviation angle was with respect to the range of angular spread of approximately $4^\circ$ seen in Figure \ref{fig:bostickDispersion}, the angular error in the measurement is as much as 2.4 minutes of arc. Implementing Equation~\eqref{eq:radialDisp}, the on-axis radial error on the detector plane is then approximated as 80 \textmu m assuming a lens three focal length (Figure~\ref{fig:layout}) of 115 mm. Imaged onto a detector plane having a pixel pitch of 20 \textmu m, the possible error in signal position knowledge is four pixels in the radial direction. To understand the effects of four-pixel ambiguity, review Bostick's analysis of instrumental error causing a two-pixel uncertainty in the radial dispersion for a predicted wavelength. Bostick concluded that when the reconstructed algorithm designed for a ten-pixel offset is applied to an eight-pixel offset, monochromatic image, the result is a reduction in the spatial resolution of the reconstructed image by more than 50\%. For a spectrally-diverse, continuous image, the result would instead be an error in the bandwidth for which the image is reconstructed~\cite{Bostick}. Adjusting for a two-pixel uncertainty at one bandwidth in the radial direction is a trivial task. However, the calibration of the instrument for an uncertain radial dispersion as it varies with wavelength in both dimensions on the focal plane is prohibitively complex. Even if accomplished, the identification of the spectral band related to a particular dispersion vector requires another convoluted calibration. It is evident, therefore, that a seemingly-small uncertainty in prism dispersion has a profound impact on \ac{CTI} results, thereby justifying the need for a viable and precise characterization of the prism assembly.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Background Conclusion}
+\label{sec:backgroundConclusion}
+
+The \ac{CTEx} project at \ac{AFIT} has led to the development of the linear \ac{GCTEx} system capable of imaging a monochromatic \ac{FOV} with spatial and spectral resolution. In the process, the \ac{DVP} component has, necessarily, been a key consideration. Much work has been done to design \acp{DVP} under conflicting performance criteria and characterize fabricated assemblies to enable hypercube reconstruction. The continuation of \ac{CTI} research necessarily focuses on demonstrating the temporal resolution capabilities of \ac{CTI}. Following attempted imaging of rapid-transient events, the prism and the error caused by prism misalignments become the subject of the next stage of development. An investigation into controlling the uncertainty of \ac{DVP} geometry as well as characterizing the \ac{DVP} is required. Also, with the finalization of a \ac{DVP} design and realized \ac{DVP} motor hardware, it is necessary to design the mechanical interface for the two components. In addition to maintaining precise optical alignment, the integration design must address mechanical, and environmental and logistical concerns. The investigation presented here develops \ac{DVP} characterization techniques to be used for \ac{DVP} tolerance specification, for precise alignment of \ac{DVP} components, and the precise and accurate characterization of the as-built \ac{DVP}.
+
+

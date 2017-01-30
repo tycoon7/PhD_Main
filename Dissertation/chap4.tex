@@ -1,0 +1,448 @@
+\chapter{Direct-Vision Prism Design, Analysis, and Test}
+\label{ch:DVP}
+
+The conclusions of Section~\ref{sec:backgroundConclusion} established the need for a more accurate characterization of the \acf{DVP} than has been achieved to date.  This chapter presents an investigation into precise characterization of a \ac{DVP} and a proposed mechanical design of the \ac{DVP} hardware.
+
+The investigation into precise characterization of a \ac{DVP} assembly is presented in four phases. First, analysis of prism assembly misalignments was performed using Zemax models to verify the extent to which selected measurements produce a unique set of data. Second, the precision of measurement capabilities was investigated which also provided insight into the optical sensitivity of the prism assembly hardware. Third, a linear system approximation was constructed and its accuracy established by analysis. Lastly, a method of system identification utilizing the linear system was analyzed for its accuracy in determining the orientation of the surfaces in a prism assembly.
+
+Also in this chapter is an overview of the proposed hardware design for a \ac{DVP} and mechanical sleeve assembly. Geometric dimensioning and tolerance specifications were explored drawing on the results of the foregoing investigation and tools previously developed.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Zemax Misalignment Uniqueness Investigation}
+\label{sec:misalignmentUniqueness}
+
+As a means of precisely diagnosing the orientation of the \ac{DVP} assembly surfaces, it is proposed that interferometric measuring methods be utilized. To evaluate the utility of interferometric measurement data in this application, a simplified assembly was analyzed in Zemax to both validate the application and qualify the predicted data. The simplified assembly was a two-prism system in which both prisms were Thorlabs PS814-A round wedge prisms aligned as shown in Figure~\ref{fig:Two_Prisms_Nominal}.
+
+It was expected that the prism assembly would not be bonded exactly as shown, so to simulate the scope of measurement data from the misaligned two-prism
+assembly, the simulation added small rotation perturbations to the second prism orientation. As reviewed in Section~\ref{sec:interferometry}, an interferometer measures the relative shape of a wavefront and in the two-prism simulation, the shape of the wavefront exiting the second prism was measured relative to a flat input wave. The data was extracted as the tip and tilt Zernike coefficients as reviewed in Section~\ref{sec:zernikes}. The surfaces were assumed to be without aberrations described by higher-order Zernike polynomials as described in~\cite{Wyant}. The interferometric measurements were made of the interference pattern between the input field to the first prism and the output field from the last prism of the two-prism system.
+
+\begin{figure}[H]  % Two_Prisms_Nominal
+\begin{center}
+\subfigure[]{
+\includegraphics[width=0.4\textwidth,trim=12.75cm 0cm 3.75cm 12.75cm,clip]{images/chap4/Two_Prisms_Nominal}}
+\subfigure[]{
+\includegraphics[width=0.4\textwidth,trim=7.5cm 10.75cm 9.75cm 1cm,clip]{images/chap4/Two_Prisms_Nominal}}
+\caption{The nominal alignment of identical round wedge prisms in the two-prism test setup from the third-angle (a) right and (b) isometric views. The optical axis is parallel to the Z-axis shown}
+\label{fig:Two_Prisms_Nominal}
+\end{center}
+\end{figure}
+
+Because the effects of various prism misalignments on the output were not intuitive, the data from of the two-prism simulation was investigated for the uniqueness of the output ray angle changes caused by deviations from the nominal case. The significant misalignments of the two-prism system were defined as those changes which caused an angular separation between any two surfaces which was different from the nominal case. In the simulation model, the first prism remained fixed and the front and back surfaces of each prism maintained the nominal angle of separation. The significant misalignments of the second prism were modeled by independent rotation about the X, Y, or Z axis or a rotation about the axis normal to the second prism's angled surface as illustrated in Figure~\ref{fig:NormalRotation} and referred to here as normal rotation. Pure translation was not considered as it only has the effect of constricting the entrance pupil in this ideal scenario. While the size of the entrance pupil does affect the value of the Zernike coefficients, it has no effect on the angle of the ray. It for this reason that care must be taken to assure the entrance pupil remains the same for all prism rotation angles when comparing output ray directions.
+
+\begin{figure}[htb]	% NormalRotation
+\centering
+\includegraphics[width=0.3\textwidth,trim=5cm 0cm 13.5cm 0cm,clip,page=11]{images/chap4/MyGraphics_Ch4}
+\caption{\textmd{Illustration of the second prism rotation about the normal axis of its angled surface. The two-prism alignment is shown with the second prism (a) in the nominal orientation, (b) rotated 90$^\circ$ about the normal, and (c) rotated 180$^\circ$ about the normal.}}
+\label{fig:NormalRotation}
+\end{figure}
+
+MATLAB and \ac{DDE} was used to extract and record Zernike standard coefficients resulting from small, forced misalignments in Zemax simulation. Execution of the MATLAB code automatically updated the prism orientation, ran the simulation, and extracted the Zernike coefficients for a great number of misalignments. Because the Zernike standard polynomials form an orthogonal basis set, a unique linear combination of the first-order Zernike standard polynomials describes a unique output ray angle. For the simple, flat-surface prisms with no modeled optical imperfections, the wavefront varies only in angle as it traverses the refractive surfaces. With a flat wavefront described completely by the ray angle, only the coefficients of the first-order Zernike terms are nonzero. The first-order Zernike terms denote the wavefront tip and tilt as described in Section~\ref{sec:zernikes}. The results of independent rotations are presented in Figures~\ref{fig:XRotZernikes} through~\ref{fig:NormalRotZernikes}. Examining the plots, it is evident that the tip and tilt combination is unique for any misalignment angle about any one of the axes. The output angle is, therefore, also unique for any misalignment angle about any one of the axes.
+
+Presenting output for independent rotations is straightforward, however, actual uncertainties and perturbations of prism surfaces are defined by multiple independent rotations and produce one output angle with multiple perturbation combinations. Evidence of this is revealed in the comparison of Figure~\ref{fig:PlotZernikes_P2ZRotSmall} and Figure~\ref{fig:PlotZernikes_P2NormRotSmall}, in which the combinations of Zernike standard coefficients are nearly identical. The data sets to show repeated output angles are prohibitively large and have limited application. As such, a more robust and deterministic approach to system characterization is required.
+
+\begin{figure}[H]	% XRotZernikes
+\begin{center}
+\subfigure[]{
+\includegraphics[height=0.35\textheight,trim=0.75cm 6.25cm 1.5cm 7cm,clip]{images/chap4/PlotZernikes_P2XRotMed}
+\label{fig:PlotZernikes_P2XRotMed}}
+\subfigure[]{
+\includegraphics[height=0.35\textheight,trim=0.75cm 6.25cm 1.5cm 7cm,clip]{images/chap4/PlotZernikes_P2XRotSmall}
+\label{fig:PlotZernikes_P2XRotSmall}}
+\caption{\textmd{Simulated standard Zernikes coefficients through the one-inch diagnostic assembly at 0.635 \textmu m as they change with a rotation of the second prism about the X-axis. (a) Medium X-Rotation (b) Small X-Rotation. The combination of standard Zernike coefficients is unique for the isolated rotation.}}
+\label{fig:XRotZernikes}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]	% YRotZernikes
+\begin{center}
+\subfigure[]{
+\includegraphics[height=0.35\textheight,trim=0.75cm 6.25cm 1.5cm 7cm,clip]{images/chap4/PlotZernikes_P2YRotMed}
+\label{fig:PlotZernikes_P2YRotMed}}
+\subfigure[]{
+\includegraphics[height=0.35\textheight,trim=0.75cm 6.25cm 1.5cm 7cm,clip]{images/chap4/PlotZernikes_P2YRotSmall}
+\label{fig:PlotZernikes_P2YRotSmall}}
+\caption{\textmd{Simulated standard Zernikes coefficients through the one-inch diagnostic assembly at 0.635 \textmu m as they change with a rotation of the second prism about the Y-axis. (a) Medium Y-Rotation (b) Small Y-Rotation. The combination of standard Zernike coefficients is unique for the isolated rotation.}}
+\label{fig:YRotZernikes}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]	% ZRotZernikes
+\begin{center}
+\subfigure[]{
+\includegraphics[height=0.35\textheight,trim=0.75cm 6.25cm 1.5cm 7cm,clip]{images/chap4/PlotZernikes_P2ZRotLarge}
+\label{fig:PlotZernikes_P2ZRotLarge}}
+\subfigure[]{
+\includegraphics[height=0.35\textheight,trim=0.75cm 6.25cm 1.5cm 7cm,clip]{images/chap4/PlotZernikes_P2ZRotSmall}
+\label{fig:PlotZernikes_P2ZRotSmall}}
+\caption{\textmd{Simulated standard Zernikes coefficients through the one-inch diagnostic assembly at 0.635 \textmu m as they change with a rotation of the second prism about the Z-axis. (a) Large Z-Rotation (b) Small Z-Rotation. The combination of standard Zernike coefficients is unique for the isolated rotation.}}
+\label{fig:ZRotZernikes}
+\end{center}
+\end{figure}
+
+\begin{figure}[H]	% NormalRotZernikes
+\begin{center}
+\subfigure[]{
+\includegraphics[height=0.35\textheight,trim=0.75cm 6.25cm 1.5cm 7cm,clip]{images/chap4/PlotZernikes_P2NormRotLarge}
+\label{fig:PlotZernikes_P2NormRotLarge}}
+\subfigure[]{
+\includegraphics[height=0.35\textheight,trim=0.75cm 6.25cm 1.5cm 7cm,clip]{images/chap4/PlotZernikes_P2NormRotSmall}
+\label{fig:PlotZernikes_P2NormRotSmall}}
+\caption{\textmd{Simulated standard Zernikes coefficients through the one-inch diagnostic assembly at 0.635 \textmu m as they change with a rotation of the second prism about the axis normal to the angled surfaces. (a) Large Normal Rotation (b) Small Normal Rotation. The combination of standard Zernike coefficients is unique for the isolated rotation. Similarity of (b) to Figure~\ref{fig:PlotZernikes_P2ZRotSmall} indicates that the Zernike standard coefficients are not unique for any given combination of prism rotations.}}
+\label{fig:NormalRotZernikes}
+\end{center}
+\end{figure}
+
+% I could try to set up the model to run every possible combination of X, Y, Z Rotation and then figure out where the tip and tilt combination is the same. I wrote code that converts the rotation vector of a surface to the Euler angles for Zemax.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Autocollimator Diagnostics Investigation}
+\label{sec:autocollimatorDiagnostics}
+
+The current optical design for the \ac{CTEx} prism is the assembly of four prisms shown in Figure~\ref{fig:HawksPrism_Zemax_L3d}, the two outer prisms are H-LAK12 glass and two inner prisms are ZF10 glass. For the autocollimator diagnostics investigation, two uncoated 25 mm H-ZF10 test pieces were oriented as shown in Figure~\ref{fig:Two_Prisms_Nominal}. Recall that optical interfaces affect the light path by both reflection and refraction as discussed in Section~\ref{sec:propLight} and though the light is predominantly refracted through a given prism surface, a small amount is reflected and detectable by an autocollimator under certain conditions. Especially important to the ratio of reflection to transmission is the use of antireflective coatings. For an uncoated surface, as was the case with the 25 mm H-ZF10 prism surfaces, the  reflected energy is approximately 4\% of the incident energy~\cite{Hecht}. The observability of the reflection is tested in Section~\ref{sec:prismTest_1}.
+
+\begin{figure}[H]  % HawksPrism_Zemax_L3d
+\centering
+\includegraphics[height=1\textwidth,angle = 90,trim=7.5cm 2cm 4cm 2cm,clip]{images/chap4/HawksPrism_Zemax_L3d}
+\caption{The Hawks four-prism DVP optical design. The outer two prisms are CDGM H-LAK12 glass and the inner two prisms are CDGM ZF10 glass. The number of prisms, symmetry of prisms, prism wedge angle, and prism material are set by the optical design.}
+\label{fig:HawksPrism_Zemax_L3d}
+\end{figure}
+
+\subsection{The 1-Inch-Prism Diagnostic Assembly}
+The 1-inch-prism diagnostic assembly is shown in Figure~\ref{fig:1_inch_diagnostic} and consists of two Thorlabs PRM1Z8 rotation stages aligned with the optical axis, a CR1-Z7 rotation stage to rotate the second prism about the nominal Y-direction, a PR01 rotation stage for coarse adjustment. The rotation stages are positioned using coarse translation stages and height-adjustable posts. The PRM1Z8 and CR1-Z7 rotation stages are motorized and controlled manually with servo-controller buttons, or through a computer interface. Using MATLAB and ActiveX Control, the rotation adjustments were automated. The PRM1Z8 rotation stages are capable of 360$^\circ$ rotation with a minimum step size of 25 arc seconds~\cite{PRM1Z8}. The CR1-Z7 rotation stages are capable of 360$^\circ$ rotation and a minimum step size of 2.19 arc seconds~\cite{CR1Z7}.
+
+% I could add more specs in a table. 
+
+\begin{figure}[H]  % 1_inch_diagnostic
+\centering
+\includegraphics[width=0.75\textwidth,page=13]{images/chap4/MyGraphics_Ch4}
+\caption{1-inch-diagnostic assembly test setup.}
+\label{fig:1_inch_diagnostic}
+\end{figure}
+
+\subsection{The Davidson Optronics D-275 Autocollimator}
+Operation of the D-275 is similar to the general operation of an autocollimator described in Section~\ref{sec:principlesOfAutocollimation} with the addition of lens and reticle components for the illumination source as well as the eyepiece~\cite{DavidsonOptronics}. For testing purposes, a \ac{CCD} camera was placed at the eyepiece of the D-275, as shown in Figure~\ref{fig:CCD_Eyepiece}, to display the results on a monitor as well as record image data for analysis. To measure the angle of the incoming light, a reticle is placed at the focal point of the illumination source (the object reticle) as shown in Figure~\ref{fig:DavidsonAutocollimator} creating the pattern as shown in Figure~\ref{fig:reticlePattern}. The concentric rings in the object reticle are precisely spaced so that the projected rays from each ring are separated by increments of exactly two arc minutes, measuring a one arc minute angle deviation from normal of a reflective surface. The angular \acf{FOV} observed at the eyepiece reticle  forms an image at the detector plane. An off-axis field angle focuses on a different portion of the eyepiece reticle. The translated concentric rings are viewed along with fixed crosshairs identifying the center of the on-axis light ray. By observing which concentric ring of the eyepiece reticle pattern the center of the crosshairs points to, the field angle relative to the optical axis is obtained. The absolute orientation of this field angle is not resolved using the eyepiece reticle pattern, only the angle of separation between the incoming rays and the optical axis of the outgoing beam. It is noted that the documentation for the D-275 autocollimator verifies that an incoming field angle of zero degrees is measured with an accuracy of two arc seconds if the eyepiece reticle pattern is aligned with the center dot at the intersection of the reference cross hairs~\cite{D275}.
+
+\begin{figure}[H]  % DavidsonAutocollimator
+\centering
+\includegraphics[width=0.75\textwidth,trim=.5cm .5cm .5cm .5cm,clip]{images/chap4/DavidsonAutocollimator}
+\caption{The Davidson Optronics D-275 autocollimator operation~\cite{DavidsonOptronics}. The object and eyepiece reticle patterns, shown in Figure~\ref{fig:reticlePattern}, allow for pictorial observation of input field angle.}
+\label{fig:DavidsonAutocollimator}
+\end{figure}
+
+\begin{figure}[H]  % reticlePattern
+\centering
+\includegraphics[width=0.6\textwidth,trim=20cm 9cm 20cm 20cm,clip]{images/chap4/ScreenPicBasicCircles}
+\caption{The Davidson Optronics D-275 autocollimator object and eyepiece reticle pattern as seen by the CCD camera through the eyepiece and displayed on a CRT monitor. The object reticle obscuration creates the transmitted concentric ring pattern and the eyepiece reticle obscuration makes the cross hairs pattern. Each concentric ring measures the angle of a flat, reflective surface at intervals of one arc minute (two arc minute input field angle). With the crosshairs centered on the dot, the light into the scope is parallel to the optical axis within two arc seconds~\cite{D275}.}
+\label{fig:reticlePattern}
+\end{figure}
+
+\begin{figure}[H]  % CCD_Eyepiece
+\centering
+\includegraphics[width=0.75\textwidth]{images/chap4/CCD_Eyepiece}
+\caption{The Davidson Optronics D-275 autocollimator (left) operation utilizing a CCD camera (right) to view results through the eyepiece.}
+\label{fig:CCD_Eyepiece}
+\end{figure}
+
+\subsection{Prism Reflection Investigation Test \#1}
+\label{sec:prismTest_1}
+ The arrangement of the optical components for the first investigation test is shown in Figure~\ref{fig:AutoC_Test_1}. The first reflection investigation test determined the observability of the prism front-face reflection with the D-275. When aligning the optical axis of the D-275 perpendicular to the front surface of the prism, it was shown that the simultaneous alignment of the optical axis with the axis of rotation of the prism rotation stage (the P1Z stage) was possible. This was accomplished by aligning the D-275 with the surface normal and then rotating the P1Z stage. If the image seen in the D-275 did not change, then the axis of rotation and the normal of the front surface of the prism were parallel with the optical axis of the D-275. If the pattern of the D-275 traced a circular path as the P1Z stage rotated, then the prism surface normal was misaligned with respect to the P1Z stage axis of rotation by an angle measured by the radius of the path traced out as the prism rotated. The incoming light need not be collinear with the optical axis to measure its angle relative to the optical axis. To be observed, it is only required that a sufficient amount of light enter the autocollimator at an angle that is within the measurable limits.
+
+\begin{figure}[H]  % AutoC_Test_1
+\centering
+\includegraphics[width=0.75\textwidth,trim=3cm 5cm 2cm 3cm,clip,page=14]{images/chap4/MyGraphics_Ch4}
+\caption{Autocollimator test \#1, front face reflection test. The equipment included one PRM1Z8 rotation stage, one SM1P1, one 25 mm H-ZF10 prism, and one D-275 autocollimator.}
+\label{fig:AutoC_Test_1}
+\end{figure}
+
+The setup for the first test verified that a reflection of a prism surface was resolved by the D-275 and that normal alignment of the front surface was achieved to within two arc seconds. Recalling from Section~\ref{sec:reflection} that light is reflected from any material interface even if the ratio of the indices of refraction is less than unity, it was necessary to check that the reflection observed was not the reflection from the back surface of the prism. It was first verified that the D-275 was aligned with the normal of the first surface by visual inspection. Next, a Zemax model simulated the ray-trace reflected off of the back prism surface as shown in Figure~\ref{fig:Zmx_ReflectionS2}. The model verifies that an on-axis light source reflected off of the back surface of the 25 mm H-ZF10 prism returns at an angle which is outside of the autocollimator \ac{FOV} of 30 arc minutes~\cite{D275}. 
+
+% The light is cut off by the front surface because the angle of incidence of the return rays at the front surface is greater than the critical angle as discussed in Section~\ref{sec:criticalAngle}. Figure~\ref{fig:Zmx_ReflectionS2_Field-25} reveals that the critical angle is not reached until the input field angle is at about $25^\circ$. Confident that the human angular resolution for the alignment is well below $25^\circ$, it was confirmed that the reflection off of the back surface of the prism was did not form the image seen in the D-275. It was verified by the first autocollimator test, that careful setup achieves alignment of the surface normal, the axis of rotation, and the D-275 optical axis to within two arc seconds.
+
+\begin{figure}[H]		% secondSurfaceReflection
+\begin{center}
+% \subfigure[]{
+\includegraphics[width=0.45\textwidth,trim=6cm 9cm 3cm 9cm,clip,angle=90]{images/chap4/Zmx_ReflectionS2}
+% \label{fig:Zmx_ReflectionS2}}
+% \subfigure[]{
+% \includegraphics[width=0.45\textwidth,trim=6cm 9cm 6cm 9cm,clip,angle=90]{images/chap4/Zmx_ReflectionS2_Field-25}
+% \label{fig:Zmx_ReflectionS2_Field-25}}
+\caption{Zemax model of light reflected off of the second surface of the front prism for a 0$^\circ$ input field angle. The return rays are at an angle outside of the autocollimator FOV. It is evident, therefore, that the reflected image seen in Figure~\ref{fig:reticlePattern} is not from the back surface of the prism. As the SE version of Zemax did not support non-sequential ray tracing at the time, the model was built by adding a mirror at the surface under consideration, then rebuilding each surface on the return through the system. The light is cut off by the front surface because the angle of incidence of the return rays at the front surface is greater than the critical angle as discussed in Section~\ref{sec:criticalAngle}.}
+\label{fig:Zmx_ReflectionS2}
+\end{center}
+\end{figure}
+
+\subsection{Prism Reflection Investigation Test \#2}
+\label{sec:prismTest_2}
+For the second reflection investigation test, one additional 25 mm H-ZF10 prism was added to the assembly shown in Figure~\ref{fig:AutoC_Test_2}. The second prism had a Z-axis rotation stage (P2Z) as well as a Y-axis rotation Stage (P2Y) shown in Figure~\ref{fig:1_inch_diagnostic}. It is noted that an offset of the rotation axis away from the center of a surface causes a small amount of translation affecting only the entrance pupil size minimally and need only be addressed when measurements depend on the entrance pupil size as do Zernike coefficients. When the two prisms were aligned sufficiently close to the nominal orientation shown in Figure~\ref{fig:Two_Prisms_Nominal}, a second reflection was visible with the D-275 as shown in Figure~\ref{fig:secondReflection}. It is shown in Figure~\ref{fig:secondReflection} that the object reticle pattern formed by the first prism front surface reflection is centered on the crosshairs and the object reticle pattern formed by the second prism back surface reflection is offset by approximately eight arc seconds, determined by counting the rings of the object reticle pattern. To verify the origin of the secondary reflection, a Zemax model was built for ray-trace simulation as in Test \#1. In the first autocollimator test, it was determined that the back surface of the first prism did not reflect light back to the D-275 and the same was true for the second test. It was also assumed, in the second test, that any double reflections would result in a degradation of signal intensity so as to become unobservable. For the second autocollimator test, it was then only possible that the secondary reflection observed came from the front or back surface of the second prism. Figure~\ref{fig:Zmx_ReflectionS3} shows the ray-trace for the reflected signal off of the front surface of the second prism. The reflected rays diverge away from the optical axis even before they intersect the front surface of the first prism and are clearly not the source of the secondary reflection observed. The ray-trace for reflection off of the back surface of the second prism is shown in Figure~\ref{fig:Zmx_ReflectionS4} with an input field angle of 10 arc minutes to illustrate that the reflected rays return to the D-275. It was concluded, therefore, that the second reflection observed was from light reflected off of the back surface of the second prism.
+
+\begin{figure}[htb]  % AutoC_Test_2
+\centering
+\includegraphics[width=0.75\textwidth,trim=1cm 3cm 2cm 1cm,clip,page=15]{images/chap4/MyGraphics_Ch4}
+\caption{Autocollimator test \#2, secondary reflection test. The equipment included the 1-inch-prism diagnostic assembly shown in Figure~\ref{fig:1_inch_diagnostic}, two 25 mm H-ZF10 prisms, and one D-275 autocollimator.}
+\label{fig:AutoC_Test_2}
+\end{figure}
+
+\begin{figure}[htb]		% SecondReflection
+\centering
+\includegraphics[width=0.75\textwidth]{images/chap4/SecondReflection}
+\caption{Picture taken through the eyepiece of the D-275 autocollimator. The object reticle pattern reflected by the first prism front surface reflection is centered on the crosshairs and the object reticle pattern reflected by the second prism back surface reflection is offset by approximately eight arc seconds, determined by counting the rings of the object reticle pattern.}
+\label{fig:secondReflection}
+\end{figure}
+
+\begin{figure}[htb]		% Zmx_ReflectionS3
+\centering
+\includegraphics[width=0.5\textwidth,trim=2cm 6cm 6.5cm 6cm,clip,angle=270]{images/chap4/Zmx_ReflectionS3}
+\caption{Zemax model of light reflected off of the front surface of the second prism.}
+\label{fig:Zmx_ReflectionS3}
+\end{figure}
+
+\begin{figure}[htb]		% Zmx_ReflectionS4
+\centering
+\includegraphics[width=0.35\textwidth,trim=1.6cm 5cm 7.5cm 2.5cm,clip,angle=270]{images/chap4/Zmx_ReflectionS4}
+\caption{Zemax model of light reflected off of the back surface of the second prism with input field angle of 10 arc minutes to show the reflected ray.}
+\label{fig:Zmx_ReflectionS4}
+\end{figure}
+
+The autocollimator diagnostics investigation showed that sub-arc-minute alignment of the front and back surfaces was achieved with the D-275 autocollimator. However, it is noted that, even though the back surface was observed in the D-275, its alignment was contingent upon the two angled surfaces being exactly parallel. Though the reflection from two surfaces is identifiable, the determination of the system affecting the angle of the second reflection still requires a nonlinear ray-trace. Instead of evaluating the nonlinear system, the use of a linear approximation of the system is proposed. The following section evaluates the accuracy of the JPL linear approximation method applied to model the two-prism system.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Linearized Approximation of the Two-Prism Assembly}
+\label{sec:linearPrism}
+
+As discussed in Section~\ref{sec:backgroundAnalysis}, the performance of a CTI system is strongly correlated with the knowledge of the prism dispersion characteristics. Direct measurement of the prism output has been used previously at \ac{AFIT} to characterize the prism dispersion, but the results of these methods were proven inadequate as discussed in Section~\ref{sec:backgroundAnalysis}. Completely defining the each prism assembly surface orientation to an established accuracy was proposed as a means to accurately characterize the prism assembly output dispersion angle. For this linearization investigation, the two-prism H-ZF10 assembly was analyzed. The precision of the orientation specification for each optical surface was assumed to be limited by the surface flatness tolerances specified as 100 nm RMS which is close to the surface flatness specification of the 25 mm H-ZF10 test pieces ($\lambda$/4). Considering a 25 mm diameter prism with assumed-flat surfaces, the goal for absolute surface orientation knowledge was then the angle causing a 100 nm difference across a flat surface, about one arc second.
+
+The approach to extract surface orientation knowledge was developed by first considering the two-prism assembly as a linear input/output system. The mathematics necessary for system analysis is greatly simplified when working with a linear system, thereby promoting the identification of surface orientation system parameters in this case. To approximate the inherently-nonlinear, two-prism optical system to a linear system, the JPL perturbation method outlined in Section~\ref{sec:pertJPL} was applied. The linear system math model was built using MATLAB.
+
+\subsection{Linearized Perturbation Model}
+The first step in developing the linearized perturbation model was to define the nominal beam train as an exact ray-trace through the prism assembly as shown in blue in Figure~\ref{fig:nomRayTrace}. The coordinate-free vectorial refraction equation, Equation~\eqref{eq:exactRefraction}, was applied sequentially at each surface of the 25 mm H-ZF10 prism assembly in the nominal configuration of Figure~\ref{fig:Two_Prisms_Nominal}. The input field angle, which was somewhat arbitrary, was considered to be parallel with the optical axis. The output ray direction vector was then defined by the surface geometry and material properties. The refracted ray direction vector after each surface was recorded for use in calculating the sensitivities. 
+
+\begin{figure}[htb]		% nomRayTrace
+\centering
+\includegraphics[width=0.75\textwidth,page=4,trim=3cm 4cm 3cm 4cm,clip]{images/chap4/myGraphics_Ch4}
+\caption{The first step in developing the linearized perturbation model was to define the nominal beam train as an exact ray-trace through the prism assembly. The coordinate-free vectorial refraction equation, Equation~\eqref{eq:exactRefraction}, was applied sequentially at each surface of the 25 mm H-ZF10 prism assembly in the nominal configuration to define the nominal beam train shown in two dimensions.}
+\label{fig:nomRayTrace}
+\end{figure}
+
+After the nominal ray-trace was completed, the second step was to compute the sensitivity terms for each surface. This was accomplished by application of Equations~\eqref{eq:idr_di} and~\eqref{eq:Thdr_dTh} at each surface using the refracted ray unitary direction vectors calculated in the first step. A sensitivity term was required for each possible perturbation shown in red in Figure~\ref{fig:nomRayTrace} and corresponding to the state vector of Equation~\eqref{eq:prismLinSys4}.
+
+The final step in defining the linearized perturbation model was to build the system model using the sensitivities and the perturbations. The result was the linear system of Equation~\eqref{eq:prismLinSys4} with the output as the direction perturbation vector of the refracted ray leaving the back surface of the second prism. An example illustration of the application of Equation~\eqref{eq:prismLinSys4} is shown in Figure~\ref{fig:appliedEqn} where, for a rotation perturbation of surface one only, the change in the fourth refracted ray unitary direction vector is approximated. Notice that the perturbation effect is cascaded through each subsequent surface.
+
+\begin{table}		% prismLinSys4
+\centering
+\begin{equation}		% prismLinSys4
+\label{eq:prismLinSys4}
+\left \{
+	\begin{array}{c}
+	\hspace{5mm} \\
+	\textrm{d}\hat{r}_{4} \\
+	\hspace{5mm}
+	\end{array}
+\right \}_{3x1} = 
+\left [
+	\begin{array}{ccccc}
+	\hspace{5mm} \\
+	\left [ \dfrac{\partial\hat{r}_4}{\partial\hat{r}_0} \right ] & 
+	\left [ \dfrac{\partial\hat{r_4}}{\partial\vec{\theta}_1} \right ] & 
+	\left [ \dfrac{\partial\hat{r_4}}{\partial\vec{\theta}_2} \right ] & 
+	\left [ \dfrac{\partial\hat{r_4}}{\partial\vec{\theta}_3} \right ] & 
+	\left [ \dfrac{\partial\hat{r_4}}{\partial\vec{\theta}_4} \right ] \\
+	\hspace{5mm}
+	\end{array}
+\right ]_{3x15}
+\left \{
+	\begin{array}{c}
+	\textrm{d}\hat{r}_{0} \\
+	\vec{\theta}_{1} \\
+	\vec{\theta}_{2} \\
+	\vec{\theta}_{3} \\
+	\vec{\theta}_{4}
+	\end{array}
+\right \}_{15x1}
+\end{equation}
+\begin{tabular}{cll}
+$\textrm{d}\hat{r}_{4}$ & $\equiv$ & $\textit{output ray direction perturbation vector}$ \\
+$\textrm{d}\hat{r}_{0}$  & $\equiv$ & $\textit{input ray direction perturbation vector}$ \\
+$\vec{\theta}_{j}$  & $\equiv$ & $\textit{angular perturbation of surface j}$ \\
+$\left [ \dfrac{\partial\hat{r}_4}{\partial X} \right ]$  & $\equiv$ & $\textit{output ray perturbation vector sensitivity to perturbation X}$ \\
+\end{tabular}
+\end{table}
+
+\begin{figure}[htb]		% appliedEqn
+\centering
+\includegraphics[width=0.77\textwidth,page=8,trim=3cm 4cm 1cm 4cm,clip]{images/chap4/myGraphics_Ch4}
+\caption{An example illustration of the application of Equation~\eqref{eq:prismLinSys4} where, for a rotation perturbation of surface one only, the change in the fourth refracted ray unitary direction vector is approximated. Notice that the perturbation effect is cascaded through each subsequent surface.}
+\label{fig:appliedEqn}
+\end{figure}
+
+\subsection{Analysis of the Linear model}
+The linear perturbation model of Equation~\eqref{eq:prismLinSys4} was an approximation of the true, nonlinear system and only valid for small perturbations from the exact ray-trace of the nominal case. Therefore, evaluation was necessary to determine the range of validity of the linear approximation. To perform this evaluation, the output unitary direction vector calculated by the linear model was compared with that from a simulated ray-race through the perturbed model in Zemax. Simply comparing to an exact ray-trace of the perturbed system accomplishes the same task, but allows error from equations common to both the linear model and the exact ray-trace procedure to be overlooked. Because the goal was to define the orientation of each surface to within one arc second, the threshold of the linear estimation error was also one arc second and dictated the maximum perturbation state. To determine the maximum perturbation state, a significant perturbation was simulated as shown in Figure~\ref{fig:badPert}. The error of the linear approximation of the output angle perturbation, d$\hat{r}_4$, was plotted against the perturbation angle, $\vec{\theta}_2 = -\vec{\theta}_3$, as shown in Figure~\ref{fig:PertModelValidRange_S2X_-S3X_small}. The error was defined as the angular difference between the linear model approximation and the nonlinear Zemax calculation of the output ray direction vector. Figure~\ref{fig:PertModelValidRange_S2X_-S3X_small} reveals that an increase in perturbation angle causes an increase in the error of the prediction made by the linear model. For the perturbation modeled, the linear approximation maintained an accuracy less than one arc second for perturbation angles less than six arc minutes.
+
+\begin{figure}[htb]		% badPert
+\centering
+\includegraphics[width=0.8\textwidth,trim=0cm 4cm 0cm 4cm,clip,page=2]{images/chap4/MyGraphics_Ch4}
+\caption{The linear model approximation was tested by perturbing the second and third surfaces as shown to simulate a perturbation combination that would have a significant effect on the output ray angle. Comparing the error in the linear approximation vs the perturbation angle indicates the range for which the linear approximation is valid.}
+\label{fig:badPert}
+\end{figure}
+
+\begin{figure}[htb]		% PertModelValidRange_S2X_-S3X_small
+\centering
+\includegraphics[width=0.75\textwidth,trim=1.5cm 6cm 1.5cm 8cm,clip]{images/chap4/PertModelValidRange_S2X_-S3X_small}
+\caption{Valid range of perturbation model for independent rotation of surface two about the positive X-axis and surface three about the negative X-axis. The plot shows that estimation was accurate to within one arc second for perturbation angles less than 6 arc minutes. The error is the difference between the linearized perturbation approximation and the exact ray-trace through the perturbed system.}
+\label{fig:PertModelValidRange_S2X_-S3X_small}
+\end{figure}
+
+For a fixed system, the perturbation angle is analogous to an uncertainty in surface orientation. Based on simulation data and an assumed worst-case scenario, it was concluded that the linear model predicted the prism surface orientations to within one arc second for all surface orientation uncertainties less than five arc minutes. From the results of the autocollimator tests in Section~\ref{sec:autocollimatorDiagnostics}, prism surface angles were observed to sub-arc-minute precision with commercial optical diagnostic equipment, well below the assumed threshold of five arc minutes.
+
+It is important to note that the valid range for the approximation as described above is sensitive to the nominal orientations of the surfaces. Recalling the analysis of the small-angle approximation in Section~\ref{sec:pertTheoryOptics}, as the nominal orientation of the refractive surface increases, the accuracy of the approximation decreases. As the nominal orientations were fixed for this investigation, no further verification was necessary.
+
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{System Identification}
+\label{sec:systemID}
+
+The preceding section reviewed the development of a linear system model to approximate the output ray unitary direction perturbation vector, d$\hat{r}_4$. The forward calculation of d$\hat{r}_4$  does not assist in defining the orientation of each surface. However, the linear system verified by forward calculation is also valid for system identification. For system identificaton, the perturbation angle of each surface orientation is instead the uncertainty in surface orientation. It was shown that the input ray direction vector and the output ray direction vector are able to be measured in Section~\ref{sec:prismTest_1} and Section~\ref{sec:misalignmentUniqueness}, respectively, the linear systems theory applied to Equation~\eqref{eq:prismLinSys4} thus allowing for the determination of the orientation of each surface.
+
+\subsection{Model Reduction}
+To simplify the system of equations, the number of unknowns in the linear model was reduced by applying careful assumptions and observations. By considering only an input field parallel to the optic axis, perturbations of the input ray unitary direction perturbation vector, d$\hat{r}_0$, were not considered and, thus, eliminated. In Section~\ref{sec:autocollimatorDiagnostics}, the orientation of the first prism's front surface was measured by observing the reflection off of the surface and was aligned perpendicular to the optic axis, which eliminated $\theta_1$ and reduced the number of unknown surface orientations to three. It was assumed that the angle between the front and back surfaces of the prism were known and because the prism is a rigid structure, the only degree of freedom for the back surface of the first prism was the rotation about the optical axis, $\left \{ \theta_2 \right \}_Z$. Lastly, because the second prism is also a rigid structure, the rotation perturbation angle of the front surface of the second prism is the same as that for the back surface of the second prism, Equation~\eqref{eq:theta34}. Applying these as constraints on the system, terms of the linear system model were eliminated\comment{as shown in Equation~\eqref{eq:modelReduction}}, resulting in the reduced linear model of Equation~\eqref{eq:reducedModel}. This system is underdetermined as there are four variables and three equations. To identify the surface orientations, the number of equations and unknowns should be the same. To remedy this imbalance an independent measurement is added to the system.
+
+\begin{equation}		% theta34
+\label{eq:theta34}
+\vec{\theta}_{34} = \vec{\theta}_3 = \vec{\theta}_4
+\end{equation}
+
+\begin{equation}		% reducedModel
+\label{eq:reducedModel}
+\left \{
+	\begin{array}{c}
+	\hspace{5mm} \\
+	\textrm{d}\hat{r}_{4} \\
+	\hspace{5mm}
+	\end{array}
+\right \}_{3x1} = 
+\left [ 
+	\begin{array}{cc}
+	\hspace{5mm} \\
+	\left \{ \dfrac{\partial\hat{r_4}}{\partial\vec{\theta}_2} \right \}_3 & 
+	\left [ \dfrac{\partial\hat{r_4}}{\partial\vec{\theta}_3} + \dfrac{\partial\hat{r_4}}{\partial\vec{\theta}_4} \right ] \\
+	\hspace{5mm}
+	\end{array}
+\right ]_{3x4}
+\left \{
+	\begin{array}{c}
+	\theta_{Z2} \\
+	\left \{ \vec{\theta}_{34} \right \}
+	\end{array}
+\right \}_{4x1}
+\end{equation}
+
+\subsection{The Second Reflection Applied}
+In Section~\ref{sec:prismTest_2}, it was revealed that a reflection from the back surface of the second prism could be observed. The angle of this reflection is an extrapolation of the refracted ray leaving the third surface of the prism as shown in Figure~\ref{fig:Zmx_ReflectionS4}. This is true because no additional information is added to the system for the reflected ray-trace and the solution vector remains the same. This relationship allowed for the simplification of the verification analysis presented here by assuming that the direction vector of the refracted ray leaving the third surface could be measured. This provided another set of linear equations with the same solution vector as Equation~\eqref{eq:reducedModelS3}.
+
+\begin{equation}		% reducedModelS3
+\label{eq:reducedModelS3}
+\left [ \textrm{d}\hat{r}_{3} \right ]_{3x1} = 
+\left [ 
+	\begin{array}{cc}
+	\left \{ \dfrac{\partial\hat{r_3}}{\partial\vec{\theta}_2} \right \}_3 & 
+	\left [ \dfrac{\partial\hat{r_3}}{\partial\vec{\theta}_3} \right ]
+	\end{array}
+\right ]_{3x4}
+\left \{
+	\begin{array}{c}
+	\theta_{Z2} \\
+	\left \{ \vec{\theta}_{34} \right \}
+	\end{array}
+\right \}_{4x1}
+\end{equation}
+
+Combining Equations~\eqref{eq:reducedModel} and~\eqref{eq:reducedModelS3} results in Equation~\eqref{eq:overDefModel}. Because the state vector is the same, the additional measurement of the third surface refracted ray direction vector adds three equations and no more unknowns to the system. With this addition, the system is overdetermined as has more equations than variables. 
+
+\begin{equation}		% overDefModel
+\label{eq:overDefModel}
+\left \{ 
+	\begin{array}{c}
+	\textrm{d}\hat{r}_{3} \\[5mm]
+	\textrm{d}\hat{r}_{4}
+	\end{array}
+\right \}_{6x1} = 
+\left [ 
+	\begin{array}{cc}
+	\left \{ \dfrac{\partial\hat{r_3}}{\partial\vec{\theta}_2} \right \}_3 & \left [ \dfrac{\partial\hat{r_3}}{\partial\vec{\theta}_3} \right ] \\[5mm]
+	\left \{ \dfrac{\partial\hat{r_4}}{\partial\vec{\theta}_2} \right \}_3 & \left [ \dfrac{\partial\hat{r_4}}{\partial\vec{\theta}_3} + \dfrac{\partial\hat{r_4}}{\partial\vec{\theta}_4} \right ]
+	\end{array}
+\right ]_{6x4}
+\left \{
+	\begin{array}{c}
+	\theta_{Z2} \\[5mm]
+	\left \{ \vec{\theta}_{34} \right \}
+	\end{array}
+\right \}_{4x1}
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Direct-Vision Prism Hardware Design Methodology}
+\label{sec:designMethod}
+
+The current prism motor design in the CTEx system is shown in Figure~\ref{fig:PrismMotor}. The motor design is such that the optical axis, aligned with the rotation axis, runs through an open space to be occupied by the prism. Given the cylindrical nature of shafts, it is reasonable to assume a cylindrical design for the DVP assembly as shown in Figure~\ref{fig:HawksPrism_Iso}. To position the DVP inside of the smooth-bore motor shaft, an intermediate prism sleeve is added as identified in Figure~\ref{fig:PrismSleeveAssy_Section}. 
+
+\begin{figure}[htb]		% PrismMotor
+\centering
+\includegraphics[width=0.75\textwidth,trim=0cm 0cm 0cm 0cm,clip]{images/chap4/PrismMotor}
+\caption{Model of the prism motor assembly. The shaft has a cylindrical opening aligned with the axis of rotation where the DVP is to be inserted and then aligned with the system optical axis.}
+\label{fig:PrismMotor}
+\end{figure}
+
+\begin{figure}[htb]		% HawksPrism_Iso
+\centering
+\includegraphics[width=1\textwidth,trim=9cm 5cm 2cm 2cm,clip]{images/chap4/HawksPrism_Iso}
+\caption{The physical Hawks DVP assembly mechanical design is 72 mm in diameter.}
+\label{fig:HawksPrism_Iso}
+\end{figure}
+
+\begin{figure}[htb]		% PrismSleeveAssy_Section
+\centering
+\includegraphics[width=1\textwidth,trim=0cm 1cm 0cm 3cm,clip,page=12]{images/chap4/MyGraphics_Ch4}
+\caption{The design for a prism sleeve assembly.}
+\label{fig:PrismSleeveAssy_Section}
+\end{figure}
+
+\subsection{Direct-Vision Prism Assembly Design Methodology}
+\label{sec:dvpDesignMethod}
+The \ac{DVP} nominal optical design is considered to be established for this research. The trade space of optical properties for the DVP is controlled mainly by the material and the wedge angle selection Beyond these relatively minor geometric definitions, the mechanical design of the DVP for CTEx is predominantly dictated by the mechanical design of the motor intended to spin the prism during operation.
+
+
+\subsection{Direct-Vision Prism Sleeve Assembly Design Methodology}
+\label{sec:dvpSleeveDesignMethod}
+The preliminary engineering drawing of the prism sleeve assembly is supplied in Appendix \autoref{app:SleeveDrawing}. An intermediate prism sleeve offers the advantage of making the DVP removable without requiring removal of the motor shaft from the motor. A critical aspect of the DVP is the precision of the optical surfaces and the diameter of the clear aperture. As indicated by optical fabrication contractors, the feasibility of a clear aperture of 50 mm increases with DVP diameter for the range of interest. It is, therefore advantageous to design the prism sleeve with a small cylinder wall thickness dimension to allow for a larger diameter DVP.
+
+To mount the DVP in the sleeve, a combination of a mechanical alignment assembly and a chemical adhesive procedure are proposed. It is desired that the prism be permanently bonded in the DVP sleeve using adhesive. Before permanently adhering the 
+DVP to the sleeve, the design allows for the prism to be mechanically secured in the sleeve. To the right of the DVP in Figure~\ref{fig:PrismSleeveAssy_Section}, the wave-spring rests against the retaining ring with a washer to distribute the force evenly on the face of the DVP. To the left of the DVP, a centering tool is pressed against the DVP with a pressure plate tightened with machine screws through the threads shown. With the DVP held in place, the alignment of the DVP is verified in the complete assembly. If the prism is misaligned, the pressure plate is removed to make adjustments as necessary. After the DVP is aligned within specified tolerances, an adhesive is applied to permanently fix the prism in place.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Sensitivity Investigation of the Hawks DVP}
+\label{sec:sensitiveHawks}
+
+To investigate the effects of small misalignments of the Hawks \ac{DVP}, Zemax simulation was used. Figure~\ref{fig:HawksPrism_Optical_wAxes} shows the Hawks \ac{DVP} in the nominal configuration. Figure~\ref{fig:sptDiagrams} shows the spot diagram at the detector plane for the nominal alignment of the Hawks \ac{DVP} and the spot diagram at the detector plane for the Hawks \ac{DVP} when the first prism is rotated 0.1$^\circ$ about the Y-axis. The effect is a transverse offset that is wavelength-dependent. Assuming a lens three focal length in the \ac{CTEx} system (Figure~\ref{fig:layout}) of 115 mm and a pixel pitch of 20 \textmu m, the approximately 120 \textmu m transverse offset equates to a planar offset of six pixels at the detector plane. As referred to in Section~\ref{sec:backgroundAnalysis}, Bostick showed that a two-pixel offset error degrades the reconstruction significantly~\cite{Bostick}. The simulation establishes that a relatively small misalignment of even one of the prisms in the Hawks \ac{DVP} has detrimental impact on system performance.
+
+\begin{figure}[H]		% HawksPrism_Optical_wAxes
+\centering
+\includegraphics[width=1\textwidth]{images/chap4/HawksPrism_Optical_wAxes}
+\caption{Optical model of the Hawks DVP assembly.}
+\label{fig:HawksPrism_Optical_wAxes}
+\end{figure}
+
+\begin{figure}[H]  % sptDiagrams
+\begin{center}
+\subfigure[]{
+\includegraphics[width=0.4\textwidth]{images/chap4/SptDiagram_AlignedHawks}}
+\subfigure[]{
+\includegraphics[width=0.4\textwidth]{images/chap4/SptDiagram_MisalignedHawks}}
+\caption{Spot diagrams of wavelengths 0.40 \textmu m, 0.55 \textmu m, and 0.70 \textmu m at the image plane for (a) the nominal alignment of the Hawks DVP and (b) the Hawks DVP with the first prism rotated 0.1$^\circ$ about the Y-axis as shown. The angle of the output ray is significantly affected by small misalignments of the DVP and the change is wavelength-dependent.}
+\label{fig:sptDiagrams}
+\end{center}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusion}
+\label{sec:dvpConclusion}
+
+The investigation into the characterization and design of a~\ac{DVP} resulted in the mathematics and observations necessary to precisely define a \ac{DVP} after it is fabricated and possibly to aide in the alignment of the prism components.

@@ -1,0 +1,55 @@
+function [ c, ceq ] = Constr_MECH622_Qual( u, N, s0 )
+%CONSTR_MECH622_QUAL Contains all problem constraints
+%   State Constraints
+%   Initial Constraints
+%   Endpoint Constraints
+%   Path Constraints
+
+nsVars = min(size(s0));
+
+[s, Vbr] = States_MECH622_Qual(u, N, s0);
+
+% initial constraints
+Ieq = zeros(nsVars,1);
+for i = 1:nsVars
+    Ieq(i) = s0(i,1) - s(i,1);
+end
+
+% endpoint constraints
+Eeq = zeros(nsVars,1);
+for i = 1:nsVars
+    Eeq(i) = s0(i,end) - s(i,end);
+end
+
+% path constraints
+% Add another constraint to prevent the force on the boat from
+% being backwards. Velocity vector must be in the same direction as the
+% heading angle at all times.
+
+A = u(N+1:2*N);
+% Vbr_x = Vbr(1,:)';
+% Vbr_y = Vbr(2,:)';
+% Vbr_angle = zeros(N,1);
+% for i = 1:N
+%     Vbr_angle(i) = calcAngle(Vbr(:,i));
+% end
+Vbr_angle = calcAngle(Vbr);
+
+% Peq = zeros(N,1);
+Peq = A - Vbr_angle;
+
+% assemble constraint vectors
+ceq = [Ieq; Eeq; Peq];   % equality constraints vector
+
+c = [];             % no inequality constraints
+
+%% nested function to calculate the angle wrt +x-axis
+function angle = calcAngle(v)
+    % calc angle between v and +x-axis=
+    vx = v(1,:); vy = v(2,:);
+    angle = atan(vy./vx)';
+    I = find(isnan(angle));
+    angle(I) = 0;
+end
+
+end

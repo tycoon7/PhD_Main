@@ -1,0 +1,123 @@
+\documentclass{article}
+\usepackage{graphicx}
+
+\begin{document}
+
+\title{Coon Doctorate Plan}
+\author{Timothy Coon}
+\maketitle
+
+\begin{abstract}
+This plan is constructed using the natural planning technique of Allen. There are five phases to this plan.
+
+\begin{enumerate}
+	\item Defining Purpose and Principles
+	\item Outcome Visioning
+	\item Brainstorming
+	\item Identifying Next Actions
+\end{enumerate}
+
+\end{abstract}
+
+This planning document is focused at the top-level goal of obtaining a doctorate.
+
+\section{Defining a Purpose and Principles}
+
+Defining my purpose is asking ``Why?".  Defining my principles means stating the standards and values that I hold.
+
+\subsection{Purpose}
+My purpose is to obtain a doctorate and the recognition that goes along with it. My purpose for conducting research in optical control and optimization is to develop a working understanding of these systems and their underlying theory to the extent it enhances my abilities and contributions to space-based reconnaissance missions as an engineer and project manager.
+
+\subsection{Principles}
+\begin{quote}
+``I would give another person free rein to complete my research as long as they..."
+\end{quote}
+
+\begin{itemize}
+	\item Finished in no more than two years.
+	\item Gave me a working knowledge of control and optimization of optical systems.
+	\item Contribute something interesting and creative to the field.
+	\item Submitted research and materials that are complete, correct, and professional.
+\end{itemize}
+
+\section{Outcome Visioning}
+
+Beyond obtaining a doctorate, the outcome I envision is a valued expertise in an area significant to my career and future as an engineer. Wild success is the ability to take information on any technical engineering topic and apply appropriate general theory from limited research to arrive at a comprehensive set of data for meaningful analysis and articulate results.
+
+\section{Brainstorming}
+
+\subsection{Capturing Ideas}
+
+\subsubsection{Toolbox}
+Let's start with a list of tools at my disposal or which could be developed for use.
+
+\begin{itemize}
+
+	\item Educational Tools
+	\begin{itemize}
+		\item Linear Control Theory
+		\item Nonlinear Analytical Analysis
+		\item Mechanical Engineering Design
+		\item Direct/Indirect Optimization
+		\item Numerical Techniques
+		\item Geometrical Optics
+		\item Fourier Optics
+		\item Dynamical System Modelling
+	\end{itemize}
+	
+	\item Software Tools
+	\begin{itemize}
+		\item C/C++
+		\item MATLAB
+		\item Solidworks
+		\item Zemax
+	\end{itemize}
+	
+	\item Hardware Available
+	\begin{itemize}
+		\item Off-Axis Mersenne Telescope
+		\item Telescope Control System
+		\item Deformable Mirror
+		\item Shack Hartmann WF Sensor
+	\end{itemize}
+	
+	\item{People}
+	\begin{itemize}
+		\item Dr. Cobb
+		\item Dr. Baker
+		\item Dr. Hawks
+	\end{itemize}
+	
+\end{itemize}
+
+\subsubsection{Research Projects}
+List the research projects that I could work on or tailor my research around.
+
+\begin{itemize}
+	\item CTEx
+		\begin{itemize}
+			\item Reconstruction Algorithm Development
+			\item Prism Design/Control/Analysis/Identification
+			\item Telescope Control
+		\end{itemize}
+	\item Segmented Mirror Telescope (SMT)
+		\begin{itemize}
+			\item Optimal Linear Control
+			\item Nonlinear Control
+			\item Dynamics Modelling
+		\end{itemize}
+	\item Satellite Surveillance and Tracking (SST) System
+		\begin{itemize}
+			\item Linear Control
+			\item Optical State Estimation
+			\item Nonlinear Analysis
+		\end{itemize}
+\end{itemize}
+
+\subsubsection{My First Idea}
+My first complete and original idea for research is to address limitations in the conventional method of optical design. The conventional method is to complete the optical design in an idealized environment, (i.e. Zemax). This does not take into account the cost (by whatever metric introduced) associated with the environmental or operational inputs the system will be subjected to such as structural vibrations, telescope pointing actuators, and disturbance rejection and alignment control actuators. It makes sense to assume the dynamical system and a particular disturbance or control vector will impact the performance differently for various optical prescriptions. The question is, ``How much?" Can I design the optical system with consideration to the dynamic operation in such a way as to achieve better performance?
+
+As an example, I may design a telescope in Zemax to minimize the diffraction-limited spot size. The final static design results in an estimated spot size of 1. Now, consider the environment in which it will be operated. For a space-based application, we may consider inputs such as slew/pointing maneuvers, motor/instrument vibrations, and thermal effects. These inputs can be characterized using stochastic theory to yield a representation of the operational environment. In order to adapt to this environment, the telescope has multiple actuators which reorient optical elements to maintain the ideal performance of the static design. Consider now a dynamic simulation of the telescope performance given a characteristic input (maybe use Monte Carlo). In the operational environment, simulation predicts the diffraction-limited spot size to be, at the most, 4 with the static-ideal telescope design. Assume we now let a few design parameters vary, say, the focal length of the primary and secondary mirrors. Now, with a given input disturbance vector (or set of vectors) we can compare the maximum spot size over a specified simulation time of one pair of focal lengths with that given a different pair of focal lengths and find the pair that results in the smallest maximum spot size. Now, this new optical prescription yields a spot size of 2 in static operation, but in dynamic operation, we see a spot size of 3, better than the first design.
+		
+
+\end{document}

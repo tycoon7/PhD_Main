@@ -1,0 +1,48 @@
+%% This BibTeX bibliography file was created using BibDesk.
+%% http://bibdesk.sourceforge.net/
+
+
+%% Created for timothy Coon at 2015-02-10 12:46:39 -0500 
+
+
+%% Saved with string encoding Unicode (UTF-8) 
+
+
+
+@article{cividini,
+	Author = {A. Cividini, G. Maier, A. Nappi},
+	Date-Added = {2015-02-10 17:16:54 +0000},
+	Date-Modified = {2015-02-10 17:34:47 +0000},
+	Journal = {Int. J. Rock Mech. Min. Sci. and Geomech.},
+	Number = {5},
+	Pages = {215-226},
+	Title = {Parameter Estimation of a Static Geotechnical Model Using a Bayes' Approach},
+	Volume = {20},
+	Year = {1983}}
+
+@unpublished{gavin,
+	Author = {Henri P. Gavin},
+	Date-Added = {2015-02-10 17:12:53 +0000},
+	Date-Modified = {2015-02-10 17:15:20 +0000},
+	Month = {October},
+	Note = {Department of Civil and Environmental Engineering, Duke University},
+	Title = {The Levenberg-Marquardt method for nonlinear least-squares curve-fitting problems},
+	Year = {2013}}
+
+@book{xiu,
+	Address = {Princeton, N.J.},
+	Author = {Dongbin Xiu},
+	Date-Added = {2015-02-10 17:09:24 +0000},
+	Date-Modified = {2015-02-10 17:11:00 +0000},
+	Publisher = {Princeton University Press},
+	Title = {Numerical Methods for Stochastic Computations},
+	Year = {2010}}
+
+@book{simon,
+	Address = {Hoboken, N.J.},
+	Author = {Dan Simon},
+	Date-Added = {2015-02-10 17:04:38 +0000},
+	Date-Modified = {2015-02-10 17:08:16 +0000},
+	Publisher = {Wiley-Interscience},
+	Title = {Optimal State Estimation: Kalman, H [infinity], and Nonlinear Approaches},
+	Year = {2006}}
