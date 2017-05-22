@@ -1,4 +1,4 @@
-% Tim Coon - 9 December, 2014
+,% Tim Coon - 9 December, 2014
 % Qualifying Exam, Question #5, Part 1
 % With no active control, characterize the evolution of the focal point
 % distribution in response to the random disturbance input.
