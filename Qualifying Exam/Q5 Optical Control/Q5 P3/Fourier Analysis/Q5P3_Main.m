@@ -3,7 +3,7 @@
 % Characterize the influence of a surface roughness term on the focal point
 % distribution.
 
-% Plot frauhofer diffraction pattern in the focal plane for the single
+% Plot fraunhofer diffraction pattern in the focal plane for the single
 % parabolic mirror. The input is a collimated beam and we may reference the
 % scenario of an input placed against a lens as detailed in Goodman section
 % 5.2.1 validating the math to show the diffraction pattern in the focal

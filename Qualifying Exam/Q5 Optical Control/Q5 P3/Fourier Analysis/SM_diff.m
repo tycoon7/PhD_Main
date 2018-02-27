@@ -22,7 +22,7 @@ k = 2*pi/lambda;        % (1/m) wave number
 % Option #1: centered or offset pupil
 % Option #2: deviated or ideal surface
 if isCentered
-    P = sqrt(X1.^2+Y1.^2) <= D/2;           % pupil function (centered)
+    P = sqrt(X1.^2+Y1.^2) <= D/2;       % pupil function (centered)
 else
 P = sqrt((X1+D/2).^2+Y1.^2) <= D/2;     % pupil function (shifted in x)
 end

@@ -37,11 +37,11 @@ D = zeros(length(Dt),2);
 r = sigma*randn(length(Dt),1) + r0;
 theta = 2*pi*rand(length(Dt),1);
 % impulse input
-% D(1,:) = [r(1)*cos(theta(1)), r(1)*sin(theta(1))];
+D(1,:) = [r(1)*cos(theta(1)), r(1)*sin(theta(1))];
 % continuous random input
 % D = [r.*cos(theta), r.*sin(theta)];
 % continuous sinusoidal inputs
-D = [sin(10*Dt), sin(5*Dt)];
+% D = [sin(10*Dt), sin(5*Dt)];
 
 % Control Input
 Ut = linspace(t0,tf,100)';

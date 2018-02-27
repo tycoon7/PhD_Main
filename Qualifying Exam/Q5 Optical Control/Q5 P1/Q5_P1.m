@@ -33,7 +33,7 @@ k = 5;
 % r0 = 1;
 % sigma0 = 0.2;
 t0 = 0;
-tf = 1;
+tf = 1; 
 
 %% generate sample realizations and determine statistics of resulting focal-
 % point-evolution ball radius
